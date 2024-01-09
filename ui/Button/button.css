@@ -1,30 +1,37 @@
-.storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+.mm-button {
+  background-color: var(--color-primary);
   border: 0;
-  border-radius: 3em;
+  border-radius: var(--radius-button);
+  color: var(--color-background-default);
   cursor: pointer;
   display: inline-block;
+  font-family: var(--font-family-default);
+  font-size: 0.875rem;
+  font-weight: 600;
   line-height: 1;
+  padding: var(--spacing-sm) var(--spacing-lg);
 }
-.storybook-button--primary {
-  color: white;
-  background-color: #1ea7fd;
+.mm-button:hover {
+  background-color: var(--color-primary-dark);
 }
-.storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+
+.mm-button--secondary {
+  background-color: var(--color-primary-lightest);
+  color: var(--color-primary-dark);
 }
-.storybook-button--small {
-  font-size: 12px;
-  padding: 10px 16px;
+
+.mm-button--secondary:hover {
+  background-color: var(--color-primary-lighter);
 }
-.storybook-button--medium {
-  font-size: 14px;
-  padding: 11px 20px;
+
+.mm-button--sm {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: var(--spacing-xs) var(--spacing-md);
 }
-.storybook-button--large {
-  font-size: 16px;
-  padding: 12px 24px;
+
+.mm-button--lg {
+  font-size: 1.125rem;
+  letter-spacing: 0.03rem;
+  padding: var(--spacing-md) var(--spacing-xl);
 }

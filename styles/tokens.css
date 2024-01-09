@@ -1,0 +1,48 @@
+:root {
+  /* colors */
+  --color-background-default: #fafdfb;
+  --color-typography-default: #131919;
+  --color-typography-reverse: #ffffff;
+  --color-primary-darker: #0e3b42;
+  --color-primary-dark: #066070;
+  --color-primary: #00798f;
+  --color-primary-light: #86bfc3;
+  --color-primary-lighter: #dcedea;
+  --color-primary-lightest: #ecf6f2;
+  --color-accent: #e37b5b;
+  --color-semantic-success: #36754f;
+  --color-semantic-critical: #ac2020;
+
+  /* spacing */
+  --spacing-6xl: 4.77rem;
+  --spacing-5xl: 3.81rem;
+  --spacing-4xl: 3.05rem;
+  --spacing-3xl: 2.44rem;
+  --spacing-2xl: 1.95rem;
+  --spacing-xl: 1.56rem;
+  --spacing-lg: 1.25rem;
+  --spacing-md: 1rem;
+  --spacing-sm: 0.71rem;
+  --spacing-xs: 0.5rem;
+  --spacing-2xs: 0.35rem;
+  --spacing-3xs: 0.25rem;
+  --spacing-4xs: 0.18rem;
+
+  /* radius */
+  --radius-circle: 50%;
+  --radius-button: 10rem;
+  --radius-large: 0.5rem;
+  --radius-small: 0.25rem;
+
+  /* shadows */
+  --shadow-level-1: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  --shadow-level-2: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  --shadow-level-3: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.2);
+
+  /* typography */
+  --font-family-default: 'Montserrat', sans-serif;
+  --line-height-heading: 1.25;
+  --line-height-reset: 1;
+  --line-height-text: 1.5;
+}
