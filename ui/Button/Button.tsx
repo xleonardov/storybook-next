@@ -7,7 +7,7 @@ interface ButtonProps {
    */
   label: string;
   /**
-   * How large should the button be?
+   * Button size.
    */
   size?: 'sm' | 'md' | 'lg';
   /**
