@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-default);
+  font-weight: 600;
+  line-height: var(--line-height-heading);
+  margin: 0;
+  margin-block-end: var(--spacing-sm);
+  color: var(--color-typography-default);
+}
+
+h1 {
+  font-size: var(--spacing-4xl);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--spacing-3xl);
+}
+
+h3 {
+  font-size: var(--spacing-2xl);
+}
+
+h4 {
+  font-size: var(--spacing-xl);
+}
+
+h5 {
+  font-size: var(--spacing-lg);
+}
+
+h6 {
+  font-size: var(--spacing-md);
+}

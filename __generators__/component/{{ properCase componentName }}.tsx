@@ -4,7 +4,7 @@ import './{{ dashCase componentName }}.css';
 
 interface {{ properCase componentName }}Props {
     /**
-   * Optional additional class names
+   * Optional additional class names.
    */
   className?: string;
 }
@@ -18,7 +18,7 @@ export const {{ properCase componentName }} = ({ className, ...props }: {{ prope
 	// Set up classes.
 	const baseClass = 'mm-{{ dashCase componentName }}';
 
-	// Render the output
+	// Render the output.
 	return (
 	<div
 		className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')}

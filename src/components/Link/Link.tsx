@@ -4,7 +4,7 @@ import './link.css';
 
 interface LinkProps {
   /**
-   * Optional additional class names
+   * Optional additional class names.
    */
   className?: string;
 }
@@ -16,7 +16,7 @@ export const Link = ({ className, ...props }: LinkProps) => {
   // Set up classes.
   const baseClass = 'mm-link';
 
-  // Render the output
+  // Render the output.
   return (
     <div className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')} {...props}>
       <div>!!!Content goes here</div>
