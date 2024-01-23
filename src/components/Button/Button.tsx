@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './button.css';
 
 interface ButtonProps {
@@ -22,12 +23,23 @@ interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+  /**
+   * Optional additional class names
+   */
+  className?: string;
 }
 
 /**
  * Button UI component
  */
-export const Button = ({ label, size = 'md', type = 'button', variant = 'primary', ...props }: ButtonProps) => {
+export const Button = ({
+  label,
+  size = 'md',
+  type = 'button',
+  variant = 'primary',
+  className,
+  ...props
+}: ButtonProps) => {
   // Set up classes.
   const baseClass = 'mm-button';
   const sizeClass = size !== 'md' ? `${baseClass}--${size}` : null;
@@ -36,7 +48,7 @@ export const Button = ({ label, size = 'md', type = 'button', variant = 'primary
   return (
     <button
       type={type}
-      className={[baseClass, sizeClass, variantClass].join(' ').trim().replace(/\s+/g, ' ')}
+      className={[baseClass, sizeClass, variantClass, className].join(' ').trim().replace(/\s+/g, ' ')}
       {...props}
     >
       {label}

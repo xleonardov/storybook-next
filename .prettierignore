@@ -1,0 +1,17 @@
+#### packages ####
+node_modules
+
+#### Storybook ####
+storybook-static
+build-storybook.log
+.storybook
+
+#### Playwright ####
+__tests__
+
+### Other #####
+_dist
+public
+__generators__
+.gitignore
+.npmrc
