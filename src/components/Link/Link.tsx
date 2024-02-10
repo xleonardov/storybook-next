@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import './link.css';
 
 interface LinkProps {
+  /**
+   * Fully-formed link element.
+   */
+  linkContent: ReactNode;
   /**
    * Optional additional class names.
    */
@@ -12,14 +16,14 @@ interface LinkProps {
 /**
  * Link UI component
  */
-export const Link = ({ className, ...props }: LinkProps) => {
+export const Link = ({ linkContent, className, ...props }: LinkProps) => {
   // Set up classes.
   const baseClass = 'mm-link';
 
   // Render the output.
   return (
     <div className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')} {...props}>
-      <div>!!!Content goes here</div>
+      {linkContent}
     </div>
   );
 };
