@@ -18,19 +18,19 @@
     "rss": "^1.2.2"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.6.7",
-    "@storybook/addon-interactions": "^7.6.7",
-    "@storybook/addon-links": "^7.6.7",
+    "@storybook/addon-essentials": "^8.0.0-beta.2",
+    "@storybook/addon-interactions": "^8.0.0-beta.2",
+    "@storybook/addon-links": "^8.0.0-beta.2",
     "@storybook/addon-onboarding": "^1.0.10",
-    "@storybook/blocks": "^7.6.7",
-    "@storybook/nextjs": "^7.6.7",
-    "@storybook/react": "^7.6.7",
-    "@storybook/test": "^7.6.7",
+    "@storybook/blocks": "^8.0.0-beta.2",
+    "@storybook/nextjs": "^8.0.0-beta.2",
+    "@storybook/react": "^8.0.0-beta.2",
+    "@storybook/test": "^8.0.0-beta.2",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "plop": "^4.0.1",
-    "storybook": "^7.6.7",
+    "storybook": "^8.0.0-beta.2",
     "typescript": "^4.7.4"
   }
 }
