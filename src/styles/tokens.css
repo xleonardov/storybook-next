@@ -41,7 +41,8 @@
     0 3px 5px -1px rgba(0, 0, 0, 0.2);
 
   /* typography */
-  --font-family-default: 'Montserrat', sans-serif;
+  --font-family-default: 'Figtree', sans-serif;
+  --font-family-code: 'Source Code Pro', monospace;
   --line-height-heading: 1.25;
   --line-height-reset: 1;
   --line-height-text: 1.5;
