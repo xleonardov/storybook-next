@@ -10,7 +10,9 @@
   font-weight: 600;
   line-height: 1;
   padding: var(--mm-spacing-sm) var(--mm-spacing-lg);
+  transition: var(--mm-animation-default-transition);
 }
+
 .mm-button:hover {
   background-color: var(--mm-color-primary-dark);
 }
