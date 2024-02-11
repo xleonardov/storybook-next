@@ -1,10 +1,8 @@
-import React from 'react';
-
-export default {
+const meta = {
   title: 'Foundations/Typography/Headings',
-  argTypes: {},
-  args: {},
 };
+
+export default meta;
 
 export const Default = () => {
   return (

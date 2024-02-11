@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 const inputMinimumLength = async (input) => {
   if (input.length < 3) {
     return 'Name must be at least 3 characters.';
