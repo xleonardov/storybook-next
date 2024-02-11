@@ -52,4 +52,20 @@
   --mm-line-height-heading: 1.25;
   --mm-line-height-reset: 1;
   --mm-line-height-text: 1.5;
+
+  /* Animation */
+  --mm-animation-transition-default-delay: 0s;
+  --mm-animation-transition-default-duration: 200ms;
+  --mm-animation-transition-default-timing-function: ease-in-out;
+  --mm-animation-default-transition: all
+    var(--mm-animation-transition-default-duration)
+    var(--mm-animation-transition-default-timing-function)
+    var(--mm-animation-transition-default-delay);
+
+  /* z-index */
+  --mm-z-index-dropdown: 200;
+  --mm-z-index-modal: 500;
+  --mm-z-index-navigation: 100;
+  --mm-z-index-notifications: 300;
+  --mm-z-index-overlay: 400;
 }
