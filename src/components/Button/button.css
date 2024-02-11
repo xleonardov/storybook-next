@@ -36,3 +36,8 @@
   letter-spacing: 0.03rem;
   padding: var(--mm-spacing-md) var(--mm-spacing-xl);
 }
+
+.mm-button-group {
+  display: flex;
+  gap: var(--mm-spacing-sm);
+}

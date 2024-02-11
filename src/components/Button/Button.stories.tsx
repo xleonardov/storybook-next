@@ -46,3 +46,10 @@ export const Secondary: Story = {
     variant: 'secondary',
   },
 };
+
+export const ButtonGroup = () => (
+  <div className='mm-button-group'>
+    <Button label='Primary button' />
+    <Button label='Secondary button' variant='secondary' />
+  </div>
+);
