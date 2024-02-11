@@ -1,0 +1,6 @@
+p {
+  font-family: var(--mm-font-family-default);
+  font-size: var(--mm-spacing-md);
+  line-height: var(--mm-line-height-text);
+  margin-block: 0 var(--mm-spacing-sm);
+}

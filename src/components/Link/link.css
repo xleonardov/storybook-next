@@ -1,10 +1,10 @@
 .mm-link {
   --link-color: var(--mm-color-link);
-  --icon-offset: var(--mm-spacing-2xs);
+  --icon-offset: var(--mm-spacing-3xs);
 
   &:hover {
-    --link-color: var(--mm-color-link-hover);
-    --icon-offset: var(--mm-spacing-xs);
+    --link-color: var(--mm-color-primary-dark);
+    --icon-offset: var(--mm-spacing-2xs);
   }
 }
 

@@ -1,5 +1,5 @@
 const meta = {
-  title: 'Foundations/Typography/Headings',
+  title: 'Foundations/Headings',
 };
 
 export default meta;

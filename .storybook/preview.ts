@@ -12,7 +12,20 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    backgrounds: {
+    values: [
+      {
+        name: 'light',
+        value: 'var(--mm-color-background-default)',
+      },
+      {
+        name: 'dark',
+        value: 'var(--mm-color-background-reverse)',
+      },
+    ],
   },
+  },
+
 };
 
 export default preview;
