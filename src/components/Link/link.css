@@ -1,20 +1,20 @@
 .mm-link {
-	--link-color: var(--mm-color-link);
+  --link-color: var(--mm-color-link);
 }
 
 .mm-link a {
-	color: var(--link-color);
-	font-family: var(--mm-font-family-default);
-	font-size: var(--spacing-lg);
-	font-weight: 700;
-	text-decoration: none;
+  color: var(--link-color);
+  font-family: var(--mm-font-family-default);
+  font-size: var(--spacing-lg);
+  font-weight: 700;
+  text-decoration: none;
 
-	&:hover {
-		--link-color: var(--mm-color-link-hover);
-	}
+  &:hover {
+    --link-color: var(--mm-color-link-hover);
+  }
 }
 
 .mm-link__icon {
-	color: var(--link-color);
-	margin-left: var(--mm-spacing-2xs);
+  color: var(--link-color);
+  margin-left: var(--mm-spacing-2xs);
 }

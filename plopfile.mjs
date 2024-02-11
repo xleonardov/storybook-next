@@ -48,10 +48,14 @@ export default function (plop) {
       {
         type: 'append',
         path: 'src/styles/foundations/index.css',
-        template: "@import url('./{{ dashCase foundationName }}/{{ dashCase foundationName }}.css');",
+        template:
+          "@import url('./{{ dashCase foundationName }}/{{ dashCase foundationName }}.css');",
       },
     ],
   });
 
-  plop.setHelper('capitalizeFirst', (txt) => txt.charAt(0).toUpperCase() + txt.substr(1));
+  plop.setHelper(
+    'capitalizeFirst',
+    (txt) => txt.charAt(0).toUpperCase() + txt.substr(1),
+  );
 }

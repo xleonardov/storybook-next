@@ -22,7 +22,10 @@ export const Link = ({ linkContent, className, ...props }: LinkProps) => {
 
   // Render the output.
   return (
-    <div className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')} {...props}>
+    <div
+      className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')}
+      {...props}
+    >
       {linkContent}
     </div>
   );

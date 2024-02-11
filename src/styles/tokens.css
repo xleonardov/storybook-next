@@ -1,55 +1,55 @@
 :root {
-	/* colors */
-	--mm-color-background-default: #fafdfb;
-	--mm-color-typography-default: #131919;
-	--mm-color-typography-reverse: #ffffff;
-	--mm-color-primary-darker: #0e3b42;
-	--mm-color-primary-dark: #066070;
-	--mm-color-primary: #00798f;
-	--mm-color-primary-light: #80bcc7;
-	--mm-color-primary-lighter: #cce2e9;
-	--mm-color-primary-lightest: #eaf3f2;
-	--mm-color-accent-dark: #a94d2e;
-	--mm-color-accent: #e37b5b;
-	--mm-color-accent-light: #f3bda3;
-	--mm-color-semantic-success: #36754f;
-	--mm-color-semantic-critical: #ac2020;
-	--mm-color-link: var(--mm-color-primary);
-	--mm-color-link-hover: var(--mm-color-primary-dark);
+  /* colors */
+  --mm-color-background-default: #fafdfb;
+  --mm-color-typography-default: #131919;
+  --mm-color-typography-reverse: #ffffff;
+  --mm-color-primary-darker: #0e3b42;
+  --mm-color-primary-dark: #066070;
+  --mm-color-primary: #00798f;
+  --mm-color-primary-light: #80bcc7;
+  --mm-color-primary-lighter: #cce2e9;
+  --mm-color-primary-lightest: #eaf3f2;
+  --mm-color-accent-dark: #a94d2e;
+  --mm-color-accent: #e37b5b;
+  --mm-color-accent-light: #f3bda3;
+  --mm-color-semantic-success: #36754f;
+  --mm-color-semantic-critical: #ac2020;
+  --mm-color-link: var(--mm-color-primary);
+  --mm-color-link-hover: var(--mm-color-primary-dark);
 
-	/* spacing */
-	--mm-spacing-6xl: 4.77rem;
-	--mm-spacing-5xl: 3.81rem;
-	--mm-spacing-4xl: 3.05rem;
-	--mm-spacing-3xl: 2.44rem;
-	--mm-spacing-2xl: 1.95rem;
-	--mm-spacing-xl: 1.56rem;
-	--mm-spacing-lg: 1.25rem;
-	--mm-spacing-md: 1rem;
-	--mm-spacing-sm: 0.71rem;
-	--mm-spacing-xs: 0.5rem;
-	--mm-spacing-2xs: 0.35rem;
-	--mm-spacing-3xs: 0.25rem;
-	--mm-spacing-4xs: 0.18rem;
+  /* spacing */
+  --mm-spacing-6xl: 4.77rem;
+  --mm-spacing-5xl: 3.81rem;
+  --mm-spacing-4xl: 3.05rem;
+  --mm-spacing-3xl: 2.44rem;
+  --mm-spacing-2xl: 1.95rem;
+  --mm-spacing-xl: 1.56rem;
+  --mm-spacing-lg: 1.25rem;
+  --mm-spacing-md: 1rem;
+  --mm-spacing-sm: 0.71rem;
+  --mm-spacing-xs: 0.5rem;
+  --mm-spacing-2xs: 0.35rem;
+  --mm-spacing-3xs: 0.25rem;
+  --mm-spacing-4xs: 0.18rem;
 
-	/* radius */
-	--mm-radius-circle: 50%;
-	--mm-radius-button: 10rem;
-	--mm-radius-large: 0.5rem;
-	--mm-radius-small: 0.25rem;
+  /* radius */
+  --mm-radius-circle: 50%;
+  --mm-radius-button: 10rem;
+  --mm-radius-large: 0.5rem;
+  --mm-radius-small: 0.25rem;
 
-	/* shadows */
-	--mm-shadow-level-1: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-		0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
-	--mm-shadow-level-2: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
-		0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
-	--mm-shadow-level-3: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
-		0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  /* shadows */
+  --mm-shadow-level-1: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  --mm-shadow-level-2: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  --mm-shadow-level-3: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 
-	/* typography */
-	--mm-font-family-default: 'Figtree', sans-serif;
-	--mm-font-family-code: 'Source Code Pro', monospace;
-	--mm-line-height-heading: 1.25;
-	--mm-line-height-reset: 1;
-	--mm-line-height-text: 1.5;
+  /* typography */
+  --mm-font-family-default: 'Figtree', sans-serif;
+  --mm-font-family-code: 'Source Code Pro', monospace;
+  --mm-line-height-heading: 1.25;
+  --mm-line-height-reset: 1;
+  --mm-line-height-text: 1.5;
 }

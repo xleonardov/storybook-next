@@ -43,12 +43,16 @@ export const Button = ({
   // Set up classes.
   const baseClass = 'mm-button';
   const sizeClass = size !== 'md' ? `${baseClass}--${size}` : null;
-  const variantClass = variant !== 'primary' ? `${baseClass}--${variant}` : null;
+  const variantClass =
+    variant !== 'primary' ? `${baseClass}--${variant}` : null;
 
   return (
     <button
       type={type}
-      className={[baseClass, sizeClass, variantClass, className].join(' ').trim().replace(/\s+/g, ' ')}
+      className={[baseClass, sizeClass, variantClass, className]
+        .join(' ')
+        .trim()
+        .replace(/\s+/g, ' ')}
       {...props}
     >
       {label}

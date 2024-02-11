@@ -1,36 +1,36 @@
 .mm-button {
-	background-color: var(--mm-color-primary);
-	border: 0;
-	border-radius: var(--mm-radius-button);
-	color: var(--mm-color-background-default);
-	cursor: pointer;
-	display: inline-block;
-	font-family: var(--mm-font-family-default);
-	font-size: var(--mm-spacing-md);
-	font-weight: 600;
-	line-height: 1;
-	padding: var(--mm-spacing-sm) var(--mm-spacing-lg);
+  background-color: var(--mm-color-primary);
+  border: 0;
+  border-radius: var(--mm-radius-button);
+  color: var(--mm-color-background-default);
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--mm-font-family-default);
+  font-size: var(--mm-spacing-md);
+  font-weight: 600;
+  line-height: 1;
+  padding: var(--mm-spacing-sm) var(--mm-spacing-lg);
 }
 .mm-button:hover {
-	background-color: var(--mm-color-primary-dark);
+  background-color: var(--mm-color-primary-dark);
 }
 
 .mm-button--secondary {
-	background-color: var(--mm-color-primary-lightest);
-	color: var(--mm-color-primary-dark);
+  background-color: var(--mm-color-primary-lightest);
+  color: var(--mm-color-primary-dark);
 }
 
 .mm-button--secondary:hover {
-	background-color: var(--mm-color-primary-lighter);
+  background-color: var(--mm-color-primary-lighter);
 }
 
 .mm-button--sm {
-	font-size: var(--mm-spacing-sm);
-	padding: var(--mm-spacing-xs) var(--mm-spacing-md);
+  font-size: var(--mm-spacing-sm);
+  padding: var(--mm-spacing-xs) var(--mm-spacing-md);
 }
 
 .mm-button--lg {
-	font-size: var(--mm-spacing-lg);
-	letter-spacing: 0.03rem;
-	padding: var(--mm-spacing-md) var(--mm-spacing-xl);
+  font-size: var(--mm-spacing-lg);
+  letter-spacing: 0.03rem;
+  padding: var(--mm-spacing-md) var(--mm-spacing-xl);
 }

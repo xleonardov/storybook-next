@@ -1,11 +1,11 @@
-const YEAR = new Date().getFullYear()
+const YEAR = new Date().getFullYear();
 
 export default {
   footer: (
     <footer>
       <small>
         <time>{YEAR}</time> © Your Name.
-        <a href="/feed.xml">RSS</a>
+        <a href='/feed.xml'>RSS</a>
       </small>
       <style jsx>{`
         footer {
@@ -17,4 +17,4 @@ export default {
       `}</style>
     </footer>
   ),
-}
+};
