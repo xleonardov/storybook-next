@@ -14,7 +14,7 @@
 }
 
 .mm-button:hover {
-  background-color: var(--mm-color-primary-darker);
+  background-color: var(--mm-color-link-hover);
 }
 
 .mm-button--secondary {

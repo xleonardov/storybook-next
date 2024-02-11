@@ -6,9 +6,9 @@ a {
   color: var(--mm-color-link-visited);
 } */
 
-a:hover,
-a:visited:hover {
-  color: var(--mm-color-link-hover);
+a:not([class]):hover,
+a:not([class])visited:hover {
+  color: var(--mm-color-link-hover-inline);
 }
 
 a:focus {

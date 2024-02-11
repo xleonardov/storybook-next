@@ -1,0 +1,11 @@
+.mm-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--mm-spacing-xl);
+  text-align: center;
+}
+
+.mm-footer__fine-print {
+  font-size: var(--mm-spacing-sm);
+}

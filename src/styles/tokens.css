@@ -32,7 +32,8 @@
   --mm-color-typography-reverse: var(--mm-color-neutral-lightest);
   --mm-color-semantic-success: #439160;
   --mm-color-link: var(--mm-color-primary);
-  --mm-color-link-hover: var(--mm-color-accent);
+  --mm-color-link-hover: var(--mm-color-primary-darker);
+  --mm-color-link-hover-inline: var(--mm-color-accent);
   --mm-color-link-visited: #7559a6;
   --mm-color-focus: #0066db;
 
@@ -45,11 +46,11 @@
   --mm-spacing-xl: 1.56rem;
   --mm-spacing-lg: 1.25rem;
   --mm-spacing-md: 1rem;
-  --mm-spacing-sm: 0.71rem;
-  --mm-spacing-xs: 0.5rem;
-  --mm-spacing-2xs: 0.35rem;
-  --mm-spacing-3xs: 0.25rem;
-  --mm-spacing-4xs: 0.18rem;
+  --mm-spacing-sm: 0.8rem;
+  --mm-spacing-xs: 0.64rem;
+  --mm-spacing-2xs: 0.41rem;
+  --mm-spacing-3xs: 0.33rem;
+  --mm-spacing-4xs: 0.26rem;
 
   /* radius */
   --mm-radius-circle: 50%;

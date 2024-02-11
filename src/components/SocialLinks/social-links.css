@@ -1,0 +1,16 @@
+.mm-social-links {
+  all: unset;
+  column-gap: var(--mm-spacing-xl);
+  display: flex;
+  list-style-type: none;
+}
+
+.mm-social-links__icon {
+  color: var(--mm-color-link);
+  height: var(--mm-spacing-2xl);
+  width: var(--mm-spacing-2xl);
+}
+
+.mm-social-links__icon:hover {
+  color: var(--mm-color-link-hover);
+}
