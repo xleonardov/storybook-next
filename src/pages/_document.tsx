@@ -2,9 +2,10 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   const meta = {
-    title: 'Next.js Blog Starter Kit',
-    description: 'Clone and deploy your own Next.js portfolio in minutes.',
-    image: 'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png',
+    title: 'Melissa Miller portfolio',
+    description:
+      'Work and thoughts of Melissa Miller, UX Engineer and visual designer',
+    image: '',
   };
 
   return (
@@ -17,7 +18,7 @@ export default function Document() {
         <meta property='og:title' content={meta.title} />
         <meta property='og:image' content={meta.image} />
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:site' content='@yourname' />
+        <meta name='twitter:site' content='@_mel_miller_' />
         <meta name='twitter:title' content={meta.title} />
         <meta name='twitter:description' content={meta.description} />
         <meta name='twitter:image' content={meta.image} />
