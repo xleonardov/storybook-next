@@ -14,7 +14,7 @@ interface FooterProps {
 const YEAR = new Date().getFullYear();
 
 /**
- * Footer UI component
+ * Footer Layout component
  */
 export const Footer = ({ className, ...props }: FooterProps) => {
   // Set up classes.
@@ -31,7 +31,7 @@ export const Footer = ({ className, ...props }: FooterProps) => {
         linkItems={['github', 'drupal', 'linkedin', 'instagram', 'email']}
       />
       <div className={`${baseClass}__fine-print`}>
-        <time>{YEAR}</time> © mel-miller
+        ©<time>{YEAR}</time> mel-miller
       </div>
     </footer>
   );
