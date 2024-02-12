@@ -5,7 +5,7 @@ h4,
 h5,
 h6 {
   font-family: var(--mm-font-family-default);
-  font-weight: 600;
+  font-weight: 700;
   line-height: var(--mm-line-height-heading);
   margin: 0;
   margin-block-end: var(--mm-spacing-sm);
@@ -14,7 +14,7 @@ h6 {
 
 h1 {
   font-size: var(--mm-spacing-4xl);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h2 {
