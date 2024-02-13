@@ -1,3 +1,4 @@
+import { Container } from '../components/Container/Container';
 import { Footer } from '../components/Footer/Footer';
 import { Header } from '../components/Header/Header';
 
@@ -12,7 +13,7 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <Header />
-        {children}
+        <Container>{children}</Container>
         <Footer />
       </body>
     </html>

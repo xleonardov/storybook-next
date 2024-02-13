@@ -10,7 +10,7 @@ interface ContainerProps {
   /**
    * Relative width of the container.
    */
-  width: 'narrow' | 'standard' | 'wide';
+  width?: 'narrow' | 'standard' | 'wide';
   /**
    * Optional additional class names.
    */
