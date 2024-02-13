@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Container } from '../Container/Container';
 import { SocialLinks } from '../SocialLinks/SocialLinks';
 
 import './footer.css';
@@ -26,13 +27,15 @@ export const Footer = ({ className, ...props }: FooterProps) => {
       className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')}
       {...props}
     >
-      <SocialLinks
-        className={`${baseClass}__social-links`}
-        linkItems={['github', 'drupal', 'linkedin', 'instagram', 'email']}
-      />
-      <div className={`${baseClass}__fine-print`}>
-        ©<time>{YEAR}</time> mel-miller
-      </div>
+      <Container width='wide' className={`${baseClass}__container`}>
+        <SocialLinks
+          className={`${baseClass}__social-links`}
+          linkItems={['github', 'drupal', 'linkedin', 'instagram', 'email']}
+        />
+        <div className={`${baseClass}__fine-print`}>
+          ©<time>{YEAR}</time> mel-miller
+        </div>
+      </Container>
     </footer>
   );
 };

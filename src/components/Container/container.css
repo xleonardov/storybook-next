@@ -1,0 +1,18 @@
+.mm-container {
+  margin-inline: auto;
+  max-width: var(--mm-container-max-width-standard);
+  padding-inline: var(--mm-container-padding);
+}
+
+/* Container widths only take affect at medium breakpoints and up. */
+@media (--bp-md) {
+  .mm-container--narrow {
+    max-width: var(--mm-container-max-width-narrow);
+    padding-inline: var(--mm-container-padding-narrow);
+  }
+
+  .mm-container--wide {
+    max-width: var(--mm-container-max-width-wide);
+    padding-inline: var(--mm-container-padding-wide);
+  }
+}
