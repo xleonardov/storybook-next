@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Container } from '../Container/Container';
+import { MainMenu } from '../MainMenu/MainMenu';
 
 import './header.css';
 
@@ -23,8 +24,11 @@ export const Header = ({ className, ...props }: HeaderProps) => {
       className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')}
       {...props}
     >
-      <Container width='wide' className={`${baseClass}__container`}>
-        <h1 className={`${baseClass}__site-name`}>Melissa Miller</h1>
+      <Container width='standard' className={`${baseClass}__container`}>
+        <a href='/' className={`${baseClass}__home-link`}>
+          <h1 className={`${baseClass}__site-name`}>Melissa Miller</h1>
+        </a>
+        <MainMenu />
       </Container>
     </header>
   );

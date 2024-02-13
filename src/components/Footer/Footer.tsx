@@ -27,7 +27,7 @@ export const Footer = ({ className, ...props }: FooterProps) => {
       className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')}
       {...props}
     >
-      <Container width='wide' className={`${baseClass}__container`}>
+      <Container width='standard' className={`${baseClass}__container`}>
         <SocialLinks
           className={`${baseClass}__social-links`}
           linkItems={['github', 'drupal', 'linkedin', 'instagram', 'email']}

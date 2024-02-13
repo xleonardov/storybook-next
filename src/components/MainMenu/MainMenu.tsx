@@ -7,7 +7,7 @@ interface MainMenuProps {
   /**
    * Menu items.
    */
-  menuItems: { label: string; url: string }[];
+  menuItems?: { label: string; url: string }[];
   /**
    * Optional additional class names.
    */
@@ -17,7 +17,28 @@ interface MainMenuProps {
 /**
  * MainMenu UI component
  */
-export const MainMenu = ({ menuItems, className, ...props }: MainMenuProps) => {
+export const MainMenu = ({
+  menuItems = [
+    {
+      label: 'About',
+      url: '/about',
+    },
+    {
+      label: 'Portfolio',
+      url: '/portfolio',
+    },
+    {
+      label: 'Blog',
+      url: '/blog',
+    },
+    {
+      label: 'Contact',
+      url: '/contact',
+    },
+  ],
+  className,
+  ...props
+}: MainMenuProps) => {
   // Set up classes.
   const baseClass = 'mm-main-menu';
 

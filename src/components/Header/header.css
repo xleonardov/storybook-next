@@ -1,9 +1,26 @@
 .mm-header {
+  background-color: var(--mm-color-background-reverse);
   padding-block: var(--mm-spacing-md);
 }
 
+.mm-header__container {
+  align-items: center;
+  display: flex;
+  gap: var(--mm-spacing-2xl);
+  justify-content: space-between;
+}
+
+.mm-header__home-link {
+  color: var(--mm-color-typography-reverse);
+  text-decoration: none;
+  &:hover {
+    color: var(--mm-color-primary-light);
+  }
+}
+
 .mm-header__site-name {
-  color: var(--mm-color-primary);
+  all: unset;
+  font-family: var(--mm-font-family-heading);
   font-size: var(--mm-spacing-2xl);
   font-weight: 800;
 }
