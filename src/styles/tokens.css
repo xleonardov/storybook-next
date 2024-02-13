@@ -18,11 +18,11 @@
   --mm-color-accent-darkest: #2a0f17;
 
   --mm-color-neutral-lightest: #ffffff;
-  --mm-color-neutral-lighter: #f5f4f1;
-  --mm-color-neutral-light: #c8c8c6;
-  --mm-color-neutral: #949694;
-  --mm-color-neutral-dark: #545857;
-  --mm-color-neutral-darker: #333838;
+  --mm-color-neutral-lighter: #e9e8e6;
+  --mm-color-neutral-light: #a4a5a4;
+  --mm-color-neutral: #606362;
+  --mm-color-neutral-dark: #414645;
+  --mm-color-neutral-darker: #2c3131;
   --mm-color-neutral-darkest: #131919;
 
   /* purpose colors */
@@ -69,6 +69,8 @@
 
   /* typography */
   --mm-font-family-default: 'Manrope', sans-serif;
+  --mm-font-family-secondary: 'Aleo', serif;
+  --mm-font-family-body: 'Open Sans', sans-serif;
   --mm-font-family-code: 'Source Code Pro', monospace;
   --mm-line-height-heading: 1.25;
   --mm-line-height-reset: 1;
