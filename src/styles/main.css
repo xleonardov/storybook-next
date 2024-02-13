@@ -5,3 +5,13 @@
 @import url('./a11y.css');
 
 @import url('./foundations/index.css');
+
+html {
+  font-size: 14px;
+}
+
+body {
+  color: var(--mm-color-typography-default);
+  font-family: var(--mm-font-family-default);
+  font-weight: 400;
+}

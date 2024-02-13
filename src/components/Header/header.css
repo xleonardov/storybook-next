@@ -1,2 +1,9 @@
 .mm-header {
+  padding-block: var(--mm-spacing-md);
+}
+
+.mm-header__site-name {
+  color: var(--mm-color-primary);
+  font-size: var(--mm-spacing-2xl);
+  font-weight: 800;
 }

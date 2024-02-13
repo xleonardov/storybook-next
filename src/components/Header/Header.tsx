@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Container } from '../Container/Container';
+
 import './header.css';
 
 interface HeaderProps {
@@ -21,7 +23,9 @@ export const Header = ({ className, ...props }: HeaderProps) => {
       className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')}
       {...props}
     >
-      <h1>Melissa Miller</h1>
+      <Container width='wide' className={`${baseClass}__container`}>
+        <h1 className={`${baseClass}__site-name`}>Melissa Miller</h1>
+      </Container>
     </header>
   );
 };

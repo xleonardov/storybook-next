@@ -338,11 +338,3 @@ template {
 [hidden] {
   display: none;
 }
-
-/* MM specific */
-
-body {
-  color: var(--mm-color-typography-default);
-  font-family: var(--mm-font-family-default);
-  font-weight: 400;
-}

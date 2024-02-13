@@ -1,6 +1,6 @@
 .mm-button {
   background-color: var(--mm-color-primary);
-  border: 0;
+  border: 1px solid var(--mm-color-primary);
   border-radius: var(--mm-radius-button);
   color: var(--mm-color-background-default);
   cursor: pointer;
@@ -15,15 +15,17 @@
 
 .mm-button:hover {
   background-color: var(--mm-color-link-hover);
+  border-color: var(--mm-color-link-hover);
 }
 
 .mm-button--secondary {
-  background-color: var(--mm-color-primary-lightest);
+  background-color: var(--mm-color-neutral-lightest);
   color: var(--mm-color-primary-dark);
 }
 
 .mm-button--secondary:hover {
   background-color: var(--mm-color-primary-lighter);
+  border-color: var(--mm-color-primary);
 }
 
 .mm-button--sm {

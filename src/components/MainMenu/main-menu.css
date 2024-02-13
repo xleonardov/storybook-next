@@ -1,0 +1,17 @@
+.mm-main-menu {
+  padding-block: var(--mm-spacing-md);
+}
+
+.mm-main-menu__items {
+  display: flex;
+  list-style-type: none;
+  gap: var(--mm-spacing-2xl);
+}
+
+.mm-main-menu__link {
+  color: var(--mm-color-typography-reverse);
+  text-decoration: none;
+  font-size: var(--mm-spacing-lg);
+  font-family: var(--mm-font-family-heading);
+  font-weight: 700;
+}
