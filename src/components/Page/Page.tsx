@@ -12,6 +12,10 @@ interface PageProps {
    */
   children?: React.ReactNode;
   /**
+   * The container width.
+   */
+  containerWidth?: 'narrow' | 'standard' | 'wide';
+  /**
    * The current page pathname.
    */
   pathname?: string;
@@ -23,6 +27,7 @@ interface PageProps {
 
 export const Page = ({
   children,
+  containerWidth = 'standard',
   pathname,
   className,
   ...props
@@ -31,7 +36,9 @@ export const Page = ({
     <div className={className} {...props}>
       <Header pathname={pathname} />
       <main>
-        <Container className='mm-main-content'>{children}</Container>
+        <Container className='mm-main-content' width={containerWidth}>
+          {children}
+        </Container>
       </main>
       <Footer />
     </div>

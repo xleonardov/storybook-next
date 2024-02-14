@@ -1,3 +1,4 @@
 .mm-main-content {
   padding-block: var(--mm-spacing-2xl);
+  min-height: 30rem;
 }
