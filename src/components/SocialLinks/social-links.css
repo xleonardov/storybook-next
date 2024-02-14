@@ -9,8 +9,8 @@
   color: var(--mm-color-link);
   height: var(--mm-spacing-2xl);
   width: var(--mm-spacing-2xl);
-  flex-shrink: none;
-  flex-grow: none;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .mm-social-links__icon:hover {
