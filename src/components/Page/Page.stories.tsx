@@ -1,18 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Header } from './Header';
+
+import { Page } from './Page';
 
 const meta = {
-  title: 'Layout/Header',
-  component: Header,
-  tags: ['autodocs'],
+  title: 'Layout/Page',
+  component: Page,
   parameters: {
     layout: 'fullscreen',
   },
-} satisfies Meta<typeof Header>;
+} satisfies Meta<typeof Page>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: { pathname: '/portfolio' },
+  args: {
+    pathname: '/blog',
+  },
 };

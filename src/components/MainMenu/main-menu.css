@@ -15,3 +15,9 @@
     color: var(--mm-color-primary-light);
   }
 }
+
+.mm-main-menu__item--active {
+  a.mm-main-menu__link {
+    color: var(--mm-color-primary-light);
+  }
+}

@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import React from 'react';
+
+import Link from 'next/link';
 
 import './main-menu.css';
 
@@ -8,6 +9,10 @@ interface MainMenuProps {
    * Menu items.
    */
   menuItems?: { label: string; url: string }[];
+  /**
+   * The current page pathname.
+   */
+  pathname?: string;
   /**
    * Optional additional class names.
    */
@@ -36,6 +41,7 @@ export const MainMenu = ({
       url: '/contact',
     },
   ],
+  pathname,
   className,
   ...props
 }: MainMenuProps) => {
@@ -49,13 +55,21 @@ export const MainMenu = ({
       {...props}
     >
       <ul className={`${baseClass}__items`}>
-        {menuItems.map((item, index) => (
-          <li key={index} className={`${baseClass}__item`}>
-            <Link href={item.url} className={`${baseClass}__link`}>
-              {item.label}
-            </Link>
-          </li>
-        ))}
+        {menuItems.map((item, index) => {
+          const activeClass =
+            item.url === pathname ? `${baseClass}__item--active` : null;
+          const itemClasses = [`${baseClass}__item`, activeClass]
+            .join(' ')
+            .trim()
+            .replace(/\s+/g, ' ');
+          return (
+            <li key={index} className={itemClasses}>
+              <Link href={item.url} className={`${baseClass}__link`}>
+                {item.label}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

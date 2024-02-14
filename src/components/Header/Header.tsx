@@ -1,11 +1,17 @@
 import React from 'react';
 
+import Link from 'next/link';
+
 import { Container } from '../Container/Container';
 import { MainMenu } from '../MainMenu/MainMenu';
 
 import './header.css';
 
 interface HeaderProps {
+  /**
+   * The current page pathname.
+   */
+  pathname?: string;
   /**
    * Optional additional class names.
    */
@@ -15,7 +21,7 @@ interface HeaderProps {
 /**
  * Header Layout component
  */
-export const Header = ({ className, ...props }: HeaderProps) => {
+export const Header = ({ className, pathname, ...props }: HeaderProps) => {
   // Set up classes.
   const baseClass = 'mm-header';
 
@@ -25,10 +31,10 @@ export const Header = ({ className, ...props }: HeaderProps) => {
       {...props}
     >
       <Container width='standard' className={`${baseClass}__container`}>
-        <a href='/' className={`${baseClass}__home-link`}>
+        <Link href='/' className={`${baseClass}__home-link`}>
           <h1 className={`${baseClass}__site-name`}>Melissa Miller</h1>
-        </a>
-        <MainMenu />
+        </Link>
+        <MainMenu pathname={pathname} />
       </Container>
     </header>
   );

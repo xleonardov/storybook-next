@@ -15,7 +15,27 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    menuItems: [
+      {
+        label: 'About',
+        url: '/about',
+      },
+      {
+        label: 'Portfolio',
+        url: '/portfolio',
+      },
+      {
+        label: 'Blog',
+        url: '/blog',
+      },
+      {
+        label: 'Contact',
+        url: '/contact',
+      },
+    ],
+    pathname: '/about',
+  },
   decorators: [
     (Story) => (
       <div style={{ backgroundColor: 'var(--mm-color-neutral-darkest)' }}>
