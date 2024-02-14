@@ -1,9 +1,9 @@
+import React from 'react';
+
 export default function Page() {
   return (
-    <main>
-      <div>
-        <h1>Hello!</h1>
-      </div>
-    </main>
+    <div>
+      <h1>Hello world!</h1>
+    </div>
   );
 }
