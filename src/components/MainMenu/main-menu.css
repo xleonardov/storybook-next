@@ -16,7 +16,7 @@
   }
 }
 
-.mm-main-menu__item--active {
+.mm-main-menu__item--active-path {
   a.mm-main-menu__link {
     color: var(--mm-color-primary-light);
   }

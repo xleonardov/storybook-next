@@ -48,6 +48,10 @@ export const MainMenu = ({
   // Set up classes.
   const baseClass = 'mm-main-menu';
 
+  // Get first path segment to check for active path.
+  const pathParts = (pathname ?? '').split('/');
+  const firstPathSegment = '/' + pathParts[1];
+
   // Render the output.
   return (
     <div
@@ -57,7 +61,9 @@ export const MainMenu = ({
       <ul className={`${baseClass}__items`}>
         {menuItems.map((item, index) => {
           const activeClass =
-            item.url === pathname ? `${baseClass}__item--active` : null;
+            item.url === firstPathSegment
+              ? `${baseClass}__item--active-path`
+              : null;
           const itemClasses = [`${baseClass}__item`, activeClass]
             .join(' ')
             .trim()

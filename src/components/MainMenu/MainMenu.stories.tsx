@@ -34,7 +34,7 @@ export const Default: Story = {
         url: '/contact',
       },
     ],
-    pathname: '/about',
+    pathname: '/portfolio/bux',
   },
   decorators: [
     (Story) => (
