@@ -1,4 +1,4 @@
-import { getAllPostIds, getPostData } from '@/lib/posts';
+import { getPostData } from '@/lib/posts';
 
 type Params = {
   id: string;
@@ -9,8 +9,8 @@ type Props = {
 };
 
 type PostData = {
-  title: string;
   date: string;
+  title: string;
   tags?: string[];
   contentHtml: string;
 };

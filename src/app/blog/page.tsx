@@ -6,7 +6,7 @@ type AllPostsData = {
   date: string;
   title: string;
   id: string;
-  tags: string[];
+  tags?: string[];
 }[];
 
 export default function Blog() {
