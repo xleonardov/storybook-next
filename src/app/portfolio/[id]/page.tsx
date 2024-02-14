@@ -1,3 +1,5 @@
+import Date from '@/utilities/date';
+
 import { getProjectData } from '@/lib/projects';
 
 type Params = {
@@ -33,7 +35,9 @@ export default async function Project({ params }: Props) {
       <h1>{projectData.title}</h1>
       <p>{projectData.description}</p>
       <p>{projectData.role}</p>
-      <p>{projectData.date}</p>
+      <p>
+        <Date dateString={projectData.date} />
+      </p>
       <p>{tags}</p>
       <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
     </div>

@@ -1,3 +1,4 @@
+import Date from '@/utilities/date';
 import Link from 'next/link';
 
 import { getSortedProjectsData } from '@/lib/projects';
@@ -23,7 +24,9 @@ export default function Portfolio() {
             <Link href={`/portfolio/${id}`}>{title}</Link>
             <p>{description}</p>
             <p>{role}</p>
-            <p>{date}</p>
+            <p>
+              <Date dateString={date} />
+            </p>
             <p>{tagsList}</p>
           </li>
         );

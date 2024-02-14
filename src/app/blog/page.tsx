@@ -1,3 +1,4 @@
+import Date from '@/utilities/date';
 import Link from 'next/link';
 
 import { getSortedPostsData } from '@/lib/posts';
@@ -19,7 +20,9 @@ export default function Blog() {
         return (
           <li key={id}>
             <Link href={`/blog/${id}`}>{title}</Link>
-            <p>{date}</p>
+            <p>
+              <Date dateString={date} />
+            </p>
             <p>{tagsList}</p>
           </li>
         );

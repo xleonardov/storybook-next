@@ -1,3 +1,5 @@
+import Date from '@/utilities/date';
+
 import { getPostData } from '@/lib/posts';
 
 type Params = {
@@ -29,7 +31,9 @@ export default async function Post({ params }: Props) {
   return (
     <div>
       <h1>{postData.title}</h1>
-      <p>{postData.date}</p>
+      <p>
+        <Date dateString={postData.date} />
+      </p>
       <p>{tags}</p>
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </div>
