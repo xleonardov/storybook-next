@@ -59,23 +59,23 @@ export const Breadcrumb = ({
 
   // Render the breadcrumb based on position in array.
   const breadcrumbs = crumbs.map((crumb, index) => {
+    const currentClass =
+      index < totalCrumbs - 1 ? null : `${baseClass}__item--current`;
+    const itemClasses = [`${baseClass}__item`, currentClass]
+      .join(' ')
+      .trim()
+      .replace(/\s+/g, ' ');
+
     return (
-      <>
+      <li key={crumb.label} className={itemClasses}>
         {index < totalCrumbs - 1 ? (
-          <li key={index} className={`${baseClass}__item`}>
-            <Link href={crumb.url}>{crumb.label}</Link>
-          </li>
+          <Link href={crumb.url}>{crumb.label}</Link>
         ) : (
-          <li
-            key={index}
-            className={`${baseClass}__item ${baseClass}__item--current`}
-          >
-            <Link href={crumb.url} aria-current='page'>
-              {crumb.label}
-            </Link>
-          </li>
+          <Link href={crumb.url} aria-current='page'>
+            {crumb.label}
+          </Link>
         )}
-      </>
+      </li>
     );
   });
 
