@@ -2,6 +2,7 @@
   font-family: var(--mm-font-family-default);
   font-size: var(--mm-spacing-md);
   font-weight: 400;
+  padding-block: var(--mm-spacing-xl);
 }
 
 ol.mm-breadcrumb__items {
@@ -22,9 +23,9 @@ ol.mm-breadcrumb__items {
   }
 
   &:after {
+    color: var(--mm-color-neutral-light);
     content: '/';
     margin-inline: var(--mm-spacing-2xs);
-    color: var(--mm-color-neutral-light);
   }
 }
 

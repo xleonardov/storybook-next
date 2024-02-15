@@ -11,7 +11,7 @@ interface BreadcrumbProps {
   /**
    * Show the home breadcrumb.
    */
-  showHome: boolean;
+  showHome?: boolean;
   /**
    * Optional additional class names.
    */
