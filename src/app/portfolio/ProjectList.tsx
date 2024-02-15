@@ -12,7 +12,7 @@ type AllProjectsData = {
   tags?: string[];
 }[];
 
-export default function Portfolio() {
+export default function ProjectList() {
   const allProjectsData: AllProjectsData = getSortedProjectsData();
   return (
     <ul>

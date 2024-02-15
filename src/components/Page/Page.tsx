@@ -17,6 +17,10 @@ interface PageProps {
    */
   containerWidth?: 'narrow' | 'standard' | 'wide';
   /**
+   * The page title.
+   */
+  pageTitle?: string;
+  /**
    * The current page pathname.
    */
   pathname?: string;
@@ -33,6 +37,7 @@ interface PageProps {
 export const Page = ({
   children,
   containerWidth = 'standard',
+  pageTitle,
   pathname,
   showBreadcrumb,
   className,
@@ -46,6 +51,9 @@ export const Page = ({
           <Breadcrumb pathname={pathname} />
         </Container>
       )}
+      <Container width={containerWidth}>
+        <h1 className='mm-page-title'>{pageTitle}</h1>
+      </Container>
       <main>
         <Container className='mm-main-content' width={containerWidth}>
           {children}

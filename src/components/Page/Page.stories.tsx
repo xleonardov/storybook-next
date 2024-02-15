@@ -25,5 +25,6 @@ export const Default: Story = {
   args: {
     pathname: '/blog',
     showBreadcrumb: true,
+    pageTitle: 'Hello!',
   },
 };

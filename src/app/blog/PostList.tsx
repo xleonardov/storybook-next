@@ -10,7 +10,7 @@ type AllPostsData = {
   tags?: string[];
 }[];
 
-export default function Blog() {
+export default function BlogList() {
   const allPostsData: AllPostsData = getSortedPostsData();
   return (
     <ul>
