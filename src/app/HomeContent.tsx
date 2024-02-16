@@ -3,7 +3,7 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 
-import { Page as PageLayout } from '../components/Page/Page';
+import { Page as PageLayout } from '../layout-components/Page/Page';
 
 export interface HomeContentProps {
   pageTitle?: string;

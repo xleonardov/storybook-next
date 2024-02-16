@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Container } from '../Container/Container';
-import { SocialLinks } from '../SocialLinks/SocialLinks';
+import { Container } from '../../components/Container/Container';
+import { SocialLinks } from '../../components/SocialLinks/SocialLinks';
 
 import './footer.css';
 

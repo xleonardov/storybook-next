@@ -18,18 +18,20 @@
 
   --mm-color-neutral-lightest: #ffffff;
   --mm-color-neutral-lighter: #e9e8e6;
-  --mm-color-neutral-light: #a4a5a4;
+  --mm-color-neutral-light: #a8aaa9;
   --mm-color-neutral: #606362;
-  --mm-color-neutral-dark: #414645;
-  --mm-color-neutral-darker: #2c3131;
+  --mm-color-neutral-dark: #4b4f4e;
+  --mm-color-neutral-darker: #363b3a;
   --mm-color-neutral-darkest: #131919;
 
   /* purpose colors */
   --mm-color-background-default: var(--mm-color-neutral-lightest);
   --mm-color-background-reverse: var(--mm-color-neutral-darkest);
+
   --mm-color-typography-default: var(--mm-color-neutral-darkest);
   --mm-color-typography-default-secondary: var(--mm-color-neutral-dark);
   --mm-color-typography-reverse: var(--mm-color-neutral-lightest);
+
   --mm-color-semantic-success: #439160;
   --mm-color-link: var(--mm-color-primary);
   --mm-color-link-hover: var(--mm-color-primary-dark);

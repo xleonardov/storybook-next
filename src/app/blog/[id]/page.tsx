@@ -1,6 +1,6 @@
 import Date from '@/utilities/date';
 
-import { Page as PageLayout } from '../../../components/Page/Page';
+import { Page as PageLayout } from '../../../layout-components/Page/Page';
 
 import { getPostData } from '@/lib/posts';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Breadcrumb } from '../Breadcrumb/Breadcrumb';
-import { Container } from '../Container/Container';
+import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb';
+import { Container } from '../../components/Container/Container';
 import { Footer } from '../Footer/Footer';
 import { Header } from '../Header/Header';
 

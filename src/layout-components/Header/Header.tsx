@@ -2,8 +2,8 @@ import React from 'react';
 
 import Link from 'next/link';
 
-import { Container } from '../Container/Container';
-import { MainMenu } from '../MainMenu/MainMenu';
+import { Container } from '../../components/Container/Container';
+import { MainMenu } from '../../components/MainMenu/MainMenu';
 
 import './header.css';
 
