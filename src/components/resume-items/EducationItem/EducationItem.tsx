@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../resume-common.css';
 
-interface EducationItemProps {
+export interface EducationItemProps {
   /**
    * The name of the degree.
    */
@@ -20,10 +20,6 @@ interface EducationItemProps {
    */
   graduationDate: string;
   /**
-   * The name of the section.
-   */
-  sectionName?: string;
-  /**
    * Optional additional class names.
    */
   className?: string;
@@ -37,7 +33,6 @@ export const EducationItem = ({
   schoolName,
   schoolLocation,
   graduationDate,
-  sectionName = 'Education',
   className,
   ...props
 }: EducationItemProps) => {

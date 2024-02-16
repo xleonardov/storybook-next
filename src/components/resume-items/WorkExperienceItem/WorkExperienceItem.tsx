@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../resume-common.css';
 
-interface WorkExperienceItemProps {
+export interface WorkExperienceItemProps {
   /**
    * The name of the company.
    */
@@ -28,10 +28,6 @@ interface WorkExperienceItemProps {
    */
   description?: string | React.ReactNode;
   /**
-   * The name of the section.
-   */
-  sectionName?: string;
-  /**
    * Optional additional class names.
    */
   className?: string;
@@ -47,7 +43,6 @@ export const WorkExperienceItem = ({
   startDate,
   endDate,
   description,
-  sectionName = 'Work Experience',
   className,
   ...props
 }: WorkExperienceItemProps) => {

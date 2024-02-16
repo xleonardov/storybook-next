@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../resume-common.css';
 
-interface PresentationItemProps {
+export interface PresentationItemProps {
   /**
    * The name of the presentation.
    */
@@ -15,10 +15,7 @@ interface PresentationItemProps {
    * The event date.
    */
   eventDate: string;
-  /**
-   * The name of the section.
-   */
-  sectionName?: string;
+
   /**
    * Optional additional class names.
    */
@@ -32,7 +29,6 @@ export const PresentationItem = ({
   presentationName,
   eventName,
   eventDate,
-  sectionName = 'Selected Presentations',
   className,
   ...props
 }: PresentationItemProps) => {

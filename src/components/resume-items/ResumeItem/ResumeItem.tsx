@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../resume-common.css';
 
-interface ResumeItemProps {
+export interface ResumeItemProps {
   /**
    * The title of the item.
    */
@@ -20,10 +20,6 @@ interface ResumeItemProps {
    */
   description?: string | React.ReactNode;
   /**
-   * The name of the section.
-   */
-  sectionName?: string;
-  /**
    * Optional additional class names.
    */
   className?: string;
@@ -37,7 +33,6 @@ export const ResumeItem = ({
   subheadPart1,
   subheadPart2,
   description,
-  sectionName,
   className,
   ...props
 }: ResumeItemProps) => {

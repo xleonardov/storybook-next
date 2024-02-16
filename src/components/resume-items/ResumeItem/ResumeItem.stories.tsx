@@ -19,6 +19,5 @@ export const Default: Story = {
     itemTitle: 'Project Management Professional (PMP)',
     subheadPart1: 'Project Management Institute',
     subheadPart2: 'Credential ID: 1980855',
-    sectionName: 'Certifications',
   },
 };
