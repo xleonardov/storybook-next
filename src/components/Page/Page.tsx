@@ -52,13 +52,11 @@ export const Page = ({
         </Container>
       )}
       <Container width={containerWidth}>
-        <h1 className='mm-page-title'>{pageTitle}</h1>
-      </Container>
-      <main>
-        <Container className='mm-main-content' width={containerWidth}>
+        <main id='main' className='mm-main-content' role='main'>
+          <h1 className='mm-page-title'>{pageTitle}</h1>
           {children}
-        </Container>
-      </main>
+        </main>
+      </Container>
       <Footer />
     </div>
   );

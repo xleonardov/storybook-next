@@ -16,10 +16,10 @@ export default function BlogContent({ children, pageTitle }: BlogContentProps) {
   return (
     <PageLayout
       containerWidth='standard'
+      pageTitle={pageTitle}
       pathname={pathname}
-      showBreadcrumb={true}
+      showBreadcrumb={false}
     >
-      {pageTitle && <h1>{pageTitle}</h1>}
       <p>This is the blog page content.</p>
       {children}
     </PageLayout>

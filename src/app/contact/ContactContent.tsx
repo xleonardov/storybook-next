@@ -15,10 +15,10 @@ export default function ContactContent({ pageTitle }: ContactContentProps) {
   return (
     <PageLayout
       containerWidth='standard'
+      pageTitle={pageTitle}
       pathname={pathname}
-      showBreadcrumb={true}
+      showBreadcrumb={false}
     >
-      {pageTitle && <h1>{pageTitle}</h1>}
       <p>This is the page content.</p>
     </PageLayout>
   );

@@ -19,10 +19,10 @@ export default function PortfolioContent({
   return (
     <PageLayout
       containerWidth='standard'
+      pageTitle={pageTitle}
       pathname={pathname}
-      showBreadcrumb={true}
+      showBreadcrumb={false}
     >
-      {pageTitle && <h1>{pageTitle}</h1>}
       <p>This is the portfolio page content.</p>
       {children}
     </PageLayout>

@@ -2,7 +2,7 @@
   font-family: var(--mm-font-family-default);
   font-size: var(--mm-spacing-md);
   font-weight: 400;
-  padding-block: var(--mm-spacing-xl);
+  padding-block: var(--mm-spacing-xl) var(--mm-spacing-2xs);
 }
 
 ol.mm-breadcrumb__items {
