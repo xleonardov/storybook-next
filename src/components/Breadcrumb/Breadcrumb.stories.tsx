@@ -8,12 +8,16 @@ const meta = {
   tags: ['autodocs'],
   parameters: {},
   argTypes: {},
-  args: {},
+  args: { pathname: '/portfolio/bux', showHome: true },
 } satisfies Meta<typeof Breadcrumb>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: { pathname: '/portfolio/bux' },
+  args: {},
+};
+
+export const WithPageTitle: Story = {
+  args: { pageTitle: 'Buckeye UX' },
 };

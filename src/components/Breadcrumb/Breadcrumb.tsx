@@ -5,6 +5,10 @@ import './breadcrumb.css';
 
 interface BreadcrumbProps {
   /**
+   * The title of the current page.
+   */
+  pageTitle?: string;
+  /**
    * The current page pathname.
    */
   pathname?: string;
@@ -22,6 +26,7 @@ interface BreadcrumbProps {
  * Breadcrumb UI component
  */
 export const Breadcrumb = ({
+  pageTitle,
   pathname,
   className,
   showHome = true,
@@ -53,6 +58,11 @@ export const Breadcrumb = ({
     const segmentUrl = '/' + pathSegments.slice(0, index + 1).join('/');
     crumbs.push({ label: segmentLabel, url: segmentUrl });
   });
+
+  // If the page title is available, swap it in for the label of the last breadcrumb.
+  if (pageTitle) {
+    crumbs[crumbs.length - 1].label = pageTitle;
+  }
 
   // Detect total number of breadcrumb.
   const totalCrumbs = crumbs.length;

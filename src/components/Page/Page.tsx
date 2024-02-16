@@ -48,7 +48,7 @@ export const Page = ({
       <Header pathname={pathname} />
       {showBreadcrumb && (
         <Container width={containerWidth}>
-          <Breadcrumb pathname={pathname} />
+          <Breadcrumb pathname={pathname} pageTitle={pageTitle} />
         </Container>
       )}
       <Container width={containerWidth}>
