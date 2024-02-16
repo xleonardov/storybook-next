@@ -10,7 +10,7 @@ const postsDirectory = path.join(process.cwd(), 'src/posts');
 
 // GET THE DATA OF ALL POSTS
 export function getSortedPostsData() {
-  // Get post file names
+  // Get post file names.
   const fileNames = fs.readdirSync(postsDirectory);
 
   // Get the data from each file.

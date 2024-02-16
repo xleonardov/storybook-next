@@ -1,5 +1,5 @@
-import Date from '@/utilities/date';
 import Link from 'next/link';
+import Date from '@/utilities/date';
 
 import { getSortedPostsData } from '@/lib/posts';
 
@@ -10,7 +10,7 @@ type AllPostsData = {
   tags?: string[];
 }[];
 
-export default function BlogList() {
+export default function PostList() {
   const allPostsData: AllPostsData = getSortedPostsData();
   return (
     <ul>

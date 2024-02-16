@@ -1,5 +1,7 @@
 import Date from '@/utilities/date';
 
+import { Page as PageLayout } from '../../../components/Page/Page';
+
 import { getProjectData } from '@/lib/projects';
 
 type Params = {
@@ -29,10 +31,15 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function Project({ params }: Props) {
   const projectData: ProjectData = await getProjectData(params.id);
+  const pathname = `/portfolio/${params.id}`;
   const tags = projectData.tags?.join(', ');
   return (
-    <div>
-      <h1>{projectData.title}</h1>
+    <PageLayout
+      containerWidth='standard'
+      pageTitle={projectData.title}
+      pathname={pathname}
+      showBreadcrumb={true}
+    >
       <p>{projectData.description}</p>
       <p>{projectData.role}</p>
       <p>
@@ -40,6 +47,6 @@ export default async function Project({ params }: Props) {
       </p>
       <p>{tags}</p>
       <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
-    </div>
+    </PageLayout>
   );
 }

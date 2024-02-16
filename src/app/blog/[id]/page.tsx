@@ -1,5 +1,7 @@
 import Date from '@/utilities/date';
 
+import { Page as PageLayout } from '../../../components/Page/Page';
+
 import { getPostData } from '@/lib/posts';
 
 type Params = {
@@ -27,15 +29,20 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function Post({ params }: Props) {
   const postData: PostData = await getPostData(params.id);
+  const pathname = `/blog/${params.id}`;
   const tags = postData.tags?.join(', ');
   return (
-    <div>
-      <h1>{postData.title}</h1>
+    <PageLayout
+      containerWidth='standard'
+      pageTitle={postData.title}
+      pathname={pathname}
+      showBreadcrumb={true}
+    >
       <p>
         <Date dateString={postData.date} />
       </p>
       <p>{tags}</p>
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    </div>
+    </PageLayout>
   );
 }
