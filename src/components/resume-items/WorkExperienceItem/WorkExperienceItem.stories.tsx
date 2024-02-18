@@ -32,16 +32,7 @@ export const Default: Story = {
     jobTitle: 'Director, Web Development & Design',
     startDate: 'August 2012',
     endDate: 'December 2021',
-    description: (
-      <>
-        <p>
-          Led a diverse team of developers and designers and was responsible for
-          a large portfolio of websites, a website-building platform, web
-          applications, digital assets, component libraries, and accessible
-          document templates for The Office of the Chief Information Office
-        </p>
-        <p>Co-founded the first university-wide design system.</p>
-      </>
-    ),
+    description:
+      'Led a diverse team of developers and designers and was responsible for a large portfolio of websites, a website-building platform, web applications, digital assets, component libraries, and accessible document templates for The Office of the Chief Information Officer.',
   },
 };

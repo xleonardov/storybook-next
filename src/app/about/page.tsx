@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import AboutContent from '@/app/about/AboutContent';
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'About Me',
 };
 
 export default function Page() {

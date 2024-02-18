@@ -17,10 +17,10 @@
   --mm-color-accent-darkest: #2a0f17;
 
   --mm-color-neutral-lightest: #ffffff;
-  --mm-color-neutral-lighter: #e9e8e6;
-  --mm-color-neutral-light: #a8aaa9;
-  --mm-color-neutral: #606362;
-  --mm-color-neutral-dark: #4b4f4e;
+  --mm-color-neutral-lighter: #e2e3e2;
+  --mm-color-neutral-light: #b7b8b8;
+  --mm-color-neutral: #656868;
+  --mm-color-neutral-dark: #525655;
   --mm-color-neutral-darker: #363b3a;
   --mm-color-neutral-darkest: #131919;
 
@@ -29,8 +29,10 @@
   --mm-color-background-reverse: var(--mm-color-neutral-darkest);
 
   --mm-color-typography-default: var(--mm-color-neutral-darkest);
-  --mm-color-typography-default-secondary: var(--mm-color-neutral-dark);
+  --mm-color-typography-default-secondary: var(--mm-color-neutral);
   --mm-color-typography-reverse: var(--mm-color-neutral-lightest);
+
+  --mm-color-border-default: var(--mm-color-neutral-lighter);
 
   --mm-color-semantic-success: #439160;
   --mm-color-link: var(--mm-color-primary);
@@ -40,25 +42,26 @@
   --mm-color-focus: #0066db;
 
   /* spacing */
-  --mm-spacing-6xl: 4.77rem;
-  --mm-spacing-5xl: 3.81rem;
-  --mm-spacing-4xl: 3.05rem;
-  --mm-spacing-3xl: 2.44rem;
-  --mm-spacing-2xl: 1.95rem;
-  --mm-spacing-xl: 1.56rem;
-  --mm-spacing-lg: 1.25rem;
+  --mm-spacing-7xl: 4.3rem;
+  --mm-spacing-6xl: 3.583rem;
+  --mm-spacing-5xl: 2.986rem;
+  --mm-spacing-4xl: 2.488rem;
+  --mm-spacing-3xl: 2.074rem;
+  --mm-spacing-2xl: 1.728rem;
+  --mm-spacing-xl: 1.44rem;
+  --mm-spacing-lg: 1.2rem;
   --mm-spacing-md: 1rem;
-  --mm-spacing-sm: 0.8rem;
-  --mm-spacing-xs: 0.64rem;
-  --mm-spacing-2xs: 0.41rem;
-  --mm-spacing-3xs: 0.33rem;
-  --mm-spacing-4xs: 0.26rem;
+  --mm-spacing-sm: 0.833rem;
+  --mm-spacing-xs: 0.694rem;
+  --mm-spacing-2xs: 0.578rem;
+  --mm-spacing-3xs: 0.481rem;
+  --mm-spacing-4xs: 0.4rem;
 
   /* containers */
-  --mm-container-max-width-standard: 1000px;
+  --mm-container-max-width-standard: 960px;
   --mm-container-max-width-narrow: 800px;
   --mm-container-max-width-wide: 1200px;
-  --mm-container-padding: 6%;
+  --mm-container-padding: 8%;
   --mm-container-padding-narrow: 12%;
   --mm-container-padding-wide: 4%;
 

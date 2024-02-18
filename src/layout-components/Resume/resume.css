@@ -1,13 +1,13 @@
 .mm-resume {
   display: flex;
   flex-direction: column;
-  row-gap: var(--mm-spacing-2xl);
+  row-gap: var(--mm-spacing-5xl);
 }
 
 .mm-resume-section__section-items {
   display: flex;
   flex-direction: column;
-  row-gap: var(--mm-spacing-sm);
+  row-gap: var(--mm-spacing-2xl);
 }
 
 h2.mm-resume-section__section-title {
@@ -15,5 +15,5 @@ h2.mm-resume-section__section-title {
   font-family: var(--mm-font-family-heading);
   font-size: var(--mm-spacing-2xl);
   font-weight: 800;
-  margin-block-end: var(--mm-spacing-sm);
+  margin-block-end: var(--mm-spacing-lg);
 }

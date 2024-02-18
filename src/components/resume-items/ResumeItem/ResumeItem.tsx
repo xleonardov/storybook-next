@@ -39,6 +39,11 @@ export const ResumeItem = ({
   // Set up classes.
   const baseClass = 'mm-resume-item';
 
+  // Preprocess the description based on type of data.
+  const descriptionType = typeof description;
+  const renderedDescription =
+    descriptionType === 'string' ? <p>{description}</p> : description;
+
   // Render the output.
   return (
     <div
@@ -56,7 +61,7 @@ export const ResumeItem = ({
         )}
       </h4>
       {description && (
-        <div className={`${baseClass}__description`}>{description}</div>
+        <div className={`${baseClass}__description`}>{renderedDescription}</div>
       )}
     </div>
   );

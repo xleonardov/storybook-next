@@ -3,19 +3,34 @@ h3.mm-resume-item__title {
   font-family: var(--mm-font-family-heading);
   font-size: var(--mm-spacing-xl);
   font-weight: 800;
-  margin-block-end: var(--mm-spacing-xs);
+  margin-block-end: var(--mm-spacing-2xs);
 }
 
 h4.mm-resume-item__subtitle {
   color: var(--mm-color-typography-default-secondary);
-  column-gap: var(--mm-spacing-xs);
+  column-gap: var(--mm-spacing-2xs);
   display: inline-flex;
   font-family: var(--mm-font-family-secondary);
   font-size: var(--mm-spacing-lg);
   font-weight: 400;
+  margin-block-end: var(--mm-spacing-xs);
 }
 
 .mm-resume-item__divider {
   color: var(--mm-color-primary);
   margin-block-start: -1px;
+}
+
+.mm-resume-item__description {
+  color: var(--mm-color-typography-default);
+  font-size: var(--mm-spacing-md);
+  margin-block-end: var(--mm-spacing-md);
+
+  &:last-child {
+    margin-block-end: 0;
+  }
+
+  p:last-child {
+    margin-block-end: 0;
+  }
 }
