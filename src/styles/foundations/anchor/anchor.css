@@ -6,8 +6,7 @@ a {
   color: var(--mm-color-link-visited);
 } */
 
-a:not([class]):hover,
-a:not([class])visited:hover {
+a:hover {
   color: var(--mm-color-link-hover-inline);
 }
 
