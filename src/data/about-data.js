@@ -1,7 +1,57 @@
+export const bioData = {
+  image: '/images/young-me.jpg',
+  imageAlt: 'Image of Melissa Miller',
+  leadText:
+    'I am a front-end developer, designer, and leader who has extensive experience with building design systems and other tools to enable content creators.',
+  mainText: (
+    <>
+      <p>
+        I have a passion for creating and maintaining design systems and have
+        been working in this space for several years. In my current role, I am
+        leading the development of the Pantheon Design System. And in my
+        previous role at The Ohio State University, I was a co-founder of their
+        first university-wide design system.
+      </p>
+      <p>
+        With my diverse background in development, design, photography, and
+        project management, I am a strong proponent of building and leading
+        cross-functional teams.
+      </p>
+      <p>
+        When I'm not building the internet, I like to bike around the city, play
+        various musical instruments (most recently on{' '}
+        <a
+          href='https://open.spotify.com/album/0Pb37ITfck6eATunsfOgus'
+          target='_blank'
+        >
+          this album
+        </a>
+        ), research urban history,{' '}
+        <a href='https://melissamiller.photoshelter.com' target='_blank'>
+          take photos
+        </a>
+        , and spend time with my partner and our dog.
+      </p>
+    </>
+  ),
+};
+
 export const resumeData = [
   {
-    sectionName: 'Work Experience',
+    sectionName: 'Professional Experience',
     sectionType: 'work-experience',
+    finePrint: (
+      <>
+        Full employment timeline is available on{' '}
+        <a
+          href='https://www.linkedin.com/in/melissa-a-miller-6a37744/'
+          target='_blank'
+        >
+          LinkedIn
+        </a>
+        .
+      </>
+    ),
     items: [
       {
         companyName: 'Pantheon Systems',

@@ -17,3 +17,9 @@ h2.mm-resume-section__section-title {
   font-weight: 800;
   margin-block-end: var(--mm-spacing-lg);
 }
+
+.mm-resume-section__fine-print {
+  font-size: var(--mm-spacing-sm);
+  font-weight: 400;
+  margin-block-start: var(--mm-spacing-4xl);
+}

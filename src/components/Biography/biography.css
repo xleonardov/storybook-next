@@ -1,0 +1,43 @@
+.mm-biography {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mm-spacing-xl);
+}
+
+.mm-biography__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mm-spacing-md);
+  order: 2;
+}
+
+.mm-biography__image {
+  order: 1;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+@media (--bp-md) {
+  .mm-biography {
+    flex-direction: row;
+  }
+
+  .mm-biography__text {
+    order: 1;
+  }
+
+  .mm-biography__image {
+    order: 2;
+  }
+}
+
+.mm-biography__lead-text {
+  color: var(--mm-color-neutral);
+  font-family: var(--mm-font-family-secondary);
+  font-size: var(--mm-spacing-xl);
+  font-style: italic;
+  line-height: var(--mm-line-height-intro);
+  margin-block-end: var(--mm-spacing-xs);
+}

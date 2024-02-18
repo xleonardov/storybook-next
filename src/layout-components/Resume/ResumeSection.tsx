@@ -1,3 +1,4 @@
+import { R } from '@storybook/react/dist/types-bf5e6555';
 import React from 'react';
 
 import {
@@ -22,6 +23,7 @@ import './resume.css';
 export interface ResumeSectionProps {
   sectionName: string;
   sectionType: string;
+  finePrint?: string | React.ReactNode;
   items:
     | EducationItemProps[]
     | PresentationItemProps[]
@@ -35,6 +37,7 @@ export interface ResumeSectionProps {
 export const ResumeSection = ({
   sectionName,
   sectionType,
+  finePrint,
   items,
   ...props
 }) => {
@@ -67,6 +70,7 @@ export const ResumeSection = ({
           );
         })}
       </div>
+      {finePrint && <p className={`${baseClass}__fine-print`}>{finePrint}</p>}
     </div>
   );
 };

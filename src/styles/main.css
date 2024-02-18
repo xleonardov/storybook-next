@@ -7,11 +7,17 @@
 @import url('./foundations/index.css');
 
 html {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 body {
   color: var(--mm-color-typography-default);
   font-family: var(--mm-font-family-default);
   font-weight: 400;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--mm-color-border-default);
+  margin-block: var(--mm-spacing-3xl);
 }

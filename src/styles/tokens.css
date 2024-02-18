@@ -32,7 +32,7 @@
   --mm-color-typography-default-secondary: var(--mm-color-neutral);
   --mm-color-typography-reverse: var(--mm-color-neutral-lightest);
 
-  --mm-color-border-default: var(--mm-color-neutral-lighter);
+  --mm-color-border-default: var(--mm-color-neutral-light);
 
   --mm-color-semantic-success: #439160;
   --mm-color-link: var(--mm-color-primary);
@@ -89,9 +89,10 @@
   --mm-font-family-heading: 'Manrope', sans-serif;
   --mm-font-family-body: var(--mm-font-family-default);
   --mm-font-family-code: 'Source Code Pro', monospace;
-  --mm-line-height-heading: 1.25;
+  --mm-line-height-heading: 1.35;
+  --mm-line-height-intro: 1.5;
   --mm-line-height-reset: 1;
-  --mm-line-height-text: 1.5;
+  --mm-line-height-text: 1.75;
 
   /* Animation */
   --mm-animation-transition-default-delay: 0s;
