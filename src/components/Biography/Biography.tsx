@@ -14,6 +14,10 @@ interface BiographyProps {
    */
   imageAlt: string;
   /**
+   * Optional caption for the image.
+   */
+  imageCaption?: string;
+  /**
    * Lead text.
    */
   leadText: string;
@@ -33,6 +37,7 @@ interface BiographyProps {
 export const Biography = ({
   image,
   imageAlt,
+  imageCaption,
   leadText,
   mainText,
   className,
@@ -57,7 +62,10 @@ export const Biography = ({
         <div className={`${baseClass}__main-text`}>{renderedMainText}</div>
       </div>
       <div className={`${baseClass}__image`}>
-        <Image src={image} width={240} height={240} alt={imageAlt} />
+        <figure>
+          <Image src={image} width={300} height={300} alt={imageAlt} />
+          <figcaption>{imageCaption}</figcaption>
+        </figure>
       </div>
     </div>
   );

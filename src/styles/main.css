@@ -21,3 +21,13 @@ hr {
   border-top: 1px solid var(--mm-color-border-default);
   margin-block: var(--mm-spacing-3xl);
 }
+
+figure {
+  all: unset;
+}
+
+figcaption {
+  font-family: var(--mm-font-family-default);
+  font-size: var(--mm-spacing-sm);
+  margin-block-start: var(--mm-spacing-4xs);
+}

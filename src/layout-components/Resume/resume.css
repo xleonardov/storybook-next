@@ -1,13 +1,17 @@
 .mm-resume {
   display: flex;
   flex-direction: column;
-  row-gap: var(--mm-spacing-5xl);
+  row-gap: var(--mm-spacing-6xl);
 }
 
 .mm-resume-section__section-items {
   display: flex;
   flex-direction: column;
   row-gap: var(--mm-spacing-2xl);
+}
+
+.mm-resume-section--skills .mm-resume-section__section-items {
+  row-gap: var(--mm-spacing-xl);
 }
 
 h2.mm-resume-section__section-title {

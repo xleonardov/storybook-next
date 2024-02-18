@@ -1,16 +1,17 @@
 export const bioData = {
-  image: '/images/young-me.jpg',
-  imageAlt: 'Image of Melissa Miller',
+  image: '/images/zipline.png',
+  imageAlt: 'Image of Melissa Miller on a zipline course.',
+  imageCaption: 'Me on a zipline course in Hocking Hills.',
   leadText:
     'I am a front-end developer, designer, and leader who has extensive experience with building design systems and other tools to enable content creators.',
   mainText: (
     <>
       <p>
         I have a passion for creating and maintaining design systems and have
-        been working in this space for several years. In my current role, I am
-        leading the development of the Pantheon Design System. And in my
-        previous role at The Ohio State University, I was a co-founder of their
-        first university-wide design system.
+        been working in this space for several years. I am currently leading the
+        development of the Pantheon Design System. In my previous role at The
+        Ohio State University, I was a co-founder of their first university-wide
+        design system.
       </p>
       <p>
         With my diverse background in development, design, photography, and
@@ -18,8 +19,7 @@ export const bioData = {
         cross-functional teams.
       </p>
       <p>
-        When I'm not building the internet, I like to bike around the city, play
-        various musical instruments (most recently on{' '}
+        When I'm not building the web, I like to play music (most recently on{' '}
         <a
           href='https://open.spotify.com/album/0Pb37ITfck6eATunsfOgus'
           target='_blank'
@@ -161,6 +161,24 @@ export const resumeData = [
         itemTitle: 'Project Management Professional (PMP)',
         subheadPart1: 'Project Management Institute',
         subheadPart2: 'Credential ID: 1980855',
+      },
+    ],
+  },
+  {
+    sectionName: 'Preferred Tools and Frameworks',
+    sectionType: 'skills',
+    items: [
+      {
+        topicTitle: 'Development',
+        topicItems: ['React', 'Next.js', 'Gatsby', 'Drupal'],
+      },
+      {
+        topicTitle: 'Design Systems',
+        topicItems: ['Storybook', 'Style Dictionary'],
+      },
+      {
+        topicTitle: 'Design',
+        topicItems: ['Figma', 'Adobe Creative Suite'],
       },
     ],
   },

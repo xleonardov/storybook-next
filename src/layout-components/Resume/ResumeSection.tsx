@@ -1,4 +1,3 @@
-import { R } from '@storybook/react/dist/types-bf5e6555';
 import React from 'react';
 
 import {
@@ -14,6 +13,10 @@ import {
   ResumeItemProps,
 } from '../../components/resume-items/ResumeItem/ResumeItem';
 import {
+  SkillsItem,
+  SkillsItemProps,
+} from '../../components/resume-items/SkillsItem/SkillsItem';
+import {
   WorkExperienceItem,
   WorkExperienceItemProps,
 } from '../../components/resume-items/WorkExperienceItem/WorkExperienceItem';
@@ -28,6 +31,7 @@ export interface ResumeSectionProps {
     | EducationItemProps[]
     | PresentationItemProps[]
     | ResumeItemProps[]
+    | SkillsItemProps[]
     | WorkExperienceItemProps[];
 }
 
@@ -43,11 +47,12 @@ export const ResumeSection = ({
 }) => {
   // Set up classes.
   const baseClass = 'mm-resume-section';
+  const sectionTypeClass = `${baseClass}--${sectionType}`;
 
   // Render the output.
   return (
     <div
-      className={[baseClass, props.className]
+      className={[baseClass, sectionTypeClass, props.className]
         .join(' ')
         .trim()
         .replace(/\s+/g, ' ')}
@@ -62,6 +67,7 @@ export const ResumeSection = ({
               {sectionType === 'presentations' && (
                 <PresentationItem {...item} />
               )}
+              {sectionType === 'skills' && <SkillsItem {...item} />}
               {sectionType === 'work-experience' && (
                 <WorkExperienceItem {...item} />
               )}

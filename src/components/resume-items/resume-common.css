@@ -6,7 +6,12 @@ h3.mm-resume-item__title {
   margin-block-end: var(--mm-spacing-2xs);
 }
 
-h4.mm-resume-item__subtitle {
+h3.mm-resume-item__title--skills {
+  margin-block-end: var(--mm-spacing-3xs);
+}
+
+h4.mm-resume-item__subtitle,
+.mm-resume-item__skills-topic-items {
   color: var(--mm-color-typography-default-secondary);
   column-gap: var(--mm-spacing-2xs);
   display: inline-flex;

@@ -1,7 +1,8 @@
 .mm-biography {
+  column-gap: var(--mm-spacing-4xl);
   display: flex;
   flex-direction: column;
-  gap: var(--mm-spacing-xl);
+  row-gap: var(--mm-spacing-xl);
 }
 
 .mm-biography__text {
@@ -13,10 +14,6 @@
 
 .mm-biography__image {
   order: 1;
-
-  img {
-    border-radius: 50%;
-  }
 }
 
 @media (--bp-md) {

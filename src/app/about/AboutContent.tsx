@@ -26,6 +26,7 @@ export default function AboutContent({ pageTitle }: AboutContentProps) {
       <Biography
         image={bioData.image}
         imageAlt={bioData.imageAlt}
+        imageCaption={bioData.imageCaption}
         leadText={bioData.leadText}
         mainText={bioData.mainText}
       />
