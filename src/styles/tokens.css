@@ -8,9 +8,9 @@
   --mm-color-primary-darker: #0f3a41;
   --mm-color-primary-darkest: #112a2d;
 
-  --mm-color-accent-lightest: #f6f3f4;
+  --mm-color-accent-lightest: #f8edf1;
   --mm-color-accent-lighter: #ecd8df;
-  --mm-color-accent-light: #d8a2b5;
+  --mm-color-accent-light: #dca3b8;
   --mm-color-accent: #b13562;
   --mm-color-accent-dark: #842849;
   --mm-color-accent-darker: #571c30;
@@ -34,11 +34,11 @@
 
   --mm-color-border-default: var(--mm-color-neutral-light);
 
-  --mm-color-semantic-success: #439160;
+  --mm-color-semantic-success: #267a58;
   --mm-color-link: var(--mm-color-primary);
   --mm-color-link-hover: var(--mm-color-primary-dark);
   --mm-color-link-hover-inline: var(--mm-color-accent);
-  --mm-color-link-visited: #7559a6;
+  --mm-color-link-visited: #684b9b;
   --mm-color-focus: #0066db;
 
   /* spacing */
