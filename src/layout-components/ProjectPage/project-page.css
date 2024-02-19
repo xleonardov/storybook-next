@@ -1,6 +1,7 @@
 .mm-project-page__header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-block-end: var(--mm-spacing-3xl);
   text-align: center;
 }
@@ -10,7 +11,7 @@
   font-family: var(--mm-font-family-secondary);
   font-size: var(--mm-spacing-xl);
   font-weight: 400;
-  margin-block-end: var(--mm-spacing-2xl);
+  margin-block-end: var(--mm-spacing-md);
 }
 
 .mm-project-page__meta {
@@ -18,6 +19,13 @@
   display: inline-flex;
   font-weight: 400;
   justify-content: center;
+}
+
+.mm-project-page__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block-end: var(--mm-spacing-3xl);
 }
 
 .mm-project-page__meta-icon {

@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays, faUser } from '@fortawesome/free-solid-svg-icons';
 
+import ProjectTags from '../../app/portfolio/ProjectTags';
+
 import { Container } from '../../components/Container/Container';
 
 import './project-page.css';
@@ -93,6 +95,9 @@ export const ProjectPage = ({
             {date}
           </div>
         </div>
+      </div>
+      <div className={`${baseClass}__tags`}>
+        <ProjectTags projectTags={tags || []} />
       </div>
       <div className={`${baseClass}__image`}>
         <Image

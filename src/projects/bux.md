@@ -1,8 +1,8 @@
 ---
 title: 'Buckeye UX'
 description: 'A design system for The Ohio State University'
-date: '2024-01-01'
-tags: ['design system', 'ui', 'ux']
+date: '2019 - 2021'
+tags: ['design-system', 'development', 'project-management']
 role: 'Co-creator and tech lead'
 image: 'https://picsum.photos/960/540'
 imageAlt: 'Buckeye UX'

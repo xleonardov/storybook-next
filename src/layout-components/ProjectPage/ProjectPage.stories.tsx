@@ -21,7 +21,7 @@ export const Default: Story = {
     title: 'Buckeye UX',
     description: 'A design system for The Ohio State University',
     role: 'Co-creator and tech lead',
-    tags: ['Design System', 'Development', 'Design', 'Project Management'],
+    tags: ['design-system', 'development', 'design', 'project-management'],
     date: '2019-2021',
     mainImage: 'https://picsum.photos/960/540',
     mainImageAlt: 'A placeholder image',

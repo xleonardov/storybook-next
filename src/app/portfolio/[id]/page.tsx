@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props) {
 export default async function Project({ params }: Props) {
   const projectData: ProjectData = await getProjectData(params.id);
   const pathname = `/portfolio/${params.id}`;
-  const tags = projectData.tags?.join(', ');
+
   return (
     <PageLayout
       containerWidth='standard'
@@ -44,11 +44,11 @@ export default async function Project({ params }: Props) {
       showBreadcrumb={true}
       showTitle={false}
     >
-      <p>{tags}</p>
       <ProjectPage
         date={projectData.date}
         description={projectData.description}
         role={projectData.role}
+        tags={projectData.tags}
         title={projectData.title}
         mainImage={projectData.image}
         mainImageAlt={projectData.imageAlt}
