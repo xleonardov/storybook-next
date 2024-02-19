@@ -29,6 +29,10 @@ interface PageProps {
    */
   showBreadcrumb?: boolean;
   /**
+   * Show the page title. Set to false if the title is provided by another component.
+   */
+  showTitle?: boolean;
+  /**
    * Optional additional class names.
    */
   className?: string;
@@ -40,6 +44,7 @@ export const Page = ({
   pageTitle,
   pathname,
   showBreadcrumb,
+  showTitle = true,
   className,
   ...props
 }: PageProps) => {
@@ -53,7 +58,7 @@ export const Page = ({
       )}
       <Container width={containerWidth}>
         <main id='main' className='mm-main-content' role='main'>
-          <h1 className='mm-page-title'>{pageTitle}</h1>
+          {showTitle && <h1 className='mm-page-title'>{pageTitle}</h1>}
           {children}
         </main>
       </Container>

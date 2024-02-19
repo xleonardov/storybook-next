@@ -1,6 +1,7 @@
 import Date from '@/utilities/date';
 
 import { Page as PageLayout } from '../../../layout-components/Page/Page';
+import { ProjectPage } from '@/layout-components/ProjectPage/ProjectPage';
 
 import { getProjectData } from '@/lib/projects';
 
@@ -19,6 +20,8 @@ type ProjectData = {
   role?: string;
   tags?: string[];
   contentHtml: string;
+  image: string;
+  imageAlt: string;
 };
 
 export async function generateMetadata({ params }: Props) {
@@ -39,14 +42,19 @@ export default async function Project({ params }: Props) {
       pageTitle={projectData.title}
       pathname={pathname}
       showBreadcrumb={true}
+      showTitle={false}
     >
-      <p>{projectData.description}</p>
-      <p>{projectData.role}</p>
-      <p>
-        <Date dateString={projectData.date} />
-      </p>
       <p>{tags}</p>
-      <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
+      <ProjectPage
+        date={projectData.date}
+        description={projectData.description}
+        role={projectData.role}
+        title={projectData.title}
+        mainImage={projectData.image}
+        mainImageAlt={projectData.imageAlt}
+      >
+        <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
+      </ProjectPage>
     </PageLayout>
   );
 }
