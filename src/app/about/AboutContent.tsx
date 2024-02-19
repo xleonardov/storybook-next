@@ -3,7 +3,7 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 
-import { Biography } from '@/components/Biography/Biography';
+import { Biography } from '@/layout-components/Biography/Biography';
 import { Page as PageLayout } from '@/layout-components/Page/Page';
 import { Resume } from '@/layout-components/Resume/Resume';
 

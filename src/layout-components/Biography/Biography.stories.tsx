@@ -5,7 +5,7 @@ import { Biography } from './Biography';
 import { bioData } from '../../data/about-data';
 
 const meta = {
-  title: 'Components/Biography',
+  title: 'Layout/Biography',
   component: Biography,
   tags: ['autodocs'],
   parameters: {},
