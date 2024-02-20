@@ -89,7 +89,8 @@
   --mm-font-family-heading: 'Manrope', sans-serif;
   --mm-font-family-body: var(--mm-font-family-default);
   --mm-font-family-code: 'Source Code Pro', monospace;
-  --mm-line-height-heading: 1.35;
+  --mm-line-height-heading: 1.2;
+  --mm-line-height-subhead: 1.35;
   --mm-line-height-intro: 1.5;
   --mm-line-height-reset: 1;
   --mm-line-height-text: 1.75;

@@ -1,9 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarDays, faUser } from '@fortawesome/free-solid-svg-icons';
-
 import ProjectTags from '../../app/portfolio/ProjectTags';
 
 import { Container } from '../../components/Container/Container';
@@ -77,36 +74,26 @@ export const ProjectPage = ({
         <h1 className={`${baseClass}__title`}>{title}</h1>
         <div className={`${baseClass}__description`}>{description}</div>
         <div className={`${baseClass}__meta`}>
-          <div className={`${baseClass}__role`}>
-            <FontAwesomeIcon
-              icon={faUser}
-              className={`${baseClass}__meta-icon`}
-            />
-            {role}
-          </div>
+          {role && <div className={`${baseClass}__role`}>{role}</div>}
           {role && date && (
             <span className={`${baseClass}__meta-divider`}>|</span>
           )}
-          <div className={`${baseClass}__date`}>
-            <FontAwesomeIcon
-              icon={faCalendarDays}
-              className={`${baseClass}__meta-icon`}
-            />
-            {date}
-          </div>
+          {date && <div className={`${baseClass}__date`}>{date}</div>}
         </div>
       </div>
       <div className={`${baseClass}__tags`}>
         <ProjectTags projectTags={tags || []} />
       </div>
-      <div className={`${baseClass}__image`}>
-        <Image
-          src={mainImage || ''}
-          width={960}
-          height={540}
-          alt={mainImageAlt || ''}
-        />
-      </div>
+      {mainImage && mainImageAlt && (
+        <div className={`${baseClass}__image`}>
+          <Image
+            src={mainImage || ''}
+            width={960}
+            height={540}
+            alt={mainImageAlt || ''}
+          />
+        </div>
+      )}
       <Container width='narrow' className={`${baseClass}__content`}>
         {children}
       </Container>

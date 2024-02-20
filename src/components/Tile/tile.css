@@ -1,6 +1,7 @@
 .mm-tile {
   border-radius: var(--mm-radius-lg);
   box-shadow: var(--mm-shadow-raised);
+  text-align: center;
   text-decoration: none;
 
   &:hover {
@@ -26,8 +27,8 @@
 
   img {
     border-radius: var(--mm-radius-lg) var(--mm-radius-lg) 0 0;
-    width: 100%;
     height: auto;
+    width: 100%;
   }
 }
 
@@ -38,11 +39,15 @@
 }
 
 .mm-tile__heading {
+  font-size: var(--mm-spacing-xl);
   font-weight: 800;
   margin: 0;
+  margin-block-end: var(--mm-spacing-xs);
 }
 
 .mm-tile__subhead {
   color: var(--mm-color-typography-default-secondary);
+  font-size: var(--mm-spacing-md);
+  line-height: var(--mm-line-height-subhead);
   margin: 0;
 }

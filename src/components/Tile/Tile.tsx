@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 import './tile.css';
 
-interface TileProps {
+export interface TileProps {
   /**
    * Heading text.
    */

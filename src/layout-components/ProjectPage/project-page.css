@@ -8,7 +8,7 @@
 
 h1.mm-project-page__title {
   font-size: var(--mm-spacing-5xl);
-  margin-block-end: var(--mm-spacing-2xs);
+  margin-block-end: var(--mm-spacing-xs);
 }
 
 .mm-project-page__description {
@@ -16,13 +16,13 @@ h1.mm-project-page__title {
   font-family: var(--mm-font-family-secondary);
   font-size: var(--mm-spacing-xl);
   font-weight: 400;
-  margin-block-end: var(--mm-spacing-xl);
+  margin-block-end: var(--mm-spacing-sm);
 }
 
 .mm-project-page__meta {
-  column-gap: var(--mm-spacing-2xs);
+  column-gap: var(--mm-spacing-3xs);
   display: inline-flex;
-  font-weight: 400;
+  font-weight: 600;
   justify-content: center;
 }
 
@@ -31,15 +31,6 @@ h1.mm-project-page__title {
   flex-wrap: wrap;
   justify-content: center;
   margin-block-end: var(--mm-spacing-3xl);
-}
-
-.mm-project-page__meta-icon {
-  color: var(--mm-color-primary);
-  flex-grow: 0;
-  flex-shrink: 0;
-  height: var(--mm-spacing-md);
-  margin-inline-end: var(--mm-spacing-4xs);
-  width: var(--mm-spacing-md);
 }
 
 .mm-project-page__meta-divider {

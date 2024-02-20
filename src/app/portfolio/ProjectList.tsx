@@ -1,5 +1,7 @@
-import Date from '@/utilities/date';
 import Link from 'next/link';
+
+import { Tile } from '@/components/Tile/Tile';
+import { TileGrid } from '@/components/TileGrid/TileGrid';
 
 import { getSortedProjectsData } from '@/lib/projects';
 
@@ -10,27 +12,23 @@ type AllProjectsData = {
   description?: string;
   role?: string;
   tags?: string[];
+  image?: string;
+  imageAlt?: string;
 }[];
 
 export default function ProjectList() {
   const allProjectsData: AllProjectsData = getSortedProjectsData();
   return (
-    <ul>
-      {allProjectsData.map(({ id, date, title, description, role, tags }) => {
-        const tagsList = tags?.join(', ');
-
-        return (
-          <li key={id}>
-            <Link href={`/portfolio/${id}`}>{title}</Link>
-            <p>{description}</p>
-            <p>{role}</p>
-            <p>
-              <Date dateString={date} />
-            </p>
-            <p>{tagsList}</p>
-          </li>
-        );
-      })}
-    </ul>
+    <TileGrid
+      tiles={allProjectsData.map(
+        ({ id, title, description, image, imageAlt }) => ({
+          heading: title,
+          image: image ?? '',
+          link: `/portfolio/${id}`,
+          subhead: description ?? '',
+          alt: imageAlt ?? '',
+        }),
+      )}
+    ></TileGrid>
   );
 }
