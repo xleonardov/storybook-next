@@ -1,5 +1,5 @@
-import { TagProps } from '../../components/Tag/Tag';
-import { TagGroup } from '../../components/TagGroup/TagGroup';
+import { TagProps } from '../components/Tag/Tag';
+import { TagGroup } from '../components/TagGroup/TagGroup';
 
 const tagMapping = {
   'design-system': {
@@ -17,14 +17,14 @@ const tagMapping = {
   },
 };
 
-type ProjectTagsProps = {
-  projectTags: string[];
+type SiteTagsProps = {
+  siteTags: string[];
 };
 
-export default function ProjectTags({ projectTags }: ProjectTagsProps) {
+export default function SiteTags({ siteTags }: SiteTagsProps) {
   // Assign tags for projects.
   const processedTags: TagProps[] = [];
-  projectTags.map((tag) => {
+  siteTags.map((tag) => {
     const tagInfo = tagMapping[tag];
     if (tagInfo) {
       processedTags.push(tagInfo);

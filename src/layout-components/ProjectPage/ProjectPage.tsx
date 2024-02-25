@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import ProjectTags from '../../app/portfolio/ProjectTags';
+import SiteTags from '../../tags/SiteTags';
 
 import { Container } from '../../components/Container/Container';
 
@@ -82,7 +82,7 @@ export const ProjectPage = ({
         </div>
       </div>
       <div className={`${baseClass}__tags`}>
-        <ProjectTags projectTags={tags || []} />
+        <SiteTags siteTags={tags || []} />
       </div>
       {mainImage && mainImageAlt && (
         <div className={`${baseClass}__image`}>
