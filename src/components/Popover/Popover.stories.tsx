@@ -14,7 +14,18 @@ const meta = {
       </div>
     ),
   ],
-  argTypes: {},
+  argTypes: {
+    placement: {
+      control: {
+        type: 'select',
+      },
+    },
+    triggerIcon: {
+      control: {
+        type: 'select',
+      },
+    },
+  },
   args: {},
 } satisfies Meta<typeof Popover>;
 
@@ -25,6 +36,6 @@ export const Default: Story = {
   args: {
     content: 'Popover content',
     placement: 'top',
-    triggerIcon: 'faCircleInfo',
+    triggerIcon: 'info',
   },
 };
