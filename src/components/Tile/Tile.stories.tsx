@@ -27,5 +27,6 @@ export const Default: Story = {
     image: 'https://picsum.photos/420/236',
     link: 'https://example.com',
     subhead: 'Tile subhead',
+    tags: ['design-system', 'development', 'design', 'project-management'],
   },
 };

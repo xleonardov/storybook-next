@@ -4,16 +4,47 @@ import { TagGroup } from '../components/TagGroup/TagGroup';
 const tagMapping = {
   'design-system': {
     label: 'Design System',
-    color: 'color-1',
+    color: 'color-2',
   },
   development: {
     label: 'Development',
-    color: 'color-2',
+    color: 'color-1',
   },
-
   'project-management': {
     label: 'Project Management',
     color: 'color-3',
+  },
+  react: {
+    label: 'React',
+    color: 'color-5',
+  },
+  drupal: {
+    label: 'Drupal',
+    color: 'color-4',
+  },
+  'design-tokens': {
+    label: 'Design Tokens',
+    color: 'color-8',
+  },
+  design: {
+    label: 'Design',
+    color: 'color-6',
+  },
+  'information-architecture': {
+    label: 'Information Architecture',
+    color: 'color-7',
+  },
+  'product-strategy': {
+    label: 'Product Strategy',
+    color: 'color-6',
+  },
+  branding: {
+    label: 'Branding',
+    color: 'color-2',
+  },
+  cms: {
+    label: 'Content Management System',
+    color: 'color-4',
   },
 };
 

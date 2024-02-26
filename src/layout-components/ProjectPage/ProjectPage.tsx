@@ -70,7 +70,7 @@ export const ProjectPage = ({
       className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')}
       {...props}
     >
-      <div className={`${baseClass}__header`}>
+      <Container width='narrow' className={`${baseClass}__header`}>
         <h1 className={`${baseClass}__title`}>{title}</h1>
         <div className={`${baseClass}__description`}>{description}</div>
         <div className={`${baseClass}__meta`}>
@@ -80,10 +80,11 @@ export const ProjectPage = ({
           )}
           {date && <div className={`${baseClass}__date`}>{date}</div>}
         </div>
-      </div>
-      <div className={`${baseClass}__tags`}>
-        <SiteTags siteTags={tags || []} />
-      </div>
+        <div className={`${baseClass}__tags`}>
+          <SiteTags siteTags={tags || []} />
+        </div>
+      </Container>
+
       {mainImage && mainImageAlt && (
         <div className={`${baseClass}__image`}>
           <Image

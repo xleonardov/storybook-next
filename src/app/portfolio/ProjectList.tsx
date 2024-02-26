@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import { Tile } from '@/components/Tile/Tile';
 import { TileGrid } from '@/components/TileGrid/TileGrid';
 
 import { getSortedProjectsData } from '@/lib/projects';
@@ -12,8 +11,7 @@ type AllProjectsData = {
   description?: string;
   role?: string;
   tags?: string[];
-  image?: string;
-  imageAlt?: string;
+  tileImage?: string;
 }[];
 
 export default function ProjectList() {
@@ -21,12 +19,12 @@ export default function ProjectList() {
   return (
     <TileGrid
       tiles={allProjectsData.map(
-        ({ id, title, description, image, imageAlt }) => ({
+        ({ id, title, description, tags, tileImage }) => ({
           heading: title,
-          image: image ?? '',
+          image: tileImage ?? '',
           link: `/portfolio/${id}`,
           subhead: description ?? '',
-          alt: imageAlt ?? '',
+          tags: tags ?? [],
         }),
       )}
     ></TileGrid>

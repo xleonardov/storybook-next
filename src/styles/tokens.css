@@ -59,7 +59,7 @@
 
   /* containers */
   --mm-container-max-width-standard: 960px;
-  --mm-container-max-width-narrow: 800px;
+  --mm-container-max-width-narrow: 768px;
   --mm-container-max-width-wide: 1200px;
   --mm-container-padding: 8%;
   --mm-container-padding-narrow: 12%;

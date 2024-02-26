@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import SiteTags from '../../tags/SiteTags';
+
 import './tile.css';
 
 export interface TileProps {
@@ -22,6 +24,10 @@ export interface TileProps {
    */
   subhead: string;
   /**
+   * Optional tags.
+   */
+  tags?: string[];
+  /**
    * Optional additional class names.
    */
   className?: string;
@@ -35,6 +41,7 @@ export const Tile = ({
   image,
   link,
   subhead,
+  tags,
   className,
   ...props
 }: TileProps) => {
@@ -54,6 +61,11 @@ export const Tile = ({
         <div className={`${baseClass}__content`}>
           <h3 className={`${baseClass}__heading`}>{heading}</h3>
           <p className={`${baseClass}__subhead`}>{subhead}</p>
+          {/* {tags && (
+            <div className={`${baseClass}__tags`}>
+              <SiteTags siteTags={tags} />
+            </div>
+          )} */}
         </div>
       </Link>
     </div>

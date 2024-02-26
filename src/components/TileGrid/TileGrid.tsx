@@ -35,6 +35,7 @@ export const TileGrid = ({ tiles, className, ...props }: TileGridProps) => {
           image={tile.image}
           link={tile.link}
           subhead={tile.subhead}
+          tags={tile.tags}
           className={`${baseClass}__item`}
         ></Tile>
       ))}

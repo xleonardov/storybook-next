@@ -1,5 +1,5 @@
 export const bioData = {
-  image: '/images/zipline.png',
+  image: '/images/about/zipline.png',
   imageAlt: 'Image of Melissa Miller on a zipline course.',
   imageCaption: 'Me on a zipline course in Hocking Hills.',
   leadText:

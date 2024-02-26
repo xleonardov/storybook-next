@@ -20,8 +20,9 @@ type ProjectData = {
   role?: string;
   tags?: string[];
   contentHtml: string;
-  image: string;
-  imageAlt: string;
+  mainImage: string;
+  mainImageAlt: string;
+  id: string;
 };
 
 export async function generateMetadata({ params }: Props) {
@@ -50,8 +51,8 @@ export default async function Project({ params }: Props) {
         role={projectData.role}
         tags={projectData.tags}
         title={projectData.title}
-        mainImage={projectData.image}
-        mainImageAlt={projectData.imageAlt}
+        mainImage={projectData.mainImage}
+        mainImageAlt={projectData.mainImageAlt}
       >
         <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
       </ProjectPage>
