@@ -42,10 +42,6 @@ const tagMapping = {
     label: 'Branding',
     color: 'color-2',
   },
-  cms: {
-    label: 'Content Management System',
-    color: 'color-4',
-  },
 };
 
 type SiteTagsProps = {
