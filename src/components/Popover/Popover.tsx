@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef, useState } from 'react';
 
 import {
@@ -44,9 +46,17 @@ interface PopoverProps {
    */
   placement: 'top' | 'right' | 'bottom' | 'left';
   /**
+   * Whether the trigger icon should have a background.
+   */
+  triggerBackground?: boolean;
+  /**
    * The trigger icon for the popover.
    */
   triggerIcon: 'info' | 'question' | 'cog' | 'tags';
+  /**
+   * The relative size of the trigger icon.
+   */
+  triggerSize?: 'sm' | 'md' | 'lg';
   /**
    * Optional additional class names.
    */
@@ -59,12 +69,19 @@ interface PopoverProps {
 export const Popover = ({
   content,
   placement = 'top',
+  triggerBackground = false,
   triggerIcon = 'info',
+  triggerSize = 'md',
   className,
   ...props
 }: PopoverProps) => {
   // Set up classes.
   const baseClass = 'mm-popover';
+  const triggerBaseClass = `${baseClass}__trigger`;
+  const triggerBackgroundClass = triggerBackground
+    ? `${baseClass}__trigger--bg`
+    : '';
+  const triggerSizeClass = `${baseClass}__trigger--${triggerSize}`;
 
   // Assign icon based on triggerIcon prop.
   let processedIcon: string | [IconPrefix, IconName] | IconLookup;
@@ -141,7 +158,10 @@ export const Popover = ({
       {...props}
     >
       <button
-        className={`${baseClass}__trigger`}
+        className={[triggerBaseClass, triggerBackgroundClass, triggerSizeClass]
+          .join(' ')
+          .trim()
+          .replace(/\s+/g, ' ')}
         ref={refs.setReference}
         {...getReferenceProps()}
       >

@@ -20,6 +20,11 @@ const meta = {
         type: 'select',
       },
     },
+    triggerSize: {
+      control: {
+        type: 'select',
+      },
+    },
     triggerIcon: {
       control: {
         type: 'select',
@@ -36,6 +41,8 @@ export const Default: Story = {
   args: {
     content: 'Popover content',
     placement: 'top',
+    triggerBackground: false,
     triggerIcon: 'info',
+    triggerSize: 'md',
   },
 };

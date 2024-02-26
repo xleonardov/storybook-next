@@ -1,5 +1,5 @@
 .mm-tag-group {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--mm-spacing-2xs);
+  gap: var(--mm-spacing-xs);
 }

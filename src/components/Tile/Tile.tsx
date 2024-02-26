@@ -4,6 +4,8 @@ import Image from 'next/image';
 
 import SiteTags from '../../tags/SiteTags';
 
+import { Popover } from '../Popover/Popover';
+
 import './tile.css';
 
 export interface TileProps {
@@ -48,6 +50,12 @@ export const Tile = ({
   // Set up classes.
   const baseClass = 'mm-tile';
 
+  const popoverContent = (
+    <div className={`${baseClass}__tags`}>
+      <SiteTags siteTags={tags || []} />
+    </div>
+  );
+
   // Render the output.
   return (
     <div
@@ -61,13 +69,18 @@ export const Tile = ({
         <div className={`${baseClass}__content`}>
           <h3 className={`${baseClass}__heading`}>{heading}</h3>
           <p className={`${baseClass}__subhead`}>{subhead}</p>
-          {/* {tags && (
-            <div className={`${baseClass}__tags`}>
-              <SiteTags siteTags={tags} />
-            </div>
-          )} */}
         </div>
       </Link>
+      {tags && (
+        <Popover
+          content={popoverContent}
+          placement='bottom'
+          triggerBackground={true}
+          triggerIcon='tags'
+          triggerSize='lg'
+          className={`${baseClass}__tags-popover`}
+        />
+      )}
     </div>
   );
 };

@@ -3,10 +3,17 @@
   box-shadow: var(--mm-shadow-raised);
   text-align: center;
   text-decoration: none;
+  position: relative;
 
   &:hover {
     box-shadow: var(--mm-shadow-active);
   }
+}
+
+.mm-tile__tags-popover {
+  position: absolute;
+  top: var(--mm-spacing-sm);
+  right: var(--mm-spacing-sm);
 }
 
 .mm-tile__link {
