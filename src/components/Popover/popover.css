@@ -1,0 +1,25 @@
+.mm-popover {
+  display: inline-block;
+}
+
+.mm-popover__trigger {
+  all: unset;
+}
+
+.mm-popover__container {
+  background-color: var(--mm-color-background-default);
+  border-color: var(--mm-color-border-default);
+  border-radius: var(--mm-radius-md);
+  box-shadow: var(--mm-shadow-active), var(--mm-shadow-overlay);
+  max-width: 40vw;
+  padding: var(--mm-spacing-md);
+  width: max-content;
+
+  @media (--breakpoint-sm) {
+    max-width: 80vw;
+  }
+}
+
+.mm-popover__arrow path {
+  filter: drop-shadow(var(--mm-shadow-active));
+}
