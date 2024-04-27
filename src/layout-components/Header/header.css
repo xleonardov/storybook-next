@@ -1,5 +1,4 @@
 .mm-header {
-  background-color: var(--mm-color-background-reverse);
   padding-block: var(--mm-spacing-md);
 }
 
@@ -11,16 +10,16 @@
 }
 
 .mm-header__home-link {
-  color: var(--mm-color-typography-reverse);
+  color: var(--mm-color-typography-default);
   text-decoration: none;
   &:hover {
-    color: var(--mm-color-primary-light);
+    color: var(--mm-color-primary);
   }
 }
 
 .mm-header__site-name {
   all: unset;
   font-family: var(--mm-font-family-heading);
-  font-size: var(--mm-spacing-2xl);
-  font-weight: 800;
+  font-size: var(--mm-spacing-xl);
+  font-weight: 600;
 }

@@ -47,15 +47,17 @@
   --mm-spacing-5xl: 2.986rem;
   --mm-spacing-4xl: 2.488rem;
   --mm-spacing-3xl: 2.074rem;
-  --mm-spacing-2xl: 1.728rem;
-  --mm-spacing-xl: 1.44rem;
-  --mm-spacing-lg: 1.2rem;
-  --mm-spacing-md: 1rem;
-  --mm-spacing-sm: 0.833rem;
-  --mm-spacing-xs: 0.694rem;
-  --mm-spacing-2xs: 0.578rem;
-  --mm-spacing-3xs: 0.481rem;
-  --mm-spacing-4xs: 0.4rem;
+  --mm-spacing-2xl: 1.728rem; /* 27.6px */
+  --mm-spacing-xl: 1.44rem; /* 23px */
+  --mm-spacing-lg: 1.2rem; /* 19.2px */
+  --mm-spacing-md: 1rem; /* 16px */
+  --mm-spacing-sm: 0.833rem; /* 13.3px */
+  --mm-spacing-xs: 0.694rem; /* 11.1px */
+  --mm-spacing-2xs: 0.578rem; /* 9.2px */
+  --mm-spacing-3xs: 0.481rem; /* 7.7px */
+  --mm-spacing-4xs: 0.4rem; /* 6.4px */
+  --mm-spacing-5xs: 0.333rem; /* 5.3px */
+  --mm-spacing-6xs: 0.278rem; /* 4.4px */
 
   /* containers */
   --mm-container-max-width-standard: 960px;
@@ -84,16 +86,16 @@
     0px 2px 2px 0px rgba(0, 0, 0, 0.04), 0px 8px 8px -8px rgba(0, 0, 0, 0.04);
 
   /* typography */
-  --mm-font-family-default: 'Open Sans', sans-serif;
+  --mm-font-family-default: "Nunito Sans", sans-serif;
   --mm-font-family-secondary: 'Aleo', serif;
-  --mm-font-family-heading: 'Manrope', sans-serif;
+  --mm-font-family-heading: var(--mm-font-family-default);
   --mm-font-family-body: var(--mm-font-family-default);
   --mm-font-family-code: 'Source Code Pro', monospace;
   --mm-line-height-heading: 1.2;
   --mm-line-height-subhead: 1.35;
   --mm-line-height-intro: 1.5;
   --mm-line-height-reset: 1;
-  --mm-line-height-text: 1.75;
+  --mm-line-height-text: 1.5;
 
   /* Animation */
   --mm-animation-transition-default-delay: 0s;

@@ -1,8 +1,9 @@
 h3.mm-resume-item__title {
   color: var(--mm-color-typography-default);
   font-family: var(--mm-font-family-heading);
+
   font-size: var(--mm-spacing-xl);
-  font-weight: 800;
+  font-weight: 700;
   margin-block-end: var(--mm-spacing-2xs);
 }
 
@@ -15,20 +16,21 @@ h4.mm-resume-item__subtitle,
   color: var(--mm-color-typography-default-secondary);
   column-gap: var(--mm-spacing-2xs);
   display: inline-flex;
-  font-family: var(--mm-font-family-secondary);
   font-size: var(--mm-spacing-lg);
-  font-weight: 400;
+  font-weight:600;
   margin-block-end: var(--mm-spacing-xs);
 }
 
 .mm-resume-item__divider {
   color: var(--mm-color-primary);
-  margin-block-start: -1px;
+  margin-block-start: -2px;
+  font-weight: 300;
 }
 
 .mm-resume-item__description {
   color: var(--mm-color-typography-default);
   font-size: var(--mm-spacing-md);
+  font-weight: 300;
   margin-block-end: var(--mm-spacing-md);
 
   &:last-child {

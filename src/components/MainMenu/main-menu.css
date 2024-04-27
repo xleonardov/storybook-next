@@ -1,23 +1,24 @@
 .mm-main-menu__items {
   display: flex;
+  gap: var(--mm-spacing-md);
   list-style-type: none;
-  gap: var(--mm-spacing-2xl);
 }
 
 .mm-main-menu__link {
-  color: var(--mm-color-typography-reverse);
-  text-decoration: none;
-  font-size: var(--mm-spacing-lg);
+  color: var(--mm-color-typography-default);
   font-family: var(--mm-font-family-heading);
-  font-weight: 700;
+  font-size: var(--mm-spacing-md);
+  font-weight: 600;
+  padding: var(--mm-spacing-6xs) var(--mm-spacing-2xs);
+  text-decoration: none;
 
   &:hover {
-    color: var(--mm-color-primary-light);
+    color: var(--mm-color-primary);
   }
 }
 
 .mm-main-menu__item--active-path {
   a.mm-main-menu__link {
-    color: var(--mm-color-primary-light);
+    color: var(--mm-color-primary);
   }
 }

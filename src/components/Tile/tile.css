@@ -47,7 +47,7 @@
 
 .mm-tile__heading {
   font-size: var(--mm-spacing-xl);
-  font-weight: 800;
+  font-weight: 600;
   margin: 0;
   margin-block-end: var(--mm-spacing-xs);
 }
