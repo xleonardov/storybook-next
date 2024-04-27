@@ -53,8 +53,13 @@ export const Page = ({
   className,
   ...props
 }: PageProps) => {
+
+  // Set up classes.
+  const pageClasses = ['mm-page', className].join(' ').trim().replace(/\s+/g, ' ');
+
   return (
-    <div className={className} {...props}>
+    <div className={pageClasses} {...props}>
+      <div>
       {showHeader && <Header pathname={pathname} />}
       {showBreadcrumb && (
         <Container width={containerWidth}>
@@ -66,7 +71,8 @@ export const Page = ({
           {showTitle && <h1 className='mm-page-title'>{pageTitle}</h1>}
           {children}
         </main>
-      </Container>
+        </Container>
+        </div>
       <Footer />
     </div>
   );

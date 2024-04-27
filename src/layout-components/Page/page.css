@@ -1,3 +1,9 @@
+.mm-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
 .mm-page-title {
   margin-block-end: var(--mm-spacing-2xl);
 }
