@@ -29,6 +29,10 @@ interface PageProps {
    */
   showBreadcrumb?: boolean;
   /**
+   * Show the header on this page.
+   */
+  showHeader?: boolean;
+  /**
    * Show the page title. Set to false if the title is provided by another component.
    */
   showTitle?: boolean;
@@ -44,13 +48,14 @@ export const Page = ({
   pageTitle,
   pathname,
   showBreadcrumb,
+  showHeader = true,
   showTitle = true,
   className,
   ...props
 }: PageProps) => {
   return (
     <div className={className} {...props}>
-      <Header pathname={pathname} />
+      {showHeader && <Header pathname={pathname} />}
       {showBreadcrumb && (
         <Container width={containerWidth}>
           <Breadcrumb pathname={pathname} pageTitle={pageTitle} />
