@@ -23,7 +23,7 @@ h3.mm-resume-item__title--skills {
 
 .mm-resume-item__divider {
 	margin-block-start: -1px;
-	color: var(--mm-color-typography-default);
+	color: var(--mm-color-neutral-light);
 	font-weight: 300;
 }
 

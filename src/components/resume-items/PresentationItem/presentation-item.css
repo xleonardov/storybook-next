@@ -1,6 +1,6 @@
 .mm-resume-presentation {
 	display: flex;
-	row-gap: var(--mm-spacing-2xs);
+	row-gap: var(--mm-spacing-5xs);
 	flex-direction: column;
 	color: var(--mm-color-typography-default-secondary);
 	font-weight: 400;
@@ -14,4 +14,12 @@
 	font-weight: 700;
 	font-size: var(--mm-spacing-lg);
 	font-family: var(--mm-font-family-heading);
+}
+
+.mm-resume-presentation__date,
+.mm-resume-presentation__event {
+	color: var(--mm-color-typography-default-secondary);
+	font-weight: 400;
+	font-size: var(--mm-spacing-md);
+	font-family: var(--mm-font-family-default);
 }
