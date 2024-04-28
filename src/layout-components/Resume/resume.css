@@ -1,29 +1,29 @@
 .mm-resume {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--mm-spacing-6xl);
+	display: flex;
+	row-gap: var(--mm-spacing-6xl);
+	flex-direction: column;
 }
 
 .mm-resume-section__section-items {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--mm-spacing-2xl);
+	display: flex;
+	row-gap: var(--mm-spacing-4xl);
+	flex-direction: column;
 }
 
 .mm-resume-section--skills .mm-resume-section__section-items {
-  row-gap: var(--mm-spacing-xl);
+	row-gap: var(--mm-spacing-xl);
 }
 
 h2.mm-resume-section__section-title {
-  color: var(--mm-color-primary);
-  font-family: var(--mm-font-family-heading);
-  font-size: var(--mm-spacing-2xl);
-  font-weight: 700;
-  margin-block-end: var(--mm-spacing-lg);
+	margin-block-end: var(--mm-spacing-lg);
+	color: var(--mm-color-primary);
+	font-weight: 700;
+	font-size: var(--mm-spacing-3xl);
+	font-family: var(--mm-font-family-heading);
 }
 
 .mm-resume-section__fine-print {
-  font-size: var(--mm-spacing-sm);
-  font-weight: 300;
-  margin-block-start: var(--mm-spacing-4xl);
+	margin-block-start: var(--mm-spacing-4xl);
+	font-weight: 300;
+	font-size: var(--mm-spacing-sm);
 }

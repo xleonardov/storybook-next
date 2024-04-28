@@ -1,11 +1,8 @@
 :root {
 	/* rainbow colors */
-	--mm-color-magenta: #ba187c;
-	--mm-color-magenta-light: #fdedf7;
 	--mm-color-red: #ff595e;
 	--mm-color-yellow: #ffca3a;
 	--mm-color-green: #8ac926;
-	--mm-color-green-dark: #428118;
 	--mm-color-blue: #187bb9;
 	--mm-color-purple: #6a4c93;
 
@@ -14,24 +11,24 @@
 	--mm-color-neutral-lighter: #eaeaea;
 	--mm-color-neutral-light: #c6c6c6;
 	--mm-color-neutral: #757575;
-	--mm-color-neutral-dark: #4a4a4a;
-	--mm-color-neutral-darker: #2e2e2e;
+	--mm-color-neutral-dark: #555555;
+	--mm-color-neutral-darker: #353535;
 	--mm-color-neutral-darkest: #000000;
 
 	/* purpose colors */
 	--mm-color-background-default: var(--mm-color-neutral-lightest);
 	--mm-color-background-reverse: var(--mm-color-neutral-darkest);
 	--mm-color-typography-default: var(--mm-color-neutral-darkest);
-	--mm-color-typography-default-secondary: var(--mm-color-neutral);
+	--mm-color-typography-default-secondary: var(--mm-color-neutral-dark);
 	--mm-color-typography-reverse: var(--mm-color-neutral-lightest);
 	--mm-color-border-default: var(--mm-color-neutral-light);
 	--mm-color-focus: var(--mm-color-blue);
 	--mm-color-link: var(--mm-color-blue);
-	--mm-color-link-hover: var(--mm-color-magenta);
+	--mm-color-link-hover: var(--mm-color-purple);
 	--mm-color-link-visited: var(--mm-color-purple);
 	--mm-color-button: var(--mm-color-neutral-darker);
-	--mm-color-button-hover: var(--mm-color-magenta);
-	--mm-color-button-secondary-hover: var(--mm-color-magenta-light);
+	--mm-color-button-hover: var(--mm-color-neutral-darkest);
+	--mm-color-button-secondary-hover: var(--mm-color-neutral-lighter);
 
 	/* spacing */
 	--mm-spacing-7xl: 4.3rem; /* 68.8px */
