@@ -1,14 +1,14 @@
 .mm-page {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr auto;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	min-height: 100vh;
 }
 
 .mm-page-title {
-  margin-block-end: var(--mm-spacing-2xl);
+	margin-block-end: var(--mm-spacing-2xl);
 }
 
 .mm-main-content {
-  min-height: 30rem;
-  padding-block: var(--mm-spacing-3xl);
+	padding-block: var(--mm-spacing-3xl);
+	min-height: 30rem;
 }

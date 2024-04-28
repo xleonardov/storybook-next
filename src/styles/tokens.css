@@ -1,115 +1,107 @@
 :root {
-  /* base colors */
-  --mm-color-primary-lightest: #f6fbf8;
-  --mm-color-primary-lighter: #e0efee;
-  --mm-color-primary-light: #b5d6da;
-  --mm-color-primary: #067589;
-  --mm-color-primary-dark: #0b535f;
-  --mm-color-primary-darker: #0f3a41;
-  --mm-color-primary-darkest: #112a2d;
+	/* rainbow colors */
+	--mm-color-magenta: #ba187c;
+	--mm-color-magenta-light: #fdedf7;
+	--mm-color-red: #ff595e;
+	--mm-color-yellow: #ffca3a;
+	--mm-color-green: #8ac926;
+	--mm-color-green-dark: #428118;
+	--mm-color-blue: #187bb9;
+	--mm-color-purple: #6a4c93;
 
-  --mm-color-accent-lightest: #f8edf1;
-  --mm-color-accent-lighter: #ecd8df;
-  --mm-color-accent-light: #dca3b8;
-  --mm-color-accent: #b13562;
-  --mm-color-accent-dark: #842849;
-  --mm-color-accent-darker: #571c30;
-  --mm-color-accent-darkest: #2a0f17;
+	/* neutrals */
+	--mm-color-neutral-lightest: #ffffff;
+	--mm-color-neutral-lighter: #eaeaea;
+	--mm-color-neutral-light: #c6c6c6;
+	--mm-color-neutral: #757575;
+	--mm-color-neutral-dark: #4a4a4a;
+	--mm-color-neutral-darker: #2e2e2e;
+	--mm-color-neutral-darkest: #000000;
 
-  --mm-color-neutral-lightest: #ffffff;
-  --mm-color-neutral-lighter: #e2e3e2;
-  --mm-color-neutral-light: #b7b8b8;
-  --mm-color-neutral: #656868;
-  --mm-color-neutral-dark: #525655;
-  --mm-color-neutral-darker: #363b3a;
-  --mm-color-neutral-darkest: #131919;
+	/* purpose colors */
+	--mm-color-background-default: var(--mm-color-neutral-lightest);
+	--mm-color-background-reverse: var(--mm-color-neutral-darkest);
+	--mm-color-typography-default: var(--mm-color-neutral-darkest);
+	--mm-color-typography-default-secondary: var(--mm-color-neutral);
+	--mm-color-typography-reverse: var(--mm-color-neutral-lightest);
+	--mm-color-border-default: var(--mm-color-neutral-light);
+	--mm-color-focus: var(--mm-color-blue);
+	--mm-color-link: var(--mm-color-blue);
+	--mm-color-link-hover: var(--mm-color-magenta);
+	--mm-color-link-visited: var(--mm-color-purple);
+	--mm-color-button: var(--mm-color-neutral-darker);
+	--mm-color-button-hover: var(--mm-color-magenta);
+	--mm-color-button-secondary-hover: var(--mm-color-magenta-light);
 
-  /* purpose colors */
-  --mm-color-background-default: var(--mm-color-neutral-lightest);
-  --mm-color-background-reverse: var(--mm-color-neutral-darkest);
+	/* spacing */
+	--mm-spacing-7xl: 4.3rem; /* 68.8px */
+	--mm-spacing-6xl: 3.583rem; /* 57.3px */
+	--mm-spacing-5xl: 2.986rem; /* 47.8px */
+	--mm-spacing-4xl: 2.488rem; /* 39.8px */
+	--mm-spacing-3xl: 2.074rem; /* 33.2px */
+	--mm-spacing-2xl: 1.728rem; /* 27.6px */
+	--mm-spacing-xl: 1.44rem; /* 23px */
+	--mm-spacing-lg: 1.2rem; /* 19.2px */
+	--mm-spacing-md: 1rem; /* 16px */
+	--mm-spacing-sm: 0.833rem; /* 13.3px */
+	--mm-spacing-xs: 0.694rem; /* 11.1px */
+	--mm-spacing-2xs: 0.578rem; /* 9.2px */
+	--mm-spacing-3xs: 0.481rem; /* 7.7px */
+	--mm-spacing-4xs: 0.4rem; /* 6.4px */
+	--mm-spacing-5xs: 0.333rem; /* 5.3px */
+	--mm-spacing-6xs: 0.278rem; /* 4.4px */
 
-  --mm-color-typography-default: var(--mm-color-neutral-darkest);
-  --mm-color-typography-default-secondary: var(--mm-color-neutral);
-  --mm-color-typography-reverse: var(--mm-color-neutral-lightest);
+	/* containers */
+	--mm-container-max-width-standard: 960px;
+	--mm-container-max-width-narrow: 768px;
+	--mm-container-max-width-wide: 1200px;
+	--mm-container-padding: 8%;
+	--mm-container-padding-narrow: 12%;
+	--mm-container-padding-wide: 4%;
 
-  --mm-color-border-default: var(--mm-color-neutral-light);
+	/* radius */
+	--mm-radius-circle: 50%;
+	--mm-radius-button: 10rem;
+	--mm-radius-lg: 0.375rem;
+	--mm-radius-md: 0.25rem;
+	--mm-radius-sm: 0.125rem;
 
-  --mm-color-semantic-success: #267a58;
-  --mm-color-link: var(--mm-color-primary);
-  --mm-color-link-hover: var(--mm-color-primary-dark);
-  --mm-color-link-hover-inline: var(--mm-color-accent);
-  --mm-color-link-visited: #684b9b;
-  --mm-color-focus: #0066db;
+	/* shadows */
+	--mm-shadow-active: 0px 0px 0px 1px rgba(0, 0, 0, 0.08),
+		0px 6px 14px 0px rgba(0, 0, 0, 0.08);
+	--mm-shadow-dropdown: 0px 1px 0px 1px rgba(0, 0, 0, 0.08),
+		0px 6px 14px 0px rgba(0, 0, 0, 0.08);
+	--mm-shadow-overlay: 0px 0px 0px 1px rgba(0, 0, 0, 0.08),
+		0px 1px 1px 0px rgba(0, 0, 0, 0.02), 0px 8px 16px -4px rgba(0, 0, 0, 0.04),
+		0px 24px 32px -8px rgba(0, 0, 0, 0.06);
+	--mm-shadow-raised: 0px 0px 0px 1px rgba(0, 0, 0, 0.08),
+		0px 2px 2px 0px rgba(0, 0, 0, 0.04), 0px 8px 8px -8px rgba(0, 0, 0, 0.04);
 
-  /* spacing */
-  --mm-spacing-7xl: 4.3rem;
-  --mm-spacing-6xl: 3.583rem;
-  --mm-spacing-5xl: 2.986rem;
-  --mm-spacing-4xl: 2.488rem;
-  --mm-spacing-3xl: 2.074rem;
-  --mm-spacing-2xl: 1.728rem; /* 27.6px */
-  --mm-spacing-xl: 1.44rem; /* 23px */
-  --mm-spacing-lg: 1.2rem; /* 19.2px */
-  --mm-spacing-md: 1rem; /* 16px */
-  --mm-spacing-sm: 0.833rem; /* 13.3px */
-  --mm-spacing-xs: 0.694rem; /* 11.1px */
-  --mm-spacing-2xs: 0.578rem; /* 9.2px */
-  --mm-spacing-3xs: 0.481rem; /* 7.7px */
-  --mm-spacing-4xs: 0.4rem; /* 6.4px */
-  --mm-spacing-5xs: 0.333rem; /* 5.3px */
-  --mm-spacing-6xs: 0.278rem; /* 4.4px */
+	/* typography */
+	--mm-font-family-default: 'Nunito Sans', sans-serif;
+	--mm-font-family-secondary: 'Aleo', serif;
+	--mm-font-family-heading: var(--mm-font-family-default);
+	--mm-font-family-body: var(--mm-font-family-default);
+	--mm-font-family-code: 'Source Code Pro', monospace;
+	--mm-line-height-heading: 1.2;
+	--mm-line-height-subhead: 1.35;
+	--mm-line-height-intro: 1.5;
+	--mm-line-height-reset: 1;
+	--mm-line-height-text: 1.5;
 
-  /* containers */
-  --mm-container-max-width-standard: 960px;
-  --mm-container-max-width-narrow: 768px;
-  --mm-container-max-width-wide: 1200px;
-  --mm-container-padding: 8%;
-  --mm-container-padding-narrow: 12%;
-  --mm-container-padding-wide: 4%;
+	/* Animation */
+	--mm-animation-transition-default-delay: 0s;
+	--mm-animation-transition-default-duration: 200ms;
+	--mm-animation-transition-default-timing-function: ease-in-out;
+	--mm-animation-default-transition: all
+		var(--mm-animation-transition-default-duration)
+		var(--mm-animation-transition-default-timing-function)
+		var(--mm-animation-transition-default-delay);
 
-  /* radius */
-  --mm-radius-circle: 50%;
-  --mm-radius-button: 10rem;
-  --mm-radius-lg: 0.375rem;
-  --mm-radius-md: 0.25rem;
-  --mm-radius-sm: 0.125rem;
-
-  /* shadows */
-  --mm-shadow-active: 0px 0px 0px 1px rgba(0, 0, 0, 0.08),
-    0px 6px 14px 0px rgba(0, 0, 0, 0.08);
-  --mm-shadow-dropdown: 0px 1px 0px 1px rgba(0, 0, 0, 0.08),
-    0px 6px 14px 0px rgba(0, 0, 0, 0.08);
-  --mm-shadow-overlay: 0px 0px 0px 1px rgba(0, 0, 0, 0.08),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.02), 0px 8px 16px -4px rgba(0, 0, 0, 0.04),
-    0px 24px 32px -8px rgba(0, 0, 0, 0.06);
-  --mm-shadow-raised: 0px 0px 0px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.04), 0px 8px 8px -8px rgba(0, 0, 0, 0.04);
-
-  /* typography */
-  --mm-font-family-default: "Nunito Sans", sans-serif;
-  --mm-font-family-secondary: 'Aleo', serif;
-  --mm-font-family-heading: var(--mm-font-family-default);
-  --mm-font-family-body: var(--mm-font-family-default);
-  --mm-font-family-code: 'Source Code Pro', monospace;
-  --mm-line-height-heading: 1.2;
-  --mm-line-height-subhead: 1.35;
-  --mm-line-height-intro: 1.5;
-  --mm-line-height-reset: 1;
-  --mm-line-height-text: 1.5;
-
-  /* Animation */
-  --mm-animation-transition-default-delay: 0s;
-  --mm-animation-transition-default-duration: 200ms;
-  --mm-animation-transition-default-timing-function: ease-in-out;
-  --mm-animation-default-transition: all
-    var(--mm-animation-transition-default-duration)
-    var(--mm-animation-transition-default-timing-function)
-    var(--mm-animation-transition-default-delay);
-
-  /* z-index */
-  --mm-z-index-dropdown: 200;
-  --mm-z-index-modal: 500;
-  --mm-z-index-navigation: 100;
-  --mm-z-index-notifications: 300;
-  --mm-z-index-overlay: 400;
+	/* z-index */
+	--mm-z-index-dropdown: 200;
+	--mm-z-index-modal: 500;
+	--mm-z-index-navigation: 100;
+	--mm-z-index-notifications: 300;
+	--mm-z-index-overlay: 400;
 }

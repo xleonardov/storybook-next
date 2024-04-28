@@ -1,18 +1,21 @@
 .mm-social-links {
-  all: unset;
-  column-gap: var(--mm-spacing-xl);
-  display: flex;
-  list-style-type: none;
+	all: unset;
+	display: flex;
+	column-gap: var(--mm-spacing-4xs);
+	list-style-type: none;
 }
 
 .mm-social-links__icon {
-  color: var(--mm-color-link);
-  height: var(--mm-spacing-2xl);
-  width: var(--mm-spacing-2xl);
-  flex-shrink: 0;
-  flex-grow: 0;
+	flex-grow: 0;
+	flex-shrink: 0;
+	border-radius: 50%;
+	padding: var(--mm-spacing-2xs);
+	width: var(--mm-spacing-xl);
+	height: var(--mm-spacing-xl);
+	color: var(--mm-color-typography-default);
 }
 
 .mm-social-links__icon:hover {
-  color: var(--mm-color-link-hover);
+	background-color: var(--mm-color-neutral-lighter);
+	color: var(--mm-color-typography-default);
 }
