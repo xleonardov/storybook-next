@@ -49,9 +49,9 @@
 	--mm-spacing-6xs: 0.278rem; /* 4.4px */
 
 	/* containers */
-	--mm-container-max-width-standard: 960px;
+	--mm-container-max-width-standard: 1024px;
 	--mm-container-max-width-narrow: 768px;
-	--mm-container-max-width-wide: 1200px;
+	--mm-container-max-width-wide: 1280px;
 	--mm-container-padding: 8%;
 	--mm-container-padding-narrow: 12%;
 	--mm-container-padding-wide: 4%;

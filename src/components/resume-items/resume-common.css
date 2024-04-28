@@ -2,7 +2,7 @@ h3.mm-resume-item__title {
 	margin-block-end: var(--mm-spacing-2xs);
 	color: var(--mm-color-typography-default);
 	font-weight: 700;
-	font-size: var(--mm-spacing-xl);
+	font-size: var(--mm-spacing-lg);
 	font-family: var(--mm-font-family-heading);
 }
 
@@ -17,7 +17,7 @@ h3.mm-resume-item__title--skills {
 	margin-block-end: var(--mm-spacing-xs);
 	color: var(--mm-color-typography-default-secondary);
 	font-weight: 400;
-	font-size: var(--mm-spacing-lg);
+	font-size: calc(var(--mm-spacing-lg) * 0.9);
 	font-family: var(--mm-font-family-secondary);
 }
 

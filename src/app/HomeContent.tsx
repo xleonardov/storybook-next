@@ -4,18 +4,20 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 
 import { Page as PageLayout } from '../layout-components/Page/Page';
+import { Resume } from '@/layout-components/Resume/Resume';
+
+import { bioData, resumeData, resumeSidebarData } from '@/data/about-data';
 
 export interface HomeContentProps {
-  pageTitle?: string;
+	pageTitle?: string;
 }
 
 export default function HomeContent({ pageTitle }: HomeContentProps) {
-  const pathname = usePathname();
+	const pathname = usePathname();
 
-  return (
-    <PageLayout containerWidth='standard' showBreadcrumb={false} showHeader={false}>
-      {pageTitle && <h1>{pageTitle}</h1>}
-      <p>This is the page content.</p>
-    </PageLayout>
-  );
+	return (
+		<PageLayout containerWidth='wide' showBreadcrumb={false} showHeader={false}>
+			<Resume resumeItems={resumeData} sidebarItems={resumeSidebarData} />
+		</PageLayout>
+	);
 }

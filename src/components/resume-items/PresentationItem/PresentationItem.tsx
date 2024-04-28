@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../resume-common.css';
+import './presentation-item.css';
 
 export interface PresentationItemProps {
 	/**
@@ -33,7 +34,7 @@ export const PresentationItem = ({
 	...props
 }: PresentationItemProps) => {
 	// Set up classes.
-	const baseClass = 'mm-resume-item';
+	const baseClass = 'mm-resume-presentation';
 
 	// Render the output.
 	return (
@@ -42,11 +43,8 @@ export const PresentationItem = ({
 			{...props}
 		>
 			<h3 className={`${baseClass}__title`}>{presentationName}</h3>
-			<div className={`${baseClass}__subtitle`}>
-				<span className={`${baseClass}__event`}>{eventName}</span>
-				<span className={`${baseClass}__divider`}>|</span>
-				<span className={`${baseClass}__date`}>{eventDate}</span>
-			</div>
+			<div className={`${baseClass}__event`}>{eventName}</div>
+			<div className={`${baseClass}__date`}>{eventDate}</div>
 		</div>
 	);
 };
