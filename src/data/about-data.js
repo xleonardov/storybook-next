@@ -42,7 +42,7 @@ export const resumeData = [
 		sectionType: 'work-experience',
 		finePrint: (
 			<>
-				Full employment timeline is available on{' '}
+				Full employment timeline, including in-company growth, is available on{' '}
 				<a
 					href='https://www.linkedin.com/in/melissa-a-miller-6a37744/'
 					target='_blank'
@@ -181,15 +181,16 @@ export const resumeSidebarData = [
 			{
 				skills: [
 					'Design Systems',
+					'Site Building Systems',
 					'Design Tokens',
-					'Site Building Platforms',
-					'React/TypeScript',
-					'Drupal',
+					'React/JavaScript/TypeScript',
+					'Drupal/PHP',
 					'HTML',
 					'CSS/Sass',
-					'UI Design',
-					'Accessibility',
+					'Visual & UI Design',
+					'Web Accessibility',
 					'Project Management',
+					'Photography',
 				],
 			},
 		],
