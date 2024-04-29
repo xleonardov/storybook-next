@@ -1,0 +1,11 @@
+.mm-hero {
+}
+
+.mm-hero__container {
+	display: flex;
+}
+
+.mm-hero__image img {
+	border-radius: 50%;
+	background-color: var(--mm-color-neutral-lightest);
+}
