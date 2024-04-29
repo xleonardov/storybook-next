@@ -17,8 +17,5 @@
 }
 
 .mm-social-links__icon:hover {
-	background-image: url(/assets/radial-rainbow-bkgd.png);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-color: var(--mm-color-neutral-lighter);
 }
