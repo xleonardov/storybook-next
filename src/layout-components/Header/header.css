@@ -25,4 +25,8 @@
 	font-weight: 600;
 	font-size: var(--mm-spacing-xl);
 	font-family: var(--mm-font-family-heading);
+
+	&:hover {
+		color: var(--mm-color-primary);
+	}
 }

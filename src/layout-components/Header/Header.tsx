@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import { Container } from '../../components/Container/Container';
-// import { MainMenu } from '../../components/MainMenu/MainMenu';
+import { MainMenu } from '../../components/MainMenu/MainMenu';
 
 import './header.css';
 
@@ -34,7 +34,7 @@ export const Header = ({ className, pathname, ...props }: HeaderProps) => {
 				<Link href='/' className={`${baseClass}__home-link`}>
 					<div className={`${baseClass}__site-name`}>Melissa Miller</div>
 				</Link>
-				{/* <MainMenu pathname={pathname} /> */}
+				<MainMenu pathname={pathname} />
 			</Container>
 		</header>
 	);
