@@ -1,12 +1,18 @@
 .mm-page {
 	display: grid;
 	grid-template-rows: 1fr auto;
+	background-image: linear-gradient(
+		175deg,
+		var(--mm-color-primary-light) 0%,
+		var(--mm-color-primary-lighter) 8%,
+		var(--mm-color-neutral-lightest) 50%
+	);
 	min-height: 100vh;
 }
 
-.mm-page-title {
+/* .mm-page-title {
 	margin-block-end: var(--mm-spacing-2xl);
-}
+} */
 
 .mm-main-content {
 	padding-block: var(--mm-spacing-3xl);

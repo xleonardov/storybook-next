@@ -3,7 +3,7 @@
 	column-gap: var(--mm-spacing-2xl);
 	align-items: center;
 	margin-block-end: var(--mm-spacing-4xl);
-	padding-block: var(--mm-spacing-6xl);
+	padding-block: var(--mm-spacing-2xl);
 }
 
 .mm-hero__image img {

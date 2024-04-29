@@ -49,7 +49,7 @@ export const Hero = ({
 		>
 			{image && (
 				<div className={`${baseClass}__image`}>
-					<Image src={image} alt={imageAlt} width='160' height='160' />
+					<Image src={image} alt={imageAlt} width='180' height='180' />
 				</div>
 			)}
 			<div className={`${baseClass}__text`}>

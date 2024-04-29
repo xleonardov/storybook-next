@@ -17,7 +17,7 @@ export default function HomeContent({ pageTitle }: HomeContentProps) {
 	const pathname = usePathname();
 
 	return (
-		<PageLayout containerWidth='wide' showBreadcrumb={false} showHeader={false}>
+		<PageLayout containerWidth='wide' showBreadcrumb={false}>
 			<Hero
 				headline={bioData.headline}
 				description={bioData.description}
