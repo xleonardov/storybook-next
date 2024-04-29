@@ -31,7 +31,7 @@
 	--mm-color-typography-reverse: var(--mm-color-neutral-lightest);
 	--mm-color-border-default: var(--mm-color-neutral-light);
 	--mm-color-focus: var(--mm-color-blue);
-	--mm-color-link: var(--mm-color-blue);
+	--mm-color-link: var(--mm-color-primary);
 	--mm-color-link-hover: var(--mm-color-purple);
 	--mm-color-link-visited: var(--mm-color-purple);
 	--mm-color-button: var(--mm-color-neutral-darker);
