@@ -1,9 +1,9 @@
 export const bioData = {
-	image: '/images/about/zipline.png',
-	imageAlt: 'Image of Melissa Miller on a zipline course.',
-	imageCaption: 'Me on a zipline course in Hocking Hills.',
-	leadText:
-		'I am a front-end developer, designer, and leader who has extensive experience with building design systems and other tools to enable content creators.',
+	image: '/images/about/me.png',
+	imageAlt: '',
+	headline: 'Hello!',
+	description:
+		'I am a UX engineer, designer, and leader who has extensive experience with building design systems and other tools to enable content creators.',
 	mainText: (
 		<>
 			<p>

@@ -3,6 +3,7 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 
+import { Hero } from '@/components/Hero/Hero';
 import { Page as PageLayout } from '../layout-components/Page/Page';
 import { Resume } from '@/layout-components/Resume/Resume';
 
@@ -17,6 +18,11 @@ export default function HomeContent({ pageTitle }: HomeContentProps) {
 
 	return (
 		<PageLayout containerWidth='wide' showBreadcrumb={false} showHeader={false}>
+			<Hero
+				headline={bioData.headline}
+				description={bioData.description}
+				image={bioData.image}
+			/>
 			<Resume resumeItems={resumeData} sidebarItems={resumeSidebarData} />
 		</PageLayout>
 	);

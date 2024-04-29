@@ -1,11 +1,21 @@
 .mm-hero {
-}
-
-.mm-hero__container {
 	display: flex;
+	column-gap: var(--mm-spacing-2xl);
+	align-items: center;
+	margin-block-end: var(--mm-spacing-4xl);
+	padding-block: var(--mm-spacing-6xl);
 }
 
 .mm-hero__image img {
+	box-shadow: var(--mm-shadow-raised);
 	border-radius: 50%;
-	background-color: var(--mm-color-neutral-lightest);
+}
+
+.mm-hero__description {
+	color: var(--mm-color-typography-default-secondary);
+	font-style: italic;
+	font-weight: 400;
+	font-size: var(--mm-spacing-xl);
+	line-height: 150%;
+	font-family: var(--mm-font-family-secondary);
 }

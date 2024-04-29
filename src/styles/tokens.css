@@ -1,4 +1,6 @@
 :root {
+	--mm-color-old-primary: #008198;
+
 	/* rainbow colors */
 	--mm-color-red: #ff595e;
 	--mm-color-yellow: #ffca3a;
@@ -12,7 +14,7 @@
 	--mm-color-neutral-light: #c6c6c6;
 	--mm-color-neutral: #757575;
 	--mm-color-neutral-dark: #555555;
-	--mm-color-neutral-darker: #353535;
+	--mm-color-neutral-darker: #333333;
 	--mm-color-neutral-darkest: #000000;
 
 	/* purpose colors */
@@ -51,7 +53,7 @@
 	/* containers */
 	--mm-container-max-width-standard: 1024px;
 	--mm-container-max-width-narrow: 768px;
-	--mm-container-max-width-wide: 1280px;
+	--mm-container-max-width-wide: 1200px;
 	--mm-container-padding: 8%;
 	--mm-container-padding-narrow: 12%;
 	--mm-container-padding-wide: 4%;
