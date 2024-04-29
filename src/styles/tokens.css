@@ -1,12 +1,11 @@
 :root {
-	--mm-color-old-primary: #008198;
-
-	/* rainbow colors */
-	--mm-color-red: #ff595e;
-	--mm-color-yellow: #ffca3a;
-	--mm-color-green: #8ac926;
-	--mm-color-blue: #187bb9;
-	--mm-color-purple: #6a4c93;
+	--mm-color-primary-lightest: #f6fbf8;
+	--mm-color-primary-lighter: #e0efee;
+	--mm-color-primary-light: #b5d6da;
+	--mm-color-primary: #067589;
+	--mm-color-primary-dark: #0b535f;
+	--mm-color-primary-darker: #0f3a41;
+	--mm-color-primary-darkest: #112a2d;
 
 	/* neutrals */
 	--mm-color-neutral-lightest: #ffffff;
@@ -16,6 +15,13 @@
 	--mm-color-neutral-dark: #555555;
 	--mm-color-neutral-darker: #333333;
 	--mm-color-neutral-darkest: #000000;
+
+	/* rainbow colors */
+	--mm-color-red: #ff595e;
+	--mm-color-yellow: #ffca3a;
+	--mm-color-green: #8ac926;
+	--mm-color-blue: #187bb9;
+	--mm-color-purple: #6a4c93;
 
 	/* purpose colors */
 	--mm-color-background-default: var(--mm-color-neutral-lightest);
