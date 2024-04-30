@@ -1,6 +1,7 @@
 .mm-page {
 	display: grid;
 	grid-template-rows: 1fr auto;
+	background-color: var(--mm-color-primary-lightest);
 	min-height: 100vh;
 }
 
