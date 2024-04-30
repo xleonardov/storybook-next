@@ -1,14 +1,8 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-	faDrupal,
-	faGithub,
-	faInstagram,
-	faLinkedin,
-	faXTwitter,
-} from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faSquareRss } from '@fortawesome/free-solid-svg-icons';
+
+import { socialData } from '../../data/social-data';
 
 import './social-links.css';
 
@@ -42,45 +36,6 @@ export const SocialLinks = ({
 }: SocialLinksProps) => {
 	// Set up classes.
 	const baseClass = 'mm-social-links';
-
-	// social platform data
-	const socialData = {
-		drupal: {
-			icon: faDrupal,
-			url: 'https://www.drupal.org/u/mel-miller',
-			label: 'Drupal',
-		},
-		email: {
-			icon: faEnvelope,
-			url: 'mailto:me@mel-miller.com',
-			label: 'Email',
-		},
-		github: {
-			icon: faGithub,
-			url: 'https://github.com/mel-miller',
-			label: 'GitHub',
-		},
-		instagram: {
-			icon: faInstagram,
-			url: 'https://www.instagram.com/__mel.miller__/',
-			label: 'Instagram',
-		},
-		linkedin: {
-			icon: faLinkedin,
-			url: 'https://www.linkedin.com/in/melissa-a-miller-6a37744/',
-			label: 'LinkedIn',
-		},
-		rss: {
-			icon: faSquareRss,
-			url: '/feed.xml',
-			label: 'RSS feed',
-		},
-		xTwitter: {
-			icon: faXTwitter,
-			url: 'https://twitter.com/_mel_miller_',
-			label: 'X',
-		},
-	};
 
 	// Render the output.
 	return (
