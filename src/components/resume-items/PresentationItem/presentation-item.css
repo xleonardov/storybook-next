@@ -13,6 +13,7 @@
 	color: var(--mm-color-typography-default);
 	font-weight: 700;
 	font-size: calc(var(--mm-spacing-md) * 1.1);
+	line-height: var(--mm-line-height-subhead);
 	font-family: var(--mm-font-family-heading);
 }
 

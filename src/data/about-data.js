@@ -1,25 +1,26 @@
 export const bioData = {
-	image: '/images/about/me.png',
-	imageAlt: '',
+	image: '/images/about/llama.png',
+	imageAlt: 'Image of Melissa Miller on a zipline course.',
+	imageCaption: 'I also occasionally party with llamas.',
 	headline: 'Hello!',
 	description:
 		'I am a UX engineer, designer, and leader who has extensive experience with building design systems and other tools to enable content creators.',
+	leadText:
+		'Working with design systems allows me to use my multi-faceted skill set in a way that is meaningful.',
 	mainText: (
 		<>
-			<p>
-				I have a passion for creating and maintaining design systems and have
-				been working in this space for several years. I am currently leading the
-				development of the Pantheon Design System. In my previous role at The
-				Ohio State University, I was a co-founder of their first university-wide
-				design system.
-			</p>
 			<p>
 				With my diverse background in development, design, photography, and
 				project management, I am a strong proponent of building and leading
 				cross-functional teams.
 			</p>
 			<p>
-				When I'm not building the web, I like to play music (most recently on{' '}
+				I am currently leading the development of the Pantheon Design System.
+				And in my previous role at The Ohio State University, I was a co-founder
+				of their first university-wide design system.
+			</p>
+			<p>
+				Outside of work, I like to play music (most recently on{' '}
 				<a
 					href='https://open.spotify.com/album/0Pb37ITfck6eATunsfOgus'
 					target='_blank'
@@ -75,7 +76,7 @@ export const resumeData = [
 							for a large portfolio of websites, a website-building platform,
 							web applications, digital assets, component libraries, and
 							accessible document templates for The Office of the Chief
-							Information Office
+							Information Officer.
 						</p>
 						<p>Co-founded the first university-wide design system.</p>
 					</>

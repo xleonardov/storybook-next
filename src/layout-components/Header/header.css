@@ -1,6 +1,7 @@
 .mm-header {
-	/* background-color: var(--mm-color-primary-lighter); */
-	padding-block: var(--mm-spacing-lg);
+	/* margin-block-end: var(--mm-spacing-md); */
+	/* border-bottom: 1px solid var(--mm-color-neutral-lighter); */
+	padding-block: var(--mm-spacing-md);
 }
 
 .mm-header__container {

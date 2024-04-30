@@ -17,7 +17,7 @@ body {
 }
 
 hr {
-	margin-block: var(--mm-spacing-3xl);
+	margin-block: var(--mm-spacing-4xl);
 	border: 0;
 	border-top: 1px solid var(--mm-color-border-default);
 }

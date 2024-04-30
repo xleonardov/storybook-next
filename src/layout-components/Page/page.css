@@ -4,9 +4,9 @@
 	min-height: 100vh;
 }
 
-/* .mm-page-title {
+.mm-page-title {
 	margin-block-end: var(--mm-spacing-2xl);
-} */
+}
 
 .mm-main-content {
 	padding-block: var(--mm-spacing-3xl);

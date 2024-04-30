@@ -7,7 +7,7 @@ import { Biography } from '@/layout-components/Biography/Biography';
 import { Page as PageLayout } from '@/layout-components/Page/Page';
 import { Resume } from '@/layout-components/Resume/Resume';
 
-import { bioData, resumeData } from '@/data/about-data';
+import { bioData, resumeData, resumeSidebarData } from '@/data/about-data';
 
 export interface AboutContentProps {
 	pageTitle?: string;
@@ -18,7 +18,7 @@ export default function AboutContent({ pageTitle }: AboutContentProps) {
 
 	return (
 		<PageLayout
-			containerWidth='standard'
+			containerWidth='wide'
 			pageTitle={pageTitle}
 			pathname={pathname}
 			showBreadcrumb={false}
@@ -31,7 +31,7 @@ export default function AboutContent({ pageTitle }: AboutContentProps) {
 				mainText={bioData.mainText}
 			/>
 			<hr />
-			<Resume resumeItems={resumeData} />
+			<Resume resumeItems={resumeData} sidebarItems={resumeSidebarData} />
 		</PageLayout>
 	);
 }

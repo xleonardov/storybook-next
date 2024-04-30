@@ -3,6 +3,7 @@ h3.mm-resume-item__title {
 	color: var(--mm-color-typography-default);
 	font-weight: 700;
 	font-size: var(--mm-spacing-lg);
+
 	font-family: var(--mm-font-family-heading);
 }
 
@@ -14,17 +15,28 @@ h3.mm-resume-item__title--skills {
 .mm-resume-item__skills-topic-items {
 	display: inline-flex;
 	column-gap: var(--mm-spacing-2xs);
+	row-gap: var(--mm-spacing-5xs);
+	flex-direction: column;
 	margin-block-end: var(--mm-spacing-xs);
 	color: var(--mm-color-typography-default-secondary);
 	font-weight: 400;
 	font-size: calc(var(--mm-spacing-lg) * 0.9);
 	font-family: var(--mm-font-family-secondary);
+
+	@media (--bp-md) {
+		flex-direction: row;
+	}
 }
 
 .mm-resume-item__divider {
+	display: none;
 	margin-block-start: -1px;
-	color: var(--mm-color-neutral-light);
+	color: var(--mm-color-primary);
 	font-weight: 300;
+
+	@media (--bp-md) {
+		display: inline;
+	}
 }
 
 .mm-resume-item__description {

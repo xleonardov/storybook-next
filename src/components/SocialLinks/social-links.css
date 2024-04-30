@@ -9,11 +9,10 @@
 	flex-grow: 0;
 	flex-shrink: 0;
 	border-radius: 50%;
-
 	padding: var(--mm-spacing-2xs);
 	width: var(--mm-spacing-xl);
 	height: var(--mm-spacing-xl);
-	color: var(--mm-color-typography-default);
+	color: var(--mm-color-primary);
 }
 
 .mm-social-links__icon:hover {
