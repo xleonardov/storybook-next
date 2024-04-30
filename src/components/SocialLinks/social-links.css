@@ -1,7 +1,7 @@
 .mm-social-links {
 	all: unset;
 	display: flex;
-	column-gap: var(--mm-spacing-4xs);
+	column-gap: var(--mm-spacing-3xs);
 	list-style-type: none;
 }
 

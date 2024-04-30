@@ -2,6 +2,8 @@ import React from 'react';
 
 import Image from 'next/image';
 
+import { Container } from '../Container/Container';
+
 import './hero.css';
 
 interface HeroProps {
@@ -47,15 +49,17 @@ export const Hero = ({
 			className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')}
 			{...props}
 		>
-			{image && (
-				<div className={`${baseClass}__image`}>
-					<Image src={image} alt={imageAlt} width='180' height='180' />
+			<Container className={`${baseClass}__container`}>
+				{image && (
+					<div className={`${baseClass}__image`}>
+						<Image src={image} alt={imageAlt || ''} width='180' height='180' />
+					</div>
+				)}
+				<div className={`${baseClass}__text`}>
+					<h1 className={`${baseClass}__headline`}>{headline}</h1>
+					<div className={`${baseClass}__description`}>{description}</div>
 				</div>
-			)}
-			<div className={`${baseClass}__text`}>
-				<h1 className={`${baseClass}__headline`}>{headline}</h1>
-				<div className={`${baseClass}__description`}>{description}</div>
-			</div>
+			</Container>
 		</div>
 	);
 };

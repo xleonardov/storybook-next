@@ -1,10 +1,15 @@
+export const heroData = {
+	image: '/images/about/me.png',
+	headline: 'Hey there 👋 ',
+	description:
+		'I am a UX engineer, designer, and leader who has extensive experience with building design systems and other tools to enable content creators.',
+};
+
 export const bioData = {
 	image: '/images/about/llama.png',
 	imageAlt: 'Image of Melissa Miller on a zipline course.',
 	imageCaption: 'I also occasionally party with llamas.',
-	headline: 'Hello!',
-	description:
-		'I am a UX engineer, designer, and leader who has extensive experience with building design systems and other tools to enable content creators.',
+
 	leadText:
 		'Working with design systems allows me to use my multi-faceted skill set in a way that is meaningful.',
 	mainText: (

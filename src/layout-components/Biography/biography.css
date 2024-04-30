@@ -35,5 +35,6 @@
 }
 
 .mm-biography__image img {
+	box-shadow: var(--mm-shadow-raised);
 	border-radius: var(--mm-radius-lg);
 }
