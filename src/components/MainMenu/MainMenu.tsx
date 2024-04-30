@@ -29,8 +29,8 @@ export const MainMenu = ({
 			url: '/about',
 		},
 		{
-			label: 'Portfolio',
-			url: '/portfolio',
+			label: 'Connect',
+			url: '/connect',
 		},
 	],
 	pathname,
