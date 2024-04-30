@@ -2,7 +2,7 @@ export const heroData = {
 	image: '/images/about/me.png',
 	headline: 'Hey there 👋 ',
 	description:
-		'I am a UX engineer, designer, and leader who has extensive experience with building design systems and other tools to enable content creators.',
+		'I am a UX engineer, designer, and leader who has extensive experience building design systems and other tools to enable content creators.',
 };
 
 export const bioData = {

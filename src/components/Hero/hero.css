@@ -28,11 +28,11 @@
 
 .mm-hero__description {
 	margin-inline: auto;
-	width: 90%;
+	width: 80%;
 	color: var(--mm-color-typography-default-secondary);
 	font-style: italic;
 	font-weight: 400;
-	font-size: var(--mm-spacing-2xl);
+	font-size: calc(var(--mm-spacing-2xl) * 0.96);
 	line-height: 150%;
 	font-family: var(--mm-font-family-secondary);
 }
