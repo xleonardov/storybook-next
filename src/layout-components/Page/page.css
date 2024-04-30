@@ -13,3 +13,7 @@
 	padding-block: var(--mm-spacing-3xl);
 	min-height: 30rem;
 }
+
+.mm-page--center .mm-page-title {
+	text-align: center;
+}

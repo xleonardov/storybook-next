@@ -9,6 +9,10 @@ import './page.css';
 
 interface PageProps {
 	/**
+	 * The alignment of the content. Set for title only at this point.
+	 */
+	alignment?: 'left' | 'center';
+	/**
 	 * The content to display inside the page.
 	 */
 	children?: React.ReactNode;
@@ -43,6 +47,7 @@ interface PageProps {
 }
 
 export const Page = ({
+	alignment = 'left',
 	children,
 	containerWidth = 'standard',
 	pageTitle,
@@ -54,13 +59,17 @@ export const Page = ({
 	...props
 }: PageProps) => {
 	// Set up classes.
-	const pageClasses = ['mm-page', className]
-		.join(' ')
-		.trim()
-		.replace(/\s+/g, ' ');
+	const baseClass = 'mm-page';
+	const alignCenterClass = alignment === 'center' ? 'mm-page--center' : '';
 
 	return (
-		<div className={pageClasses} {...props}>
+		<div
+			className={[baseClass, alignCenterClass, className]
+				.join(' ')
+				.trim()
+				.replace(/\s+/g, ' ')}
+			{...props}
+		>
 			<div>
 				{showHeader && <Header pathname={pathname} />}
 				{showBreadcrumb && (
