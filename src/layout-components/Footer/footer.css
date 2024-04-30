@@ -3,10 +3,11 @@
   display: flex;
   flex-direction: column;
   padding-block: var(--mm-spacing-4xl);
-  row-gap: var(--mm-spacing-xl);
+  row-gap: var(--mm-spacing-xs);
   text-align: center;
 }
 
 .mm-footer__fine-print {
   font-size: var(--mm-spacing-sm);
+  color: var(--mm-color-typography-default-secondary);
 }

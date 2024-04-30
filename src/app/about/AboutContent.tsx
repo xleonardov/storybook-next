@@ -7,31 +7,31 @@ import { Biography } from '@/layout-components/Biography/Biography';
 import { Page as PageLayout } from '@/layout-components/Page/Page';
 import { Resume } from '@/layout-components/Resume/Resume';
 
-import { bioData, resumeData } from '@/data/about-data';
+import { bioData, resumeData, resumeSidebarData } from '@/data/about-data';
 
 export interface AboutContentProps {
-  pageTitle?: string;
+	pageTitle?: string;
 }
 
 export default function AboutContent({ pageTitle }: AboutContentProps) {
-  const pathname = usePathname();
+	const pathname = usePathname();
 
-  return (
-    <PageLayout
-      containerWidth='standard'
-      pageTitle={pageTitle}
-      pathname={pathname}
-      showBreadcrumb={false}
-    >
-      <Biography
-        image={bioData.image}
-        imageAlt={bioData.imageAlt}
-        imageCaption={bioData.imageCaption}
-        leadText={bioData.leadText}
-        mainText={bioData.mainText}
-      />
-      <hr />
-      <Resume resumeItems={resumeData} />
-    </PageLayout>
-  );
+	return (
+		<PageLayout
+			containerWidth='wide'
+			pageTitle={pageTitle}
+			pathname={pathname}
+			showBreadcrumb={false}
+		>
+			<Biography
+				image={bioData.image}
+				imageAlt={bioData.imageAlt}
+				imageCaption={bioData.imageCaption}
+				leadText={bioData.leadText}
+				mainText={bioData.mainText}
+			/>
+			<hr />
+			<Resume resumeItems={resumeData} sidebarItems={resumeSidebarData} />
+		</PageLayout>
+	);
 }

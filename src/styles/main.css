@@ -7,27 +7,27 @@
 @import url('./foundations/index.css');
 
 html {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 body {
-  color: var(--mm-color-typography-default);
-  font-family: var(--mm-font-family-default);
-  font-weight: 400;
+	color: var(--mm-color-typography-default);
+	font-weight: 400;
+	font-family: var(--mm-font-family-default);
 }
 
 hr {
-  border: 0;
-  border-top: 1px solid var(--mm-color-border-default);
-  margin-block: var(--mm-spacing-3xl);
+	margin-block: var(--mm-spacing-4xl);
+	border: 0;
+	border-top: 1px solid var(--mm-color-border-default);
 }
 
 figure {
-  all: unset;
+	all: unset;
 }
 
 figcaption {
-  font-family: var(--mm-font-family-default);
-  font-size: var(--mm-spacing-sm);
-  margin-block-start: var(--mm-spacing-4xs);
+	margin-block-start: var(--mm-spacing-4xs);
+	font-size: var(--mm-spacing-sm);
+	font-family: var(--mm-font-family-default);
 }

@@ -1,21 +1,24 @@
 'use client';
 
 import React from 'react';
-import { usePathname } from 'next/navigation';
 
+import { Hero } from '@/components/Hero/Hero';
 import { Page as PageLayout } from '../layout-components/Page/Page';
 
-export interface HomeContentProps {
-  pageTitle?: string;
-}
+import { heroData } from '@/data/about-data';
 
-export default function HomeContent({ pageTitle }: HomeContentProps) {
-  const pathname = usePathname();
-
-  return (
-    <PageLayout containerWidth='standard' showBreadcrumb={false}>
-      {pageTitle && <h1>{pageTitle}</h1>}
-      <p>This is the page content.</p>
-    </PageLayout>
-  );
+export default function HomeContent() {
+	return (
+		<PageLayout
+			containerWidth='standard'
+			showBreadcrumb={false}
+			className='mm-site-home'
+		>
+			<Hero
+				headline={heroData.headline}
+				description={heroData.description}
+				image={heroData.image}
+			/>
+		</PageLayout>
+	);
 }

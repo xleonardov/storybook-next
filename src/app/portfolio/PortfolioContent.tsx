@@ -6,25 +6,25 @@ import { usePathname } from 'next/navigation';
 import { Page as PageLayout } from '../../layout-components/Page/Page';
 
 export interface PortfolioContentProps {
-  children?: React.ReactNode;
-  pageTitle?: string;
+	children?: React.ReactNode;
+	pageTitle?: string;
 }
 
 export default function PortfolioContent({
-  children,
-  pageTitle,
+	children,
+	pageTitle,
 }: PortfolioContentProps) {
-  const pathname = usePathname();
+	const pathname = usePathname();
 
-  return (
-    <PageLayout
-      containerWidth='standard'
-      pageTitle={pageTitle}
-      pathname={pathname}
-      showBreadcrumb={false}
-    >
-      <p>This is the portfolio page content.</p>
-      {children}
-    </PageLayout>
-  );
+	return (
+		<PageLayout
+			containerWidth='wide'
+			pageTitle={pageTitle}
+			pathname={pathname}
+			showBreadcrumb={false}
+		>
+			<p>This is the portfolio page content.</p>
+			{children}
+		</PageLayout>
+	);
 }

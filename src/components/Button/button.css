@@ -1,45 +1,46 @@
 .mm-button {
-  background-color: var(--mm-color-primary);
-  border: 1px solid var(--mm-color-primary);
-  border-radius: var(--mm-radius-button);
-  color: var(--mm-color-background-default);
-  cursor: pointer;
-  display: inline-block;
-  font-family: var(--mm-font-family-default);
-  font-size: var(--mm-spacing-md);
-  font-weight: 600;
-  line-height: 1;
-  padding: var(--mm-spacing-sm) var(--mm-spacing-lg);
-  transition: var(--mm-animation-default-transition);
+	display: inline-block;
+	transition: var(--mm-animation-default-transition);
+	cursor: pointer;
+	border: 1px solid var(--mm-color-button);
+	border-radius: var(--mm-radius-button);
+	background-color: var(--mm-color-button);
+	padding: var(--mm-spacing-xs) var(--mm-spacing-md);
+	color: var(--mm-color-background-default);
+	font-weight: 400;
+	font-size: var(--mm-spacing-md);
+	line-height: 1;
+	font-family: var(--mm-font-family-default);
 }
 
 .mm-button:hover {
-  background-color: var(--mm-color-link-hover);
-  border-color: var(--mm-color-link-hover);
+	border-color: var(--mm-color-button-hover);
+	background-color: var(--mm-color-button-hover);
 }
 
 .mm-button--secondary {
-  background-color: var(--mm-color-neutral-lightest);
-  color: var(--mm-color-primary-dark);
+	background-color: var(--mm-color-neutral-lightest);
+	color: var(--mm-color-button);
 }
 
 .mm-button--secondary:hover {
-  background-color: var(--mm-color-primary-lighter);
-  border-color: var(--mm-color-primary);
+	border-color: var(--mm-color-button-hover);
+	background-color: var(--mm-color-button-secondary-hover);
+	color: var(--mm-color-button-hover);
 }
 
 .mm-button--sm {
-  font-size: var(--mm-spacing-sm);
-  padding: var(--mm-spacing-xs) var(--mm-spacing-md);
+	padding: var(--mm-spacing-2xs) var(--mm-spacing-sm);
+	font-size: var(--mm-spacing-sm);
 }
 
 .mm-button--lg {
-  font-size: var(--mm-spacing-lg);
-  letter-spacing: 0.03rem;
-  padding: var(--mm-spacing-md) var(--mm-spacing-xl);
+	padding: var(--mm-spacing-md) var(--mm-spacing-xl);
+	font-size: var(--mm-spacing-lg);
+	letter-spacing: 0.03rem;
 }
 
 .mm-button-group {
-  display: flex;
-  gap: var(--mm-spacing-sm);
+	display: flex;
+	gap: var(--mm-spacing-sm);
 }

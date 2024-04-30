@@ -1,29 +1,49 @@
 .mm-resume {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--mm-spacing-6xl);
+	display: flex;
+	flex-direction: column;
+	gap: var(--mm-spacing-5xl);
+	margin-block: var(--mm-spacing-6xl);
+
+	@media (min-width: 1024px) {
+		flex-direction: row;
+		gap: var(--mm-spacing-7xl);
+	}
 }
 
 .mm-resume-section__section-items {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--mm-spacing-2xl);
-}
-
-.mm-resume-section--skills .mm-resume-section__section-items {
-  row-gap: var(--mm-spacing-xl);
+	display: flex;
+	row-gap: var(--mm-spacing-4xl);
+	flex-direction: column;
 }
 
 h2.mm-resume-section__section-title {
-  color: var(--mm-color-primary);
-  font-family: var(--mm-font-family-heading);
-  font-size: var(--mm-spacing-2xl);
-  font-weight: 700;
-  margin-block-end: var(--mm-spacing-lg);
+	margin-block-end: var(--mm-spacing-lg);
+	color: var(--mm-color-primary);
+	font-weight: 700;
+	font-size: var(--mm-spacing-2xl);
+	font-family: var(--mm-font-family-heading);
 }
 
 .mm-resume-section__fine-print {
-  font-size: var(--mm-spacing-sm);
-  font-weight: 300;
-  margin-block-start: var(--mm-spacing-4xl);
+	margin-block-start: var(--mm-spacing-xl);
+	margin-block-end: var(--mm-spacing-xs);
+	font-weight: 300;
+	font-size: var(--mm-spacing-sm);
+}
+
+/* Layout */
+.mm-resume__main,
+.mm-resume__sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: var(--mm-spacing-6xl);
+}
+
+@media (min-width: 1024px) {
+	.mm-resume__main {
+		width: 70%;
+	}
+	.mm-resume__sidebar {
+		width: 30%;
+	}
 }

@@ -1,52 +1,50 @@
 import React from 'react';
 
 import '../resume-common.css';
+import './presentation-item.css';
 
 export interface PresentationItemProps {
-  /**
-   * The name of the presentation.
-   */
-  presentationName: string;
-  /**
-   * The name of the event.
-   */
-  eventName: string;
-  /**
-   * The event date.
-   */
-  eventDate: string;
+	/**
+	 * The name of the presentation.
+	 */
+	presentationName: string;
+	/**
+	 * The name of the event.
+	 */
+	eventName: string;
+	/**
+	 * The event date.
+	 */
+	eventDate: string;
 
-  /**
-   * Optional additional class names.
-   */
-  className?: string;
+	/**
+	 * Optional additional class names.
+	 */
+	className?: string;
 }
 
 /**
  * Presentation Item UI component
  */
 export const PresentationItem = ({
-  presentationName,
-  eventName,
-  eventDate,
-  className,
-  ...props
+	presentationName,
+	eventName,
+	eventDate,
+	className,
+	...props
 }: PresentationItemProps) => {
-  // Set up classes.
-  const baseClass = 'mm-resume-item';
+	// Set up classes.
+	const baseClass = 'mm-resume-presentation';
 
-  // Render the output.
-  return (
-    <div
-      className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')}
-      {...props}
-    >
-      <h3 className={`${baseClass}__title`}>{presentationName}</h3>
-      <h4 className={`${baseClass}__subtitle`}>
-        <span className={`${baseClass}__event`}>{eventName}</span>
-        <span className={`${baseClass}__divider`}>|</span>
-        <span className={`${baseClass}__date`}>{eventDate}</span>
-      </h4>
-    </div>
-  );
+	// Render the output.
+	return (
+		<div
+			className={[baseClass, className].join(' ').trim().replace(/\s+/g, ' ')}
+			{...props}
+		>
+			<h3 className={`${baseClass}__title`}>{presentationName}</h3>
+			<div className={`${baseClass}__event`}>{eventName}</div>
+			<div className={`${baseClass}__date`}>{eventDate}</div>
+		</div>
+	);
 };

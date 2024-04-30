@@ -1,0 +1,7 @@
+ul.mm-skills-list {
+	all: unset;
+	display: flex;
+	row-gap: var(--mm-spacing-xs);
+	flex-direction: column;
+	list-style-type: none;
+}

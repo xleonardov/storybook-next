@@ -1,23 +1,23 @@
 .mm-link {
-  --link-color: var(--mm-color-link);
-  --icon-offset: var(--mm-spacing-3xs);
+	--link-color: var(--mm-color-typography-default-secondary);
+	--icon-offset: var(--mm-spacing-3xs);
 
-  &:hover {
-    --link-color: var(--mm-color-primary-dark);
-    --icon-offset: var(--mm-spacing-2xs);
-  }
+	&:hover {
+		--link-color: var(--mm-color-typography-default);
+		--icon-offset: var(--mm-spacing-2xs);
+	}
 }
 
 .mm-link a {
-  color: var(--link-color);
-  font-family: var(--mm-font-family-default);
-  font-size: var(--spacing-lg);
-  font-weight: 700;
-  text-decoration: none;
+	color: var(--link-color);
+	font-weight: 600;
+	font-size: var(--spacing-lg);
+	font-family: var(--mm-font-family-default);
+	text-decoration: none;
 }
 
 .mm-link__icon {
-  color: var(--link-color);
-  margin-left: var(--icon-offset);
-  transition: var(--mm-animation-default-transition);
+	transition: var(--mm-animation-default-transition);
+	margin-left: var(--icon-offset);
+	color: var(--link-color);
 }

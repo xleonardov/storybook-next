@@ -1,50 +1,50 @@
 .mm-tag {
-  --tag-background: var(--mm-color-neutral);
-  --tag-foreground: var(--mm-color-typography-reverse);
+	--tag-background: var(--mm-color-neutral);
+	--tag-foreground: var(--mm-color-typography-reverse);
 
-  a,
-  span {
-    background-color: var(--tag-background);
-    border-radius: var(--mm-radius-md);
-    color: var(--tag-foreground);
-    display: inline-block;
-    font-size: var(--mm-spacing-sm);
-    font-weight: 600;
-    padding: var(--mm-spacing-4xs) var(--mm-spacing-2xs);
-    text-decoration: none;
-    white-space: nowrap;
+	a,
+	span {
+		display: inline-block;
+		border-radius: var(--mm-radius-md);
+		background-color: var(--tag-background);
+		padding: var(--mm-spacing-4xs) var(--mm-spacing-2xs);
+		color: var(--tag-foreground);
+		font-weight: 600;
+		font-size: var(--mm-spacing-sm);
+		text-decoration: none;
+		white-space: nowrap;
 
-    /* &:hover {
+		/* &:hover {
       filter: brightness(1.25);
     } */
-  }
+	}
 }
 
 .mm-tag--color-1 {
-  --tag-background: var(--mm-color-neutral-dark);
+	--tag-background: var(--mm-color-neutral-dark);
 }
 .mm-tag--color-2 {
-  --tag-background: var(--mm-color-accent);
+	--tag-background: var(--mm-color-secondary);
 }
 .mm-tag--color-3 {
-  --tag-background: #ef8f57;
-  --tag-foreground: var(--mm-color-typography-default);
+	--tag-background: #ef8f57;
+	--tag-foreground: var(--mm-color-typography-default);
 }
 .mm-tag--color-4 {
-  --tag-background: var(--mm-color-primary);
+	--tag-background: var(--mm-color-primary);
 }
 .mm-tag--color-5 {
-  --tag-background: #e9ea85;
-  --tag-foreground: var(--mm-color-typography-default);
+	--tag-background: #e9ea85;
+	--tag-foreground: var(--mm-color-typography-default);
 }
 .mm-tag--color-6 {
-  --tag-background: var(--mm-color-semantic-success);
+	--tag-background: var(--mm-color-semantic-success);
 }
 .mm-tag--color-7 {
-  --tag-background: var(--mm-color-primary-light);
-  --tag-foreground: var(--mm-color-typography-default);
+	--tag-background: var(--mm-color-primary-light);
+	--tag-foreground: var(--mm-color-typography-default);
 }
 .mm-tag--color-8 {
-  --tag-background: var(--mm-color-accent-light);
-  --tag-foreground: var(--mm-color-typography-default);
+	--tag-background: var(--mm-color-secondary-light);
+	--tag-foreground: var(--mm-color-typography-default);
 }
