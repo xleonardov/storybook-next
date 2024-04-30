@@ -37,6 +37,10 @@ interface PageProps {
 	 */
 	showHeader?: boolean;
 	/**
+	 * Show social links in the footer.
+	 */
+	showSocialLinks?: boolean;
+	/**
 	 * Show the page title. Set to false if the title is provided by another component.
 	 */
 	showTitle?: boolean;
@@ -54,6 +58,7 @@ export const Page = ({
 	pathname,
 	showBreadcrumb,
 	showHeader = true,
+	showSocialLinks = true,
 	showTitle = true,
 	className,
 	...props
@@ -84,7 +89,7 @@ export const Page = ({
 					</main>
 				</Container>
 			</div>
-			<Footer />
+			<Footer showSocialLinks={showSocialLinks} />
 		</div>
 	);
 };
