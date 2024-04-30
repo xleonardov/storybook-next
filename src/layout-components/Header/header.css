@@ -1,6 +1,4 @@
 .mm-header {
-	/* margin-block-end: var(--mm-spacing-md); */
-	/* border-bottom: 1px solid var(--mm-color-neutral-lighter); */
 	padding-block: var(--mm-spacing-md);
 }
 
@@ -30,4 +28,8 @@
 	&:hover {
 		color: var(--mm-color-primary);
 	}
+}
+
+.mm-site-home .mm-header__site-name {
+	color: var(--mm-color-primary);
 }
