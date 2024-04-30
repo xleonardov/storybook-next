@@ -26,7 +26,7 @@
 .mm-contact-block__social-links {
 	all: unset;
 	display: flex;
-	column-gap: var(--mm-spacing-2xl);
+	column-gap: var(--mm-spacing-xl);
 	justify-content: center;
 	margin-block-start: var(--mm-spacing-5xl);
 	list-style-type: none;
