@@ -37,8 +37,8 @@
 	flex-shrink: 0;
 	border-radius: 50%;
 	padding: var(--mm-spacing-2xs);
-	width: var(--mm-spacing-3xl);
-	height: var(--mm-spacing-3xl);
+	width: var(--mm-spacing-2xl);
+	height: var(--mm-spacing-2xl);
 	color: var(--mm-color-typography-default-secondary);
 
 	&:hover {
