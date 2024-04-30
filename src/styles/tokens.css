@@ -27,7 +27,7 @@
 	--mm-color-background-default: var(--mm-color-neutral-lightest);
 	--mm-color-background-reverse: var(--mm-color-neutral-darkest);
 	--mm-color-typography-default: var(--mm-color-neutral-darkest);
-	--mm-color-typography-default-secondary: var(--mm-color-neutral-dark);
+	--mm-color-typography-default-secondary: var(--mm-color-neutral);
 	--mm-color-typography-reverse: var(--mm-color-neutral-lightest);
 	--mm-color-border-default: var(--mm-color-neutral-lighter);
 	--mm-color-focus: var(--mm-color-blue);

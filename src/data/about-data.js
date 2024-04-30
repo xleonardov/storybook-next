@@ -11,7 +11,7 @@ export const bioData = {
 	imageCaption: 'I also occasionally party with llamas.',
 
 	leadText:
-		'Working with design systems allows me to use my multi-faceted skill set in a way that is meaningful.',
+		'Working with design systems allows me to utilize my diverse skill set in a way that is exciting and meaningful.',
 	mainText: (
 		<>
 			<p>

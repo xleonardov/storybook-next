@@ -16,7 +16,7 @@ export const socialData = {
 	},
 	email: {
 		icon: faEnvelope,
-		url: 'mailto:me@mel-miller.com',
+		url: 'mailto:me@mel-miller.com?subject=Inquiry from mel-miller.com',
 		label: 'Email',
 	},
 	github: {
