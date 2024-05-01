@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { socialData } from '../../data/social-data';
 
 import './social-links.css';
@@ -54,12 +52,7 @@ export const SocialLinks = ({
 								aria-label={socialData[link].label}
 								title={socialData[link].label}
 								className={`${baseClass}__link`}
-							>
-								<FontAwesomeIcon
-									icon={socialData[link].icon}
-									className={`${baseClass}__icon`}
-								/>
-							</a>
+							></a>
 						</li>
 					);
 				})}

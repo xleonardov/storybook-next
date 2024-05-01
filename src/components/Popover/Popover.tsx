@@ -18,17 +18,6 @@ import {
 	arrow,
 } from '@floating-ui/react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-	faCircleInfo,
-	faCircleQuestion,
-	faCog,
-	faTags,
-	IconLookup,
-	IconName,
-	IconPrefix,
-} from '@fortawesome/free-solid-svg-icons';
-
 import './popover.css';
 
 const ARROW_HEIGHT = 10;
@@ -82,26 +71,6 @@ export const Popover = ({
 		? `${baseClass}__trigger--bg`
 		: '';
 	const triggerSizeClass = `${baseClass}__trigger--${triggerSize}`;
-
-	// Assign icon based on triggerIcon prop.
-	let processedIcon: string | [IconPrefix, IconName] | IconLookup;
-
-	switch (triggerIcon) {
-		case 'info':
-			processedIcon = faCircleInfo;
-			break;
-		case 'question':
-			processedIcon = faCircleQuestion;
-			break;
-		case 'cog':
-			processedIcon = faCog;
-			break;
-		case 'tags':
-			processedIcon = faTags;
-			break;
-		default:
-			processedIcon = faCircleInfo;
-	}
 
 	// Set up state.
 	const [isOpen, setIsOpen] = useState(false);
@@ -164,12 +133,7 @@ export const Popover = ({
 					.replace(/\s+/g, ' ')}
 				ref={refs.setReference}
 				{...getReferenceProps()}
-			>
-				<FontAwesomeIcon
-					icon={processedIcon}
-					className={`${baseClass}__icon`}
-				/>
-			</button>
+			></button>
 			{isMounted && (
 				<FloatingFocusManager context={context} modal={false}>
 					<div

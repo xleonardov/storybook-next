@@ -1,5 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Container } from '@/components/Container/Container';
 
@@ -74,12 +73,7 @@ export const ContactBlock = ({
 										aria-label={socialData[link].label}
 										title={socialData[link].label}
 										className={`${baseClass}__social-link-link`}
-									>
-										<FontAwesomeIcon
-											icon={socialData[link].icon}
-											className={`${baseClass}__social-link-icon`}
-										/>
-									</a>
+									></a>
 								</li>
 							);
 						})}

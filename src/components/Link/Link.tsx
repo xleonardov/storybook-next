@@ -1,8 +1,5 @@
 import React, { ReactNode } from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-
 import './link.css';
 
 interface LinkProps {
@@ -30,7 +27,6 @@ export const Link = ({ linkContent, className, ...props }: LinkProps) => {
 			{...props}
 		>
 			{linkContent}
-			<FontAwesomeIcon icon={faAngleRight} className={`${baseClass}__icon`} />
 		</div>
 	);
 };
