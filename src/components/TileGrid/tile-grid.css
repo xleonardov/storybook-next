@@ -1,12 +1,12 @@
 .mm-tile-grid {
-  display: grid;
-  grid-gap: var(--mm-spacing-3xl);
+	display: grid;
+	grid-gap: var(--mm-spacing-3xl);
 
-  @media (--bp-md) {
-    grid-template-columns: 1fr 1fr;
-  }
+	@media (--bp-md) {
+		grid-template-columns: 1fr 1fr;
+	}
 
-  @media (--bp-lg) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+	@media (--bp-lg) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }

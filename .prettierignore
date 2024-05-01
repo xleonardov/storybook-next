@@ -10,7 +10,6 @@ build-storybook.log
 __tests__
 
 ### Other #####
-_dist
 public
 __generators__
 .gitignore

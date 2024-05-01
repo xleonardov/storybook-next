@@ -1,60 +1,60 @@
 .mm-tile {
-  border-radius: var(--mm-radius-lg);
-  box-shadow: var(--mm-shadow-raised);
-  text-align: center;
-  text-decoration: none;
-  position: relative;
+	position: relative;
+	box-shadow: var(--mm-shadow-raised);
+	border-radius: var(--mm-radius-lg);
+	text-align: center;
+	text-decoration: none;
 
-  &:hover {
-    box-shadow: var(--mm-shadow-active);
-  }
+	&:hover {
+		box-shadow: var(--mm-shadow-active);
+	}
 }
 
 .mm-tile__tags-popover {
-  position: absolute;
-  top: var(--mm-spacing-sm);
-  right: var(--mm-spacing-sm);
+	position: absolute;
+	top: var(--mm-spacing-sm);
+	right: var(--mm-spacing-sm);
 }
 
 .mm-tile__link {
-  display: block;
-  text-decoration: none;
+	display: block;
+	text-decoration: none;
 
-  &:focus {
-    outline: none;
-  }
+	&:focus {
+		outline: none;
+	}
 
-  &:focus-visible {
-    outline: 2px solid var(--mm-color-focus);
-  }
+	&:focus-visible {
+		outline: 2px solid var(--mm-color-focus);
+	}
 }
 
 .mm-tile__image {
-  line-height: 0;
+	line-height: 0;
 
-  img {
-    border-radius: var(--mm-radius-lg) var(--mm-radius-lg) 0 0;
-    height: auto;
-    width: 100%;
-  }
+	img {
+		border-radius: var(--mm-radius-lg) var(--mm-radius-lg) 0 0;
+		width: 100%;
+		height: auto;
+	}
 }
 
 .mm-tile__content {
-  display: flex;
-  flex-direction: column;
-  padding: var(--mm-spacing-md) var(--mm-spacing-lg);
+	display: flex;
+	flex-direction: column;
+	padding: var(--mm-spacing-md) var(--mm-spacing-lg);
 }
 
 .mm-tile__heading {
-  font-size: var(--mm-spacing-xl);
-  font-weight: 600;
-  margin: 0;
-  margin-block-end: var(--mm-spacing-xs);
+	margin: 0;
+	margin-block-end: var(--mm-spacing-xs);
+	font-weight: 600;
+	font-size: var(--mm-spacing-xl);
 }
 
 .mm-tile__subhead {
-  color: var(--mm-color-typography-default-secondary);
-  font-size: var(--mm-spacing-md);
-  line-height: var(--mm-line-height-subhead);
-  margin: 0;
+	margin: 0;
+	color: var(--mm-color-typography-default-secondary);
+	font-size: var(--mm-spacing-md);
+	line-height: var(--mm-line-height-subhead);
 }

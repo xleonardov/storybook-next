@@ -7,7 +7,7 @@ const sampleContent = (
 		<h2>Container</h2>
 		<p>
 			Kale chips typewriter direct trade, migas etsy williamsburg distillery
-			synth. Kale chips poutine air plant gorpcore neutra 90's marfa aesthetic
+			synth. Kale chips poutine air plant gorpcore neutra 90s marfa aesthetic
 			tote bag stumptown meh cred. Farm-to-table hell of snackwave flannel,
 			everyday carry gochujang street art. Raw denim cloud bread crucifix
 			portland aesthetic, dreamcatcher thundercats vexillologist health goth

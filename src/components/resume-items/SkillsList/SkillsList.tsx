@@ -1,4 +1,3 @@
-import { it } from 'node:test';
 import React from 'react';
 
 import './skills-list.css';

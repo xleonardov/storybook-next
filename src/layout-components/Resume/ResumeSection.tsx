@@ -26,13 +26,14 @@ import './resume.css';
 export interface ResumeSectionProps {
 	sectionName: string;
 	sectionType: string;
-	finePrint?: string | React.ReactNode;
+	finePrint?: React.ReactNode;
 	items:
 		| EducationItemProps[]
 		| PresentationItemProps[]
 		| ResumeItemProps[]
 		| SkillsListProps[]
 		| WorkExperienceItemProps[];
+	className?: string;
 }
 
 /**
@@ -44,7 +45,7 @@ export const ResumeSection = ({
 	finePrint,
 	items,
 	...props
-}) => {
+}: ResumeSectionProps) => {
 	// Set up classes.
 	const baseClass = 'mm-resume-section';
 	const sectionTypeClass = `${baseClass}--${sectionType}`;
@@ -60,21 +61,37 @@ export const ResumeSection = ({
 		>
 			<h2 className={`${baseClass}__section-title`}>{sectionName}</h2>
 			<div className={`${baseClass}__section-items`}>
-				{items.map((item: any, index: number) => {
-					return (
-						<div key={index} className={`${baseClass}__section-item`}>
-							{sectionType === 'education' && <EducationItem {...item} />}
-							{sectionType === 'presentations' && (
-								<PresentationItem {...item} />
-							)}
-							{sectionType === 'skills' && <SkillsList {...item} />}
-							{sectionType === 'work-experience' && (
-								<WorkExperienceItem {...item} />
-							)}
-							{sectionType === 'resume' && <ResumeItem {...item} />}
-						</div>
-					);
-				})}
+				{items.map(
+					(
+						item:
+							| EducationItemProps
+							| PresentationItemProps
+							| ResumeItemProps
+							| SkillsListProps
+							| WorkExperienceItemProps,
+						index: number,
+					) => {
+						return (
+							<div key={index} className={`${baseClass}__section-item`}>
+								{sectionType === 'education' && (
+									<EducationItem {...(item as EducationItemProps)} />
+								)}
+								{sectionType === 'presentations' && (
+									<PresentationItem {...(item as PresentationItemProps)} />
+								)}
+								{sectionType === 'skills' && (
+									<SkillsList {...(item as SkillsListProps)} />
+								)}
+								{sectionType === 'work-experience' && (
+									<WorkExperienceItem {...(item as WorkExperienceItemProps)} />
+								)}
+								{sectionType === 'resume' && (
+									<ResumeItem {...(item as ResumeItemProps)} />
+								)}
+							</div>
+						);
+					},
+				)}
 			</div>
 			{finePrint && <p className={`${baseClass}__fine-print`}>{finePrint}</p>}
 		</div>

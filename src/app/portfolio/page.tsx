@@ -5,15 +5,15 @@ import PortfolioContent from '@/app/portfolio/PortfolioContent';
 import ProjectList from './ProjectList';
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
+	title: 'Portfolio',
 };
 
 export default function Page() {
-  const title = metadata.title?.toString();
+	const title = metadata.title?.toString();
 
-  return (
-    <PortfolioContent pageTitle={title}>
-      <ProjectList />
-    </PortfolioContent>
-  );
+	return (
+		<PortfolioContent pageTitle={title}>
+			<ProjectList />
+		</PortfolioContent>
+	);
 }

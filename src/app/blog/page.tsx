@@ -5,15 +5,15 @@ import BlogContent from '@/app/blog/BlogContent';
 import PostList from './PostList';
 
 export const metadata: Metadata = {
-  title: 'Blog',
+	title: 'Blog',
 };
 
 export default function Page() {
-  const title = metadata.title?.toString();
+	const title = metadata.title?.toString();
 
-  return (
-    <BlogContent pageTitle={title}>
-      <PostList />
-    </BlogContent>
-  );
+	return (
+		<BlogContent pageTitle={title}>
+			<PostList />
+		</BlogContent>
+	);
 }

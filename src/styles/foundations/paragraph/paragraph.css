@@ -1,7 +1,7 @@
 p {
-  font-weight: 300;
-  font-family: var(--mm-font-family-body);
-  font-size: var(--mm-spacing-md);
-  line-height: var(--mm-line-height-text);
-  margin-block: 0 var(--mm-spacing-sm);
+	margin-block: 0 var(--mm-spacing-sm);
+	font-weight: 300;
+	font-size: var(--mm-spacing-md);
+	line-height: var(--mm-line-height-text);
+	font-family: var(--mm-font-family-body);
 }

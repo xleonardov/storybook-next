@@ -4,34 +4,34 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--mm-font-family-heading);
-  font-weight: 700;
-  line-height: var(--mm-line-height-heading);
-  margin: 0;
-  margin-block-end: var(--mm-spacing-sm);
-  color: var(--mm-color-typography-default);
+	margin: 0;
+	margin-block-end: var(--mm-spacing-sm);
+	color: var(--mm-color-typography-default);
+	font-weight: 700;
+	line-height: var(--mm-line-height-heading);
+	font-family: var(--mm-font-family-heading);
 }
 
 h1 {
-  font-size: var(--mm-spacing-4xl);
+	font-size: var(--mm-spacing-4xl);
 }
 
 h2 {
-  font-size: var(--mm-spacing-3xl);
+	font-size: var(--mm-spacing-3xl);
 }
 
 h3 {
-  font-size: var(--mm-spacing-2xl);
+	font-size: var(--mm-spacing-2xl);
 }
 
 h4 {
-  font-size: var(--mm-spacing-xl);
+	font-size: var(--mm-spacing-xl);
 }
 
 h5 {
-  font-size: var(--mm-spacing-lg);
+	font-size: var(--mm-spacing-lg);
 }
 
 h6 {
-  font-size: var(--mm-spacing-md);
+	font-size: var(--mm-spacing-md);
 }
