@@ -1,5 +1,5 @@
 {
-	"name": "mel-site-next",
+	"name": "mm-site-next",
 	"version": "1.0.0",
 	"private": true,
 	"engines": {
@@ -27,8 +27,7 @@
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"remark": "^15.0.1",
-		"remark-html": "^16.0.1",
-		"rss": "^1.2.2"
+		"remark-html": "^16.0.1"
 	},
 	"devDependencies": {
 		"@csstools/postcss-global-data": "^2.1.1",
