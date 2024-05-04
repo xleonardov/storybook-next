@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 import { socialData } from '../../data/social-data';
 
@@ -52,7 +53,15 @@ export const SocialLinks = ({
 								aria-label={socialData[link].label}
 								title={socialData[link].label}
 								className={`${baseClass}__link`}
-							></a>
+							>
+								<Image
+									src={socialData[link].icon}
+									alt=''
+									width={22}
+									height={22}
+									className='mm-social-links__icon'
+								/>
+							</a>
 						</li>
 					);
 				})}
