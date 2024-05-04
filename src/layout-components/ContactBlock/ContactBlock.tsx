@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 import { Container } from '@/components/Container/Container';
 
@@ -73,7 +74,15 @@ export const ContactBlock = ({
 										aria-label={socialData[link].label}
 										title={socialData[link].label}
 										className={`${baseClass}__social-link-link`}
-									></a>
+									>
+										<Image
+											src={socialData[link].icon}
+											alt=''
+											width={28}
+											height={28}
+											className='mm-social-links__icon'
+										/>
+									</a>
 								</li>
 							);
 						})}

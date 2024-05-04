@@ -32,16 +32,19 @@
 	list-style-type: none;
 }
 
-.mm-contact-block__social-link-icon {
+.mm-contact-block__social-link-link {
+	display: flex;
 	flex-grow: 0;
 	flex-shrink: 0;
+	justify-content: center;
+	align-items: center;
 	border-radius: 50%;
 	padding: var(--mm-spacing-2xs);
-	width: var(--mm-spacing-2xl);
-	height: var(--mm-spacing-2xl);
+	width: var(--mm-spacing-3xl);
+	height: var(--mm-spacing-3xl);
 	color: var(--mm-color-typography-default-secondary);
 
 	&:hover {
-		color: var(--mm-color-typography-default);
+		background-color: var(--mm-color-primary-lighter);
 	}
 }

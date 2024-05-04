@@ -13,7 +13,6 @@
 	padding: var(--mm-spacing-2xs);
 	width: var(--mm-spacing-xl);
 	height: var(--mm-spacing-xl);
-	color: var(--mm-color-primary);
 }
 
 .mm-social-links__link:hover {
