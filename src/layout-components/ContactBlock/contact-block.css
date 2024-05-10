@@ -42,9 +42,9 @@
 	padding: var(--mm-spacing-2xs);
 	width: var(--mm-spacing-3xl);
 	height: var(--mm-spacing-3xl);
-	color: var(--mm-color-typography-default-secondary);
+	color: var(--mm-color-typography-default);
 
 	&:hover {
-		background-color: var(--mm-color-primary-lighter);
+		color: var(--mm-color-link);
 	}
 }

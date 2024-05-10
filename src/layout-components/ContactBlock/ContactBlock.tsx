@@ -1,8 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
 
 import { Container } from '@/components/Container/Container';
-
+import { Icon } from '@/components/Icon/Icon';
 import { socialData } from '../../data/social-data';
 
 import './contact-block.css';
@@ -75,11 +74,9 @@ export const ContactBlock = ({
 										title={socialData[link].label}
 										className={`${baseClass}__social-link-link`}
 									>
-										<Image
-											src={socialData[link].icon}
-											alt=''
-											width={28}
-											height={28}
+										<Icon
+											name={socialData[link].icon}
+											size='lg'
 											className='mm-social-links__icon'
 										/>
 									</a>

@@ -16,14 +16,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
 	args: {
-		linkItems: [
-			'github',
-			'drupal',
-			'linkedin',
-			'instagram',
-			'xTwitter',
-			'email',
-			'rss',
-		],
+		linkItems: ['github', 'drupal', 'linkedin', 'instagram', 'email'],
 	},
 };

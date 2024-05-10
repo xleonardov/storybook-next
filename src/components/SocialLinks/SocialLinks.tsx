@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
 
+import { Icon } from '../Icon/Icon';
 import { socialData } from '../../data/social-data';
 
 import './social-links.css';
@@ -11,7 +11,6 @@ type SocialOptions =
 	| 'github'
 	| 'instagram'
 	| 'linkedin'
-	| 'rss'
 	| 'xTwitter';
 
 interface SocialLinksProps {
@@ -54,11 +53,9 @@ export const SocialLinks = ({
 								title={socialData[link].label}
 								className={`${baseClass}__link`}
 							>
-								<Image
-									src={socialData[link].icon}
-									alt=''
-									width={22}
-									height={22}
+								<Icon
+									name={socialData[link].icon}
+									size='md'
 									className='mm-social-links__icon'
 								/>
 							</a>

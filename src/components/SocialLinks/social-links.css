@@ -1,7 +1,7 @@
 .mm-social-links {
 	all: unset;
 	display: flex;
-	column-gap: var(--mm-spacing-3xs);
+	column-gap: var(--mm-spacing-xs);
 	list-style-type: none;
 }
 
@@ -13,8 +13,9 @@
 	padding: var(--mm-spacing-2xs);
 	width: var(--mm-spacing-xl);
 	height: var(--mm-spacing-xl);
+	color: var(--mm-color-typography-default);
 }
 
 .mm-social-links__link:hover {
-	background-color: var(--mm-color-primary-lighter);
+	color: var(--mm-color-link);
 }
