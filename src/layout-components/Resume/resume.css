@@ -1,12 +1,11 @@
 .mm-resume {
 	display: flex;
 	flex-direction: column;
-	gap: var(--mm-spacing-5xl);
-	margin-block: var(--mm-spacing-6xl);
+	gap: var(--mm-spacing-4xl);
+	margin-block: var(--mm-spacing-5xl);
 
 	@media (min-width: 1024px) {
 		flex-direction: row;
-		gap: var(--mm-spacing-7xl);
 	}
 }
 
@@ -17,7 +16,7 @@
 }
 
 h2.mm-resume-section__section-title {
-	margin-block-end: var(--mm-spacing-lg);
+	margin-block-end: var(--mm-spacing-2xl);
 	color: var(--mm-color-primary);
 	font-weight: 700;
 	font-size: var(--mm-spacing-2xl);
