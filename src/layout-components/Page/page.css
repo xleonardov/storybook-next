@@ -6,7 +6,7 @@
 }
 
 .mm-page-title {
-	margin-block-end: var(--mm-spacing-2xl);
+	margin-block: var(--mm-spacing-xl);
 }
 
 .mm-main-content {

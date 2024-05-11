@@ -20,7 +20,7 @@ interface IconProps {
 const iconSizes = {
 	sm: '1rem',
 	md: '1.44rem',
-	lg: '2.074rem',
+	lg: '1.728rem',
 };
 
 /**

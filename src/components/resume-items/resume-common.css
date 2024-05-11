@@ -1,9 +1,8 @@
 h3.mm-resume-item__title {
-	margin-block-end: var(--mm-spacing-2xs);
+	margin-block-end: var(--mm-spacing-4xs);
 	color: var(--mm-color-typography-default);
 	font-weight: 700;
-	font-size: var(--mm-spacing-lg);
-
+	font-size: var(--mm-spacing-xl);
 	font-family: var(--mm-font-family-heading);
 }
 
@@ -20,8 +19,8 @@ h3.mm-resume-item__title--skills {
 	margin-block-end: var(--mm-spacing-xs);
 	color: var(--mm-color-typography-default-secondary);
 	font-weight: 400;
-	font-size: calc(var(--mm-spacing-lg) * 0.9);
-	font-family: var(--mm-font-family-secondary);
+	font-size: var(--mm-spacing-lg);
+	font-family: var(--mm-font-family-heading);
 
 	@media (--bp-md) {
 		flex-direction: row;
@@ -30,9 +29,8 @@ h3.mm-resume-item__title--skills {
 
 .mm-resume-item__divider {
 	display: none;
-	margin-block-start: -1px;
 	color: var(--mm-color-primary);
-	font-weight: 300;
+	font-weight: 400;
 
 	@media (--bp-md) {
 		display: inline;
