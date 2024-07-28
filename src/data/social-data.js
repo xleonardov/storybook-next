@@ -1,26 +1,26 @@
 export const socialData = {
 	drupal: {
-		url: 'https://www.drupal.org/u/mel-miller',
+		url: '',
 		label: 'Drupal',
 		icon: 'drupal',
 	},
 	email: {
-		url: 'mailto:me@mel-miller.com?subject=Inquiry from mel-miller.com',
+		url: '',
 		label: 'Email',
 		icon: 'envelope',
 	},
 	github: {
-		url: 'https://github.com/mel-miller',
+		url: 'https://github.com/xleonardov',
 		label: 'GitHub',
 		icon: 'github',
 	},
 	instagram: {
-		url: 'https://www.instagram.com/__mel.miller__/',
+		url: '',
 		label: 'Instagram',
 		icon: 'instagram',
 	},
 	linkedin: {
-		url: 'https://www.linkedin.com/in/melissa-a-miller-6a37744/',
+		url: '',
 		label: 'LinkedIn',
 		icon: 'linkedin',
 	},

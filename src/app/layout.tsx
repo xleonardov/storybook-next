@@ -5,11 +5,11 @@ import '../styles/main.css';
 
 export const metadata: Metadata = {
 	title: {
-		template: '%s | Melissa Miller',
-		default: 'Melissa Miller',
+		template: '%s | LeonV',
+		default: 'LeonV',
 	},
 	description:
-		'The work and thoughts of Melissa Miller, UX Engineer and Designer.',
+		'The work and thoughts of LeonV, UX Engineer and Designer.',
 	keywords: [
 		'JavaScript',
 		'TypeScript',

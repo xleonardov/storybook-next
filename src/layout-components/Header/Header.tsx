@@ -32,7 +32,7 @@ export const Header = ({ className, pathname, ...props }: HeaderProps) => {
 		>
 			<Container width='wide' className={`${baseClass}__container`}>
 				<Link href='/' className={`${baseClass}__home-link`}>
-					<div className={`${baseClass}__site-name`}>Melissa Miller</div>
+					<div className={`${baseClass}__site-name`}>LeonV</div>
 				</Link>
 				<MainMenu pathname={pathname} />
 			</Container>

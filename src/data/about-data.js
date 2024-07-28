@@ -7,7 +7,7 @@ export const heroData = {
 
 export const bioData = {
 	image: '/images/about/llama.png',
-	imageAlt: 'Image of Melissa Miller on a zipline course.',
+	imageAlt: 'Image of LeonV on a zipline course.',
 	imageCaption: 'I also occasionally party with llamas.',
 
 	leadText:
@@ -33,7 +33,7 @@ export const bioData = {
 					this album
 				</a>
 				), research urban history,{' '}
-				<a href='https://melissamiller.photoshelter.com' target='_blank'>
+				<a href='https://xxx.com' target='_blank'>
 					take photos
 				</a>
 				, and spend time with my partner and our dog.
@@ -50,7 +50,7 @@ export const resumeData = [
 			<>
 				Full employment timeline, including in-company growth, is available on{' '}
 				<a
-					href='https://www.linkedin.com/in/melissa-a-miller-6a37744/'
+					href=''
 					target='_blank'
 				>
 					LinkedIn

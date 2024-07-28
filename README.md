@@ -1,4 +1,6 @@
-# Next.js site with Storybook for components
+# Storybook Component in Next.js <i>by [LeonV](https://github.com/xleonardov)</i>
+
+This is cutom implementation of storybook component in Next.js frontend project.
 
 ## Getting Started
 

@@ -43,7 +43,7 @@ export const Footer = ({
 					/>
 				)}
 				<div className={`${baseClass}__fine-print`}>
-					©<time>{YEAR}</time> mel-miller
+					©<time>{YEAR}</time> LeonV
 				</div>
 			</Container>
 		</footer>

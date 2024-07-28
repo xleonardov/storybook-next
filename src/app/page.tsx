@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import HomeContent from '@/app/HomeContent';
 
 export const metadata: Metadata = {
-	title: 'Melissa Miller',
+	title: 'LeonV',
 };
 
 export default function Page() {
